@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19828758F1D10A9E9EE214E647325081 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4C2614C9EB2747C375219FB3D745CCE0 /* Pods-YoonitFacefyDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E6D083485FADCFF51DF2432F21B39DA /* Pods-YoonitFacefyDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A113C80EF2F9D4510DDD161F6D9A179 /* YoonitFacefy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F6BEFF32655DB74DE584B744FB012FB /* YoonitFacefy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AD90D5EDDDC2CE4A97E07A8C859B5B5 /* YoonitFacefy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C64EF24CF2C09F664EF2ECCFEE8E246 /* YoonitFacefy-dummy.m */; };
+		CD39B6D205F93F8A6B82801BE64DA783 /* FacefyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61DBBC031D2F2AB218663140B32C0A3 /* FacefyController.swift */; };
+		E85910D8843DCF71BCB2D19671DC2EFE /* Pods-YoonitFacefyDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFFA85CD58EBBFC6728CC1FC6913663 /* Pods-YoonitFacefyDemo-dummy.m */; };
+		EAE40A719288C52B118F20CC0ADDD2A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67CE61A37FDBB6CB39A16801E3CBF25C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F21CA5BA7243F2EBB99D62422951EFCD;
+			remoteInfo = YoonitFacefy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E6D083485FADCFF51DF2432F21B39DA /* Pods-YoonitFacefyDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YoonitFacefyDemo-umbrella.h"; sourceTree = "<group>"; };
+		1E8D4FE0741A0E99BE7DEC850A0C7E84 /* YoonitFacefy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YoonitFacefy.release.xcconfig; sourceTree = "<group>"; };
+		1F6BEFF32655DB74DE584B744FB012FB /* YoonitFacefy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoonitFacefy-umbrella.h"; sourceTree = "<group>"; };
+		2A675918364374CB6FC56C898376FFD5 /* YoonitFacefy.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YoonitFacefy.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2C64EF24CF2C09F664EF2ECCFEE8E246 /* YoonitFacefy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YoonitFacefy-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		326E095BA524C527631894CAE9760A58 /* Pods-YoonitFacefyDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YoonitFacefyDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		4FFFA85CD58EBBFC6728CC1FC6913663 /* Pods-YoonitFacefyDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YoonitFacefyDemo-dummy.m"; sourceTree = "<group>"; };
+		60B3B5E3DA421FDE671A8F297912E48F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6494337844FE37C976FD53C972DD377A /* YoonitFacefy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoonitFacefy-prefix.pch"; sourceTree = "<group>"; };
+		6AC6ADB95EFEB8759E15CF4516C7C3B5 /* YoonitFacefy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YoonitFacefy.framework; path = YoonitFacefy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		845CDE885FE9A87ECC3B002306E32FA4 /* YoonitFacefy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YoonitFacefy-Info.plist"; sourceTree = "<group>"; };
+		90A6D5D8756817C6C659EE262BED3317 /* YoonitFacefy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YoonitFacefy.debug.xcconfig; sourceTree = "<group>"; };
+		99249F6C5EE41F46E4DB9591A3BEE36C /* Pods-YoonitFacefyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YoonitFacefyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A29591FEC86CBFF2E27A3EE3939F0B10 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A810F4CA41FC4FAB318C2A50249BE96F /* Pods-YoonitFacefyDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YoonitFacefyDemo-Info.plist"; sourceTree = "<group>"; };
+		CC51893C38B116CD54D4A746BE3D7021 /* Pods_YoonitFacefyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YoonitFacefyDemo.framework; path = "Pods-YoonitFacefyDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61DBBC031D2F2AB218663140B32C0A3 /* FacefyController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacefyController.swift; path = YoonitFacefy/src/FacefyController.swift; sourceTree = "<group>"; };
+		DF7A6366413CD337440B999DAD8797C0 /* Pods-YoonitFacefyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YoonitFacefyDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E3684B02E0C7747246116CAFA292B5DC /* YoonitFacefy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YoonitFacefy.modulemap; sourceTree = "<group>"; };
+		F021F0260DF07FC3EE284E8933180C8F /* Pods-YoonitFacefyDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YoonitFacefyDemo.modulemap"; sourceTree = "<group>"; };
+		F0803D114530E7ABD979DC9E93AF0CD8 /* Pods-YoonitFacefyDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YoonitFacefyDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F4EB713AB08D882203D93FE43DF2A08D /* Pods-YoonitFacefyDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YoonitFacefyDemo-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FC3CB2A8F5D9547498D148CB20C3969 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19828758F1D10A9E9EE214E647325081 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF063871D6C80838832F11737E38D0EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE40A719288C52B118F20CC0ADDD2A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B09169833BBEB180E4557ABE1D9D7EE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A29591FEC86CBFF2E27A3EE3939F0B10 /* LICENSE */,
+				60B3B5E3DA421FDE671A8F297912E48F /* README.md */,
+				2A675918364374CB6FC56C898376FFD5 /* YoonitFacefy.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5AC84D9E6ABD37A44EE4A3A8C744BD12 /* Pods-YoonitFacefyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F021F0260DF07FC3EE284E8933180C8F /* Pods-YoonitFacefyDemo.modulemap */,
+				F0803D114530E7ABD979DC9E93AF0CD8 /* Pods-YoonitFacefyDemo-acknowledgements.markdown */,
+				326E095BA524C527631894CAE9760A58 /* Pods-YoonitFacefyDemo-acknowledgements.plist */,
+				4FFFA85CD58EBBFC6728CC1FC6913663 /* Pods-YoonitFacefyDemo-dummy.m */,
+				F4EB713AB08D882203D93FE43DF2A08D /* Pods-YoonitFacefyDemo-frameworks.sh */,
+				A810F4CA41FC4FAB318C2A50249BE96F /* Pods-YoonitFacefyDemo-Info.plist */,
+				0E6D083485FADCFF51DF2432F21B39DA /* Pods-YoonitFacefyDemo-umbrella.h */,
+				99249F6C5EE41F46E4DB9591A3BEE36C /* Pods-YoonitFacefyDemo.debug.xcconfig */,
+				DF7A6366413CD337440B999DAD8797C0 /* Pods-YoonitFacefyDemo.release.xcconfig */,
+			);
+			name = "Pods-YoonitFacefyDemo";
+			path = "Target Support Files/Pods-YoonitFacefyDemo";
+			sourceTree = "<group>";
+		};
+		6199EAB9C9F945EC3FD724DADDE11E96 /* YoonitFacefy */ = {
+			isa = PBXGroup;
+			children = (
+				D61DBBC031D2F2AB218663140B32C0A3 /* FacefyController.swift */,
+				0B09169833BBEB180E4557ABE1D9D7EE /* Pod */,
+				C14E8D44BC5CF80E9255052225492203 /* Support Files */,
+			);
+			name = YoonitFacefy;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		7AE557AB8FF001433ED131DFABF93248 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AC84D9E6ABD37A44EE4A3A8C744BD12 /* Pods-YoonitFacefyDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C11BABBFB57FEAC3ACE6410FCCD8EEA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC51893C38B116CD54D4A746BE3D7021 /* Pods_YoonitFacefyDemo.framework */,
+				6AC6ADB95EFEB8759E15CF4516C7C3B5 /* YoonitFacefy.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C14E8D44BC5CF80E9255052225492203 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3684B02E0C7747246116CAFA292B5DC /* YoonitFacefy.modulemap */,
+				2C64EF24CF2C09F664EF2ECCFEE8E246 /* YoonitFacefy-dummy.m */,
+				845CDE885FE9A87ECC3B002306E32FA4 /* YoonitFacefy-Info.plist */,
+				6494337844FE37C976FD53C972DD377A /* YoonitFacefy-prefix.pch */,
+				1F6BEFF32655DB74DE584B744FB012FB /* YoonitFacefy-umbrella.h */,
+				90A6D5D8756817C6C659EE262BED3317 /* YoonitFacefy.debug.xcconfig */,
+				1E8D4FE0741A0E99BE7DEC850A0C7E84 /* YoonitFacefy.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/YoonitFacefyDemo/Pods/Target Support Files/YoonitFacefy";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E6950D792F94258A41A348703E0138D1 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				C11BABBFB57FEAC3ACE6410FCCD8EEA5 /* Products */,
+				7AE557AB8FF001433ED131DFABF93248 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6950D792F94258A41A348703E0138D1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6199EAB9C9F945EC3FD724DADDE11E96 /* YoonitFacefy */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		58E97D53C2048F1D7FA92D455A893502 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2614C9EB2747C375219FB3D745CCE0 /* Pods-YoonitFacefyDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F65CF0D8B4208035EF156F1F4989F1C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A113C80EF2F9D4510DDD161F6D9A179 /* YoonitFacefy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		434CEBCF464F77E095C6E0FA8AF81110 /* Pods-YoonitFacefyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0D3E8455907415633E0EA92EC5353A2 /* Build configuration list for PBXNativeTarget "Pods-YoonitFacefyDemo" */;
+			buildPhases = (
+				58E97D53C2048F1D7FA92D455A893502 /* Headers */,
+				78548EEA3BCC7044106D638E22714580 /* Sources */,
+				AF063871D6C80838832F11737E38D0EB /* Frameworks */,
+				7115E56822D2221D8935A5BEB6F65C53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55D4A55B8934B6EEC13C775FB2898BC4 /* PBXTargetDependency */,
+			);
+			name = "Pods-YoonitFacefyDemo";
+			productName = "Pods-YoonitFacefyDemo";
+			productReference = CC51893C38B116CD54D4A746BE3D7021 /* Pods_YoonitFacefyDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F21CA5BA7243F2EBB99D62422951EFCD /* YoonitFacefy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1D1E23DAA641484F9305601A8C7A8A9 /* Build configuration list for PBXNativeTarget "YoonitFacefy" */;
+			buildPhases = (
+				7F65CF0D8B4208035EF156F1F4989F1C /* Headers */,
+				062D8CD7F762C20A4735407B3D64AC8C /* Sources */,
+				1FC3CB2A8F5D9547498D148CB20C3969 /* Frameworks */,
+				57D9D3EEADA59F068F66B84B9F985CA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YoonitFacefy;
+			productName = YoonitFacefy;
+			productReference = 6AC6ADB95EFEB8759E15CF4516C7C3B5 /* YoonitFacefy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C11BABBFB57FEAC3ACE6410FCCD8EEA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				434CEBCF464F77E095C6E0FA8AF81110 /* Pods-YoonitFacefyDemo */,
+				F21CA5BA7243F2EBB99D62422951EFCD /* YoonitFacefy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57D9D3EEADA59F068F66B84B9F985CA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7115E56822D2221D8935A5BEB6F65C53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		062D8CD7F762C20A4735407B3D64AC8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD39B6D205F93F8A6B82801BE64DA783 /* FacefyController.swift in Sources */,
+				7AD90D5EDDDC2CE4A97E07A8C859B5B5 /* YoonitFacefy-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78548EEA3BCC7044106D638E22714580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E85910D8843DCF71BCB2D19671DC2EFE /* Pods-YoonitFacefyDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55D4A55B8934B6EEC13C775FB2898BC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YoonitFacefy;
+			target = F21CA5BA7243F2EBB99D62422951EFCD /* YoonitFacefy */;
+			targetProxy = 67CE61A37FDBB6CB39A16801E3CBF25C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FD4AB8299D5C555A80B2876D3BC4764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99249F6C5EE41F46E4DB9591A3BEE36C /* Pods-YoonitFacefyDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YoonitFacefyDemo/Pods-YoonitFacefyDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YoonitFacefyDemo/Pods-YoonitFacefyDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		57A1E756FFC93D748928992EFA6509C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90A6D5D8756817C6C659EE262BED3317 /* YoonitFacefy.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YoonitFacefy/YoonitFacefy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YoonitFacefy/YoonitFacefy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YoonitFacefy/YoonitFacefy.modulemap";
+				PRODUCT_MODULE_NAME = YoonitFacefy;
+				PRODUCT_NAME = YoonitFacefy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		61FC5749665EDDB2D90E737333B3BA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6FD5E4A3DBCF268CC38D8B531B7DF6DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF7A6366413CD337440B999DAD8797C0 /* Pods-YoonitFacefyDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YoonitFacefyDemo/Pods-YoonitFacefyDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YoonitFacefyDemo/Pods-YoonitFacefyDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		80AAB9C1F945A88FB2C74FFB481770B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E8D4FE0741A0E99BE7DEC850A0C7E84 /* YoonitFacefy.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YoonitFacefy/YoonitFacefy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YoonitFacefy/YoonitFacefy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YoonitFacefy/YoonitFacefy.modulemap";
+				PRODUCT_MODULE_NAME = YoonitFacefy;
+				PRODUCT_NAME = YoonitFacefy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F671B4D3AA8F2CA18D12CD74BD1CDEF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61FC5749665EDDB2D90E737333B3BA8D /* Debug */,
+				F671B4D3AA8F2CA18D12CD74BD1CDEF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0D3E8455907415633E0EA92EC5353A2 /* Build configuration list for PBXNativeTarget "Pods-YoonitFacefyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD4AB8299D5C555A80B2876D3BC4764 /* Debug */,
+				6FD5E4A3DBCF268CC38D8B531B7DF6DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1D1E23DAA641484F9305601A8C7A8A9 /* Build configuration list for PBXNativeTarget "YoonitFacefy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57A1E756FFC93D748928992EFA6509C4 /* Debug */,
+				80AAB9C1F945A88FB2C74FFB481770B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

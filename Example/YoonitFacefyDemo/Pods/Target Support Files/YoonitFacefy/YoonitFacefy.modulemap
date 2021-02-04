@@ -1,0 +1,6 @@
+framework module YoonitFacefy {
+  umbrella header "YoonitFacefy-umbrella.h"
+
+  export *
+  module * { export * }
+}

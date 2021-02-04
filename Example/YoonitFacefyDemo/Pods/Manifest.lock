@@ -1,0 +1,16 @@
+PODS:
+  - YoonitFacefy (2.3.0)
+
+DEPENDENCIES:
+  - YoonitFacefy (from `../../`)
+
+EXTERNAL SOURCES:
+  YoonitFacefy:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  YoonitFacefy: 4cc7b325a52d2c73b558ac09f1a47be308ab0a0d
+
+PODFILE CHECKSUM: 1888987bfd8292cbf6cd3097e07231990b319fad
+
+COCOAPODS: 1.9.3
