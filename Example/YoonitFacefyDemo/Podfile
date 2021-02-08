@@ -4,7 +4,11 @@
 target 'YoonitFacefyDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+    
   # Pods for YoonitFacefyDemo
   pod 'YoonitFacefy', :path => '../../'
+  # pod 'YoonitFacefy', :path => '/Users/Teruya/Documents/workspace/cyberlabs/ios-yoonit-facefy'
+  # pod 'YoonitFacefy', :git => 'https://github.com/Yoonit-Labs/ios-yoonit-facefy', :branch => 'feature/mlkit'
+  
+  pod 'YoonitCamera'
 end

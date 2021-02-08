@@ -9,17 +9,19 @@
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 //
 
-import UIKit
-//import YoonitFacefy
-//import YoonitCamera
+import Foundation
 
-class FacefyViewController: UIViewController {
-
-//    let facefy: Facefy = Facefy()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+/**
+ This class is a singleton used in the entire project to handle the features.
+ */
+public class FacefyOptions {
         
-//        print(self.facefy)                
-    }
+    // Detect face classification.
+    var classification: Bool = false
+
+    // Detect face contours.
+    var contours: Bool = false
+
+    // Detect face bounding box.
+    var boundingBox: Bool = false
 }

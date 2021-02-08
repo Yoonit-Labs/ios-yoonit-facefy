@@ -1,16 +1,23 @@
 PODS:
+  - YoonitCamera (2.3.0)
   - YoonitFacefy (2.3.0)
 
 DEPENDENCIES:
+  - YoonitCamera
   - YoonitFacefy (from `../../`)
+
+SPEC REPOS:
+  trunk:
+    - YoonitCamera
 
 EXTERNAL SOURCES:
   YoonitFacefy:
     :path: "../../"
 
 SPEC CHECKSUMS:
+  YoonitCamera: a25677c77bc14f22fc9efaffceff60b54cc32049
   YoonitFacefy: 4cc7b325a52d2c73b558ac09f1a47be308ab0a0d
 
-PODFILE CHECKSUM: 1888987bfd8292cbf6cd3097e07231990b319fad
+PODFILE CHECKSUM: 46b226ed2ef579bca45d7837e91e5752b95b00ac
 
 COCOAPODS: 1.9.3

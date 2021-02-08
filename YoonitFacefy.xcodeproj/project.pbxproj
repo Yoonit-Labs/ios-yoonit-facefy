@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C06E5CF25D1FED400E6770F /* Facefy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C06E5CE25D1FED400E6770F /* Facefy.swift */; };
+		5C06E5D225D1FF0F00E6770F /* FacefyEventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C06E5D125D1FF0F00E6770F /* FacefyEventListener.swift */; };
+		5C06E5D525D1FF3200E6770F /* FacefyOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C06E5D425D1FF3200E6770F /* FacefyOptions.swift */; };
 		5C0C64392542108B00EDF95B /* logo_cyberlabs.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C64382542108B00EDF95B /* logo_cyberlabs.png */; };
 		5CB4F8F625CC7E63001D3606 /* FacefyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB4F8F525CC7E63001D3606 /* FacefyController.swift */; };
 		6176EF20252CFA4300F4D4DD /* YoonitFacefy.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6176EF1F252CFA4300F4D4DD /* YoonitFacefy.podspec */; };
 		6176EF23252CFC9500F4D4DD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6176EF22252CFC9500F4D4DD /* LICENSE */; };
 		6176EF26252CFEE000F4D4DD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6176EF25252CFEE000F4D4DD /* README.md */; };
 		6176EFA8252E476000F4D4DD /* Example in Resources */ = {isa = PBXBuildFile; fileRef = 6176EFA7252E476000F4D4DD /* Example */; };
+		DF1F33B84EFDE8362EE8CF8A /* Pods_YoonitFacefy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD8DF93033C79B7A9C2B054 /* Pods_YoonitFacefy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C06E5CE25D1FED400E6770F /* Facefy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facefy.swift; sourceTree = "<group>"; };
+		5C06E5D125D1FF0F00E6770F /* FacefyEventListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacefyEventListener.swift; sourceTree = "<group>"; };
+		5C06E5D425D1FF3200E6770F /* FacefyOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacefyOptions.swift; sourceTree = "<group>"; };
 		5C0C64382542108B00EDF95B /* logo_cyberlabs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_cyberlabs.png; sourceTree = "<group>"; };
 		5CB4F8EE25CC7DDC001D3606 /* YoonitFacefy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YoonitFacefy.h; sourceTree = "<group>"; };
 		5CB4F8F525CC7E63001D3606 /* FacefyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacefyController.swift; sourceTree = "<group>"; };
@@ -25,6 +32,9 @@
 		6176EF22252CFC9500F4D4DD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6176EF25252CFEE000F4D4DD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6176EFA7252E476000F4D4DD /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = "<group>"; };
+		6E55E37D37145733096CC85A /* Pods-YoonitFacefy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoonitFacefy.release.xcconfig"; path = "Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy.release.xcconfig"; sourceTree = "<group>"; };
+		9913F20FC3F5CAA58AFDDAD5 /* Pods-YoonitFacefy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoonitFacefy.debug.xcconfig"; path = "Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy.debug.xcconfig"; sourceTree = "<group>"; };
+		DAD8DF93033C79B7A9C2B054 /* Pods_YoonitFacefy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoonitFacefy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF1F33B84EFDE8362EE8CF8A /* Pods_YoonitFacefy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,9 @@
 			isa = PBXGroup;
 			children = (
 				5CB4F8F525CC7E63001D3606 /* FacefyController.swift */,
+				5C06E5CE25D1FED400E6770F /* Facefy.swift */,
+				5C06E5D125D1FF0F00E6770F /* FacefyEventListener.swift */,
+				5C06E5D425D1FF3200E6770F /* FacefyOptions.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -56,6 +70,8 @@
 				6176EF1F252CFA4300F4D4DD /* YoonitFacefy.podspec */,
 				6176EEF8252CF9D200F4D4DD /* YoonitFacefy */,
 				6176EEF7252CF9D200F4D4DD /* Products */,
+				85073D94B694632C1A966E28 /* Pods */,
+				A98BB533F39550100000CDED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +93,23 @@
 			path = YoonitFacefy;
 			sourceTree = "<group>";
 		};
+		85073D94B694632C1A966E28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9913F20FC3F5CAA58AFDDAD5 /* Pods-YoonitFacefy.debug.xcconfig */,
+				6E55E37D37145733096CC85A /* Pods-YoonitFacefy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A98BB533F39550100000CDED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAD8DF93033C79B7A9C2B054 /* Pods_YoonitFacefy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,10 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6176EEFE252CF9D200F4D4DD /* Build configuration list for PBXNativeTarget "YoonitFacefy" */;
 			buildPhases = (
+				E198AB70057DFCE458FEC583 /* [CP] Check Pods Manifest.lock */,
 				6176EEF1252CF9D200F4D4DD /* Headers */,
 				6176EEF2252CF9D200F4D4DD /* Sources */,
 				6176EEF3252CF9D200F4D4DD /* Frameworks */,
 				6176EEF4252CF9D200F4D4DD /* Resources */,
+				BA52E67FC4ECE9DC1D4962FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,12 +190,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BA52E67FC4ECE9DC1D4962FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E198AB70057DFCE458FEC583 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoonitFacefy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6176EEF2252CF9D200F4D4DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C06E5D525D1FF3200E6770F /* FacefyOptions.swift in Sources */,
 				5CB4F8F625CC7E63001D3606 /* FacefyController.swift in Sources */,
+				5C06E5D225D1FF0F00E6770F /* FacefyEventListener.swift in Sources */,
+				5C06E5CF25D1FED400E6770F /* Facefy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +371,7 @@
 		};
 		6176EEFF252CF9D200F4D4DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9913F20FC3F5CAA58AFDDAD5 /* Pods-YoonitFacefy.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -319,6 +400,7 @@
 		};
 		6176EF00252CF9D200F4D4DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E55E37D37145733096CC85A /* Pods-YoonitFacefy.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
