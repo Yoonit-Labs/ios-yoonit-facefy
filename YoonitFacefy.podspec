@@ -77,5 +77,6 @@ Pod::Spec.new do |spec|
   spec.source_files  = "YoonitFacefy/src/**/*", "Classes", "Classes/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
   spec.swift_version = "5.0"
+  spec.dependency 'GoogleMLKit/FaceDetection'
 end
 

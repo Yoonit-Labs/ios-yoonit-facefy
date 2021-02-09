@@ -20,6 +20,12 @@ public class Facefy: NSObject {
     
     var facefyController = FacefyController()
     
+//    public var facefyEventListener: FacefyEventListener? = nil {
+//        didSet {
+//            self.facefyController.facefyEventListener = facefyEventListener
+//        }
+//    }
+    
     public init(facefyEventListener: FacefyEventListener) {
         self.facefyController.facefyEventListener = facefyEventListener
     }

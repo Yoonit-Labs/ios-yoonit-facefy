@@ -11,6 +11,7 @@
 
 import Foundation
 import UIKit
+import Vision
 import MLKit
 
 public class FacefyController: NSObject {

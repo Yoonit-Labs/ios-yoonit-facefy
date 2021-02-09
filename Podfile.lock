@@ -6,18 +6,18 @@ PODS:
     - MLKitFaceDetection (~> 1.1.0)
   - GoogleMLKit/MLKitCore (2.0.0):
     - MLKitCommon (~> 2.0.0)
-  - GoogleToolboxForMac/DebugUtils (2.3.0):
-    - GoogleToolboxForMac/Defines (= 2.3.0)
-  - GoogleToolboxForMac/Defines (2.3.0)
-  - GoogleToolboxForMac/Logger (2.3.0):
-    - GoogleToolboxForMac/Defines (= 2.3.0)
-  - "GoogleToolboxForMac/NSData+zlib (2.3.0)":
-    - GoogleToolboxForMac/Defines (= 2.3.0)
-  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.3.0)":
-    - GoogleToolboxForMac/DebugUtils (= 2.3.0)
-    - GoogleToolboxForMac/Defines (= 2.3.0)
-    - "GoogleToolboxForMac/NSString+URLArguments (= 2.3.0)"
-  - "GoogleToolboxForMac/NSString+URLArguments (2.3.0)"
+  - GoogleToolboxForMac/DebugUtils (2.3.1):
+    - GoogleToolboxForMac/Defines (= 2.3.1)
+  - GoogleToolboxForMac/Defines (2.3.1)
+  - GoogleToolboxForMac/Logger (2.3.1):
+    - GoogleToolboxForMac/Defines (= 2.3.1)
+  - "GoogleToolboxForMac/NSData+zlib (2.3.1)":
+    - GoogleToolboxForMac/Defines (= 2.3.1)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.3.1)":
+    - GoogleToolboxForMac/DebugUtils (= 2.3.1)
+    - GoogleToolboxForMac/Defines (= 2.3.1)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.3.1)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.3.1)"
   - GoogleUtilities/Environment (7.2.2):
     - PromisesObjC (~> 1.2)
   - GoogleUtilities/Logger (7.2.2):
@@ -74,7 +74,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   GoogleDataTransport: 1024b1a4dfbd7a0e92cb20d7e0a6f1fb66b449a4
   GoogleMLKit: 2a9032170872c4464d516700a04661d6e5b98a77
-  GoogleToolboxForMac: 1350d40e86a76f7863928d63bcb0b89c84c521c5
+  GoogleToolboxForMac: 471e0c05d39506e50e6398f46fa9a12ae0efeff9
   GoogleUtilities: 31c5b01f978a70c6cff2afc6272b3f1921614b43
   GoogleUtilitiesComponents: a69c0b3b369ba443e988141e75ef49d9010b1c80
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
@@ -85,6 +85,6 @@ SPEC CHECKSUMS:
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Protobuf: 0cde852566359049847168e51bd1c690e0f70056
 
-PODFILE CHECKSUM: 39be787cfb0384b190253f8cf674c3cadc22dffc
+PODFILE CHECKSUM: fca06beabd9a0677ec33e55ebb874521fc857941
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

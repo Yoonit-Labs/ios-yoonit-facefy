@@ -10,16 +10,32 @@
 //
 
 import UIKit
-//import YoonitFacefy
 //import YoonitCamera
+import YoonitFacefy
 
-class FacefyViewController: UIViewController {
+class FacefyViewController: UIViewController, FacefyEventListener {
 
-//    let facefy: Facefy = Facefy()
+    var facefy: Facefy? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        print(self.facefy)                
+        self.facefy = Facefy(facefyEventListener: self)
+    }
+    
+    func onFaceAnalysis(
+        _ leftEyeOpenProbability: CGFloat,
+        _ rightEyeOpenProbability: CGFloat,
+        _ smilingProbability: CGFloat
+    ) {
+        
+    }
+    
+    func onContoursDetected(_ faceContours: [CGPoint]) {
+        
+    }
+    
+    func onFaceDetected(_ boundingBox: CGRect) {
+        
     }
 }

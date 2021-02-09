@@ -1,12 +1,16 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/YoonitCamera" "${PODS_CONFIGURATION_BUILD_DIR}/YoonitFacefy"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/YoonitCamera/YoonitCamera.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YoonitFacefy/YoonitFacefy.framework/Headers"
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "YoonitCamera" -framework "YoonitFacefy"
-OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/MLKitCommon/Frameworks" "${PODS_ROOT}/MLKitFaceDetection/Frameworks" "${PODS_ROOT}/MLKitVision/Frameworks"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 $(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1 $(inherited) PB_FIELD_32BIT=1 PB_NO_PACKED_STRUCTS=1 PB_ENABLE_MALLOC=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GTMSessionFetcher" "${PODS_ROOT}/Headers/Public/GoogleDataTransport" "${PODS_ROOT}/Headers/Public/GoogleMLKit" "${PODS_ROOT}/Headers/Public/GoogleToolboxForMac" "${PODS_ROOT}/Headers/Public/GoogleUtilities" "${PODS_ROOT}/Headers/Public/GoogleUtilitiesComponents" "${PODS_ROOT}/Headers/Public/PromisesObjC" "${PODS_ROOT}/Headers/Public/Protobuf" "${PODS_ROOT}/Headers/Public/nanopb" $(inherited) ${PODS_ROOT}/GoogleMLKit/MLKitCore/Sources "${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher" "${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport" "${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac" "${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities" "${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilitiesComponents" "${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC" "${PODS_CONFIGURATION_BUILD_DIR}/Protobuf" "${PODS_CONFIGURATION_BUILD_DIR}/YoonitFacefy" "${PODS_CONFIGURATION_BUILD_DIR}/nanopb"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/YoonitFacefy/YoonitFacefy.modulemap"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"GTMSessionFetcher" -l"GoogleDataTransport" -l"GoogleToolboxForMac" -l"GoogleUtilities" -l"GoogleUtilitiesComponents" -l"PromisesObjC" -l"Protobuf" -l"YoonitFacefy" -l"c++" -l"nanopb" -l"sqlite3" -l"z" -framework "AVFoundation" -framework "Accelerate" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreTelephony" -framework "CoreVideo" -framework "Foundation" -framework "LocalAuthentication" -framework "MLKitCommon" -framework "MLKitFaceDetection" -framework "MLKitVision" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/YoonitFacefy/YoonitFacefy.modulemap"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/YoonitFacefy"
 USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
