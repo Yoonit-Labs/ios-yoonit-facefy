@@ -19,35 +19,29 @@ var facefyOptions: FacefyOptions = FacefyOptions()
 public class Facefy: NSObject {
     
     var facefyController = FacefyController()
-    
-//    public var facefyEventListener: FacefyEventListener? = nil {
-//        didSet {
-//            self.facefyController.facefyEventListener = facefyEventListener
-//        }
-//    }
-    
+        
     public init(facefyEventListener: FacefyEventListener) {
         self.facefyController.facefyEventListener = facefyEventListener
     }
     
     // Detect face classification.
-    public var faceClassification: Bool = facefyOptions.classification {
+    public var classification: Bool = facefyOptions.classification {
         didSet {
-            facefyOptions.classification = self.faceClassification
+            facefyOptions.classification = self.classification
         }
     }
     
     // Detect face contours.
-    public var faceContours: Bool = facefyOptions.contours {
+    public var contours: Bool = facefyOptions.contours {
         didSet {
-            facefyOptions.contours = self.faceContours
+            facefyOptions.contours = self.contours
         }
     }
     
     // Detect face bounding box.
-    public var faceBoundingBox: Bool = facefyOptions.boundingBox {
+    public var boundingBox: Bool = facefyOptions.boundingBox {
         didSet {
-            facefyOptions.boundingBox = self.faceBoundingBox
+            facefyOptions.boundingBox = self.boundingBox
         }
     }
     

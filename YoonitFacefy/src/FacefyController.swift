@@ -45,25 +45,20 @@ public class FacefyController: NSObject {
             let face: Face = faces.sorted {
                 return $0.frame.width > $1.frame.width
             }[0]
-                        
-            if
-                facefyOptions.classification &&
-                face.hasSmilingProbability &&
-                face.hasLeftEyeOpenProbability &&
-                face.hasRightEyeOpenProbability &&
-                face.hasHeadEulerAngleX &&
-                face.hasHeadEulerAngleY &&
-                face.hasHeadEulerAngleZ
-            {
-                print("Face: \(face.headEulerAngleX) \(face.headEulerAngleY) \(face.headEulerAngleZ)")
-                
+                      
+            // Emit face analysis classification.
+            if facefyOptions.classification {
                 self.facefyEventListener?.onFaceAnalysis(
-                    face.leftEyeOpenProbability,
-                    face.rightEyeOpenProbability,
-                    face.smilingProbability
+                    face.hasSmilingProbability ? face.leftEyeOpenProbability : nil,
+                    face.hasLeftEyeOpenProbability ? face.leftEyeOpenProbability : nil,
+                    face.hasRightEyeOpenProbability ? face.rightEyeOpenProbability : nil,
+                    face.hasHeadEulerAngleX ? face.headEulerAngleX : nil,
+                    face.hasHeadEulerAngleY ? face.headEulerAngleY : nil,
+                    face.hasHeadEulerAngleZ ? face.headEulerAngleZ : nil
                 )
             }
 
+            // Emit face contours.
             if facefyOptions.contours && !face.contours.isEmpty {
                 var faceContours: [CGPoint] = []
                 for faceContour in face.contours {
@@ -72,11 +67,12 @@ public class FacefyController: NSObject {
                     }
                 }
                                 
-                self.facefyEventListener?.onContoursDetected(faceContours)
+                self.facefyEventListener?.onContours(faceContours)
             }
 
+            // Emit face bounding box.
             if (facefyOptions.boundingBox) {
-                self.facefyEventListener?.onFaceDetected(face.frame)
+                self.facefyEventListener?.onFace(face.frame)
             }
 
         }

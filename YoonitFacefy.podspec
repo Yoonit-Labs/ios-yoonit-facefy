@@ -9,8 +9,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YoonitFacefy"
-  spec.version      = "2.3.0"
-  spec.summary      = "YoonitFacefy module for detects human faces or scan Qrcode."
+  spec.version      = "1.0.0"
+  spec.summary      = "YoonitFacefy is a module for detects human faces."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  "This module contains a custom view that shows a preview layer of the back and front facefy and detects human faces in it. And is possible scan Qrcode"
+    "A face detector module for iOS."
                    DESC
 
   spec.homepage     = "https://github.com/Yoonit-Labs/ios-yoonit-facefy"
@@ -30,7 +30,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
   
-    spec.license      = { :type => "MIT", :file => "LICENSE" }
+    spec.license    = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -43,9 +43,9 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "CyberLabs.AI" => "luigui.delyer@cyberlabs.com.br" }
+  spec.author       = { "CyberLabs.AI" => "luigui.delyer@cyberlabs.com.br" }
   
-  spec.authors = { 'CyberLabs.AI'   => 'contato@cyberlabs.ai' }
+  spec.authors      = { 'CyberLabs.AI'   => 'contato@cyberlabs.ai' }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -54,7 +54,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  spec.platform     = :ios, "12.0"
+  spec.platform     = :ios, "14.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

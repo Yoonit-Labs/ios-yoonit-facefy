@@ -13,17 +13,19 @@
 import Foundation
 import UIKit
 
-@objc
 public protocol FacefyEventListener {
         
     func onFaceAnalysis(
-        _ leftEyeOpenProbability: CGFloat,
-        _ rightEyeOpenProbability: CGFloat,
-        _ smilingProbability: CGFloat
+        _ leftEyeOpenProbability: CGFloat?,
+        _ rightEyeOpenProbability: CGFloat?,
+        _ smilingProbability: CGFloat?,
+        _ headEulerAngleX: CGFloat?,
+        _ headEulerAngleY: CGFloat?,
+        _ headEulerAngleZ: CGFloat?
     )
 
-    func onContoursDetected(_ faceContours: [CGPoint])
+    func onContours(_ faceContours: [CGPoint])
 
-    func onFaceDetected(_ boundingBox: CGRect)
+    func onFace(_ boundingBox: CGRect)
 }
 
