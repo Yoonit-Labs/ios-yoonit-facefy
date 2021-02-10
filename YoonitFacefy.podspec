@@ -78,5 +78,10 @@ Pod::Spec.new do |spec|
   spec.exclude_files = "Classes/Exclude"
   spec.swift_version = "5.0"
   spec.dependency 'GoogleMLKit/FaceDetection'
+  spec.pod_target_xcconfig = {
+    'LIBRARY_SEARCH_PATHS' => '${SRCROOT}/**',
+    'FRAMEWORK_SEARCH_PATHS' => '${SRCROOT}/**',
+    'HEADER_SEARCH_PATHS' => '${SRCROOT}/**'
+  }
 end
 

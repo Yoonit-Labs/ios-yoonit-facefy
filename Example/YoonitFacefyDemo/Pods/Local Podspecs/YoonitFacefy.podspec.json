@@ -30,5 +30,10 @@
 
     ]
   },
+  "pod_target_xcconfig": {
+    "LIBRARY_SEARCH_PATHS": "${SRCROOT}/**",
+    "FRAMEWORK_SEARCH_PATHS": "${SRCROOT}/**",
+    "HEADER_SEARCH_PATHS": "${SRCROOT}/**"
+  },
   "swift_version": "5.0"
 }
