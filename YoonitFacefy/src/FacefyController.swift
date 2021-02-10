@@ -49,9 +49,9 @@ public class FacefyController: NSObject {
             // Emit face analysis classification.
             if facefyOptions.classification {
                 self.facefyEventListener?.onFaceAnalysis(
-                    face.hasSmilingProbability ? face.leftEyeOpenProbability : nil,
                     face.hasLeftEyeOpenProbability ? face.leftEyeOpenProbability : nil,
                     face.hasRightEyeOpenProbability ? face.rightEyeOpenProbability : nil,
+                    face.hasSmilingProbability ? face.leftEyeOpenProbability : nil,
                     face.hasHeadEulerAngleX ? face.headEulerAngleX : nil,
                     face.hasHeadEulerAngleY ? face.headEulerAngleY : nil,
                     face.hasHeadEulerAngleZ ? face.headEulerAngleZ : nil
