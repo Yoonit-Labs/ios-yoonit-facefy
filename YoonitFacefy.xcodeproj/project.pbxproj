@@ -21,6 +21,7 @@
 		5CB4F8F625CC7E63001D3606 /* FacefyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB4F8F525CC7E63001D3606 /* FacefyController.swift */; };
 		5CD73DD625E5795A00DF4C6F /* FaceDetected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD73DD525E5795A00DF4C6F /* FaceDetected.swift */; };
 		5CD73EA125E7E97300DF4C6F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD73EA025E7E97300DF4C6F /* Message.swift */; };
+		5CD73F2F25E8356E00DF4C6F /* facefy-usage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5CD73F2E25E8356E00DF4C6F /* facefy-usage.gif */; };
 		6176EF20252CFA4300F4D4DD /* YoonitFacefy.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6176EF1F252CFA4300F4D4DD /* YoonitFacefy.podspec */; };
 		6176EF23252CFC9500F4D4DD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6176EF22252CFC9500F4D4DD /* LICENSE */; };
 		6176EF26252CFEE000F4D4DD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6176EF25252CFEE000F4D4DD /* README.md */; };
@@ -43,6 +44,7 @@
 		5CB4F8F525CC7E63001D3606 /* FacefyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacefyController.swift; sourceTree = "<group>"; };
 		5CD73DD525E5795A00DF4C6F /* FaceDetected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetected.swift; sourceTree = "<group>"; };
 		5CD73EA025E7E97300DF4C6F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5CD73F2E25E8356E00DF4C6F /* facefy-usage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "facefy-usage.gif"; sourceTree = "<group>"; };
 		6176EEF6252CF9D200F4D4DD /* YoonitFacefy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YoonitFacefy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6176EEFA252CF9D200F4D4DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6176EF1F252CFA4300F4D4DD /* YoonitFacefy.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YoonitFacefy.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -90,6 +92,7 @@
 			children = (
 				6176EFA7252E476000F4D4DD /* Example */,
 				5C0C64382542108B00EDF95B /* logo_cyberlabs.png */,
+				5CD73F2E25E8356E00DF4C6F /* facefy-usage.gif */,
 				6176EF25252CFEE000F4D4DD /* README.md */,
 				6176EF22252CFC9500F4D4DD /* LICENSE */,
 				6176EF1F252CFA4300F4D4DD /* YoonitFacefy.podspec */,
@@ -217,6 +220,7 @@
 				6176EF26252CFEE000F4D4DD /* README.md in Resources */,
 				6176EF23252CFC9500F4D4DD /* LICENSE in Resources */,
 				6176EF20252CFA4300F4D4DD /* YoonitFacefy.podspec in Resources */,
+				5CD73F2F25E8356E00DF4C6F /* facefy-usage.gif in Resources */,
 				5C0C64392542108B00EDF95B /* logo_cyberlabs.png in Resources */,
 				6176EFA8252E476000F4D4DD /* Example in Resources */,
 			);
