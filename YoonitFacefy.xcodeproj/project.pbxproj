@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		14A21D681153BBE1C4B003A8 /* Pods_YoonitFacefy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F916739A319F58C181F7B61D /* Pods_YoonitFacefy.framework */; };
 		5C06E5CF25D1FED400E6770F /* Facefy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C06E5CE25D1FED400E6770F /* Facefy.swift */; };
-		5C06E5D225D1FF0F00E6770F /* FacefyEventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C06E5D125D1FF0F00E6770F /* FacefyEventListener.swift */; };
-		5C06E5D525D1FF3200E6770F /* FacefyOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C06E5D425D1FF3200E6770F /* FacefyOptions.swift */; };
 		5C0C64392542108B00EDF95B /* logo_cyberlabs.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C64382542108B00EDF95B /* logo_cyberlabs.png */; };
 		5C65787E25D32FB2001171F8 /* libGoogleDataTransport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C65787D25D32FB2001171F8 /* libGoogleDataTransport.a */; };
 		5C65788025D32FB2001171F8 /* libGoogleToolboxForMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C65787F25D32FB2001171F8 /* libGoogleToolboxForMac.a */; };
@@ -21,6 +19,8 @@
 		5C65788C25D32FB2001171F8 /* libPromisesObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C65788B25D32FB2001171F8 /* libPromisesObjC.a */; };
 		5C65788E25D32FB2001171F8 /* libProtobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C65788D25D32FB2001171F8 /* libProtobuf.a */; };
 		5CB4F8F625CC7E63001D3606 /* FacefyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB4F8F525CC7E63001D3606 /* FacefyController.swift */; };
+		5CD73DD625E5795A00DF4C6F /* FaceDetected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD73DD525E5795A00DF4C6F /* FaceDetected.swift */; };
+		5CD73EA125E7E97300DF4C6F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD73EA025E7E97300DF4C6F /* Message.swift */; };
 		6176EF20252CFA4300F4D4DD /* YoonitFacefy.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6176EF1F252CFA4300F4D4DD /* YoonitFacefy.podspec */; };
 		6176EF23252CFC9500F4D4DD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6176EF22252CFC9500F4D4DD /* LICENSE */; };
 		6176EF26252CFEE000F4D4DD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6176EF25252CFEE000F4D4DD /* README.md */; };
@@ -29,8 +29,6 @@
 
 /* Begin PBXFileReference section */
 		5C06E5CE25D1FED400E6770F /* Facefy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facefy.swift; sourceTree = "<group>"; };
-		5C06E5D125D1FF0F00E6770F /* FacefyEventListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacefyEventListener.swift; sourceTree = "<group>"; };
-		5C06E5D425D1FF3200E6770F /* FacefyOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacefyOptions.swift; sourceTree = "<group>"; };
 		5C0C64382542108B00EDF95B /* logo_cyberlabs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_cyberlabs.png; sourceTree = "<group>"; };
 		5C65787D25D32FB2001171F8 /* libGoogleDataTransport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleDataTransport.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C65787F25D32FB2001171F8 /* libGoogleToolboxForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleToolboxForMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +41,8 @@
 		5C65788D25D32FB2001171F8 /* libProtobuf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libProtobuf.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB4F8EE25CC7DDC001D3606 /* YoonitFacefy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YoonitFacefy.h; sourceTree = "<group>"; };
 		5CB4F8F525CC7E63001D3606 /* FacefyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacefyController.swift; sourceTree = "<group>"; };
+		5CD73DD525E5795A00DF4C6F /* FaceDetected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetected.swift; sourceTree = "<group>"; };
+		5CD73EA025E7E97300DF4C6F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		6176EEF6252CF9D200F4D4DD /* YoonitFacefy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YoonitFacefy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6176EEFA252CF9D200F4D4DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6176EF1F252CFA4300F4D4DD /* YoonitFacefy.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YoonitFacefy.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -79,8 +79,8 @@
 			children = (
 				5CB4F8F525CC7E63001D3606 /* FacefyController.swift */,
 				5C06E5CE25D1FED400E6770F /* Facefy.swift */,
-				5C06E5D125D1FF0F00E6770F /* FacefyEventListener.swift */,
-				5C06E5D425D1FF3200E6770F /* FacefyOptions.swift */,
+				5CD73DD525E5795A00DF4C6F /* FaceDetected.swift */,
+				5CD73EA025E7E97300DF4C6F /* Message.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -271,9 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C06E5D525D1FF3200E6770F /* FacefyOptions.swift in Sources */,
 				5CB4F8F625CC7E63001D3606 /* FacefyController.swift in Sources */,
-				5C06E5D225D1FF0F00E6770F /* FacefyEventListener.swift in Sources */,
+				5CD73EA125E7E97300DF4C6F /* Message.swift in Sources */,
+				5CD73DD625E5795A00DF4C6F /* FaceDetected.swift in Sources */,
 				5C06E5CF25D1FED400E6770F /* Facefy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +422,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ai.cyberlabs.YoonitFacefy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -452,7 +452,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ai.cyberlabs.YoonitFacefy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

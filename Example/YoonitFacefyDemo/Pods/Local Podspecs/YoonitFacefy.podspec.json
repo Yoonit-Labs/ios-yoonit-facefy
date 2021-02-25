@@ -1,8 +1,8 @@
 {
   "name": "YoonitFacefy",
-  "version": "2.3.0",
-  "summary": "YoonitFacefy module for detects human faces or scan Qrcode.",
-  "description": "\"This module contains a custom view that shows a preview layer of the back and front facefy and detects human faces in it. And is possible scan Qrcode\"",
+  "version": "1.0.0",
+  "summary": "YoonitFacefy is a module for detects human faces.",
+  "description": "\"A face detector module for iOS.\"",
   "homepage": "https://github.com/Yoonit-Labs/ios-yoonit-facefy",
   "license": {
     "type": "MIT",
@@ -12,11 +12,11 @@
     "CyberLabs.AI": "contato@cyberlabs.ai"
   },
   "platforms": {
-    "ios": "12.0"
+    "ios": "14.0"
   },
   "source": {
     "git": "https://github.com/Yoonit-Labs/ios-yoonit-facefy.git",
-    "tag": "2.3.0"
+    "tag": "1.0.0"
   },
   "source_files": [
     "YoonitFacefy/src/**/*",

@@ -7,5 +7,5 @@ target 'YoonitFacefyDemo' do
   # Pods for YoonitFacefyDemo
   pod 'YoonitFacefy', :path => '../../'
 
- # pod 'YoonitCamera'
+  pod 'YoonitCamera'
 end

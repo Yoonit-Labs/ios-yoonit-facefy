@@ -14,67 +14,78 @@ import UIKit
 import Vision
 import MLKit
 
-public class FacefyController: NSObject {
-        
-    public var facefyEventListener: FacefyEventListener?
+public class FacefyController {
+                       
+    private let faceDetector: FaceDetector
     
-    public func detect(sampleBuffer: CMSampleBuffer, orientation: UIImage.Orientation) {
-        
-        let visionImage: VisionImage = VisionImage(buffer: sampleBuffer)
-        visionImage.orientation = orientation
-        
+    init() {
         let options: FaceDetectorOptions = FaceDetectorOptions()
-        options.performanceMode = .accurate
+        options.performanceMode = .fast
         options.landmarkMode = .all
+        options.contourMode = .all
         options.classificationMode = .all
         
-        let faceDetector = FaceDetector.faceDetector(options: options)
+        self.faceDetector = FaceDetector.faceDetector(options: options)
+    }
+    
+    public func detect(
+        image: UIImage,
+        onFaceDetected: @escaping (FaceDetected) -> Void,
+        onMessage: @escaping (String) -> Void
+    ) {
+        let visionImage: VisionImage = VisionImage(image: image)
+        
         
         weak var weakSelf = self
-        faceDetector.process(visionImage) { faces, error in
+        self.faceDetector.process(visionImage) {
+            faces, error in
             
             guard weakSelf != nil else {
+                onMessage(Message.FACE_UNDETECTED.rawValue)
                 return
             }
 
             guard error == nil, let faces = faces, !faces.isEmpty else {
+                onMessage(Message.FACE_UNDETECTED.rawValue)
                 return
             }
-            
+                                    
             // The closest face.
             let face: Face = faces.sorted {
                 return $0.frame.width > $1.frame.width
             }[0]
-                      
-            // Emit face analysis classification.
-            if facefyOptions.classification {
-                self.facefyEventListener?.onFaceAnalysis(
-                    face.hasLeftEyeOpenProbability ? face.leftEyeOpenProbability : nil,
-                    face.hasRightEyeOpenProbability ? face.rightEyeOpenProbability : nil,
-                    face.hasSmilingProbability ? face.leftEyeOpenProbability : nil,
-                    face.hasHeadEulerAngleX ? face.headEulerAngleX : nil,
-                    face.hasHeadEulerAngleY ? face.headEulerAngleY : nil,
-                    face.hasHeadEulerAngleZ ? face.headEulerAngleZ : nil
-                )
-            }
-
-            // Emit face contours.
-            if facefyOptions.contours && !face.contours.isEmpty {
-                var faceContours: [CGPoint] = []
+                                           
+            var faceContours: [CGPoint] = []
+            
+            // Get face analysis classification.
+            let leftEyeOpenProbability: CGFloat? = face.hasLeftEyeOpenProbability ? face.leftEyeOpenProbability : nil
+            let rightEyeOpenProbability: CGFloat? = face.hasRightEyeOpenProbability ? face.rightEyeOpenProbability : nil
+            let smilingProbability: CGFloat? = face.hasSmilingProbability ? face.smilingProbability : nil
+            let headEulerAngleX: CGFloat? = face.hasHeadEulerAngleX ? face.headEulerAngleX : nil
+            let headEulerAngleY: CGFloat? = face.hasHeadEulerAngleY ? face.headEulerAngleY : nil
+            let headEulerAngleZ: CGFloat? = face.hasHeadEulerAngleZ ? face.headEulerAngleZ : nil
+            
+            // Get face contours.
+            if !face.contours.isEmpty {
                 for faceContour in face.contours {
                     for point in faceContour.points {
                         faceContours.append(CGPoint(x: point.x, y: point.y))
                     }
                 }
-                                
-                self.facefyEventListener?.onContours(faceContours)
             }
-
-            // Emit face bounding box.
-            if (facefyOptions.boundingBox) {
-                self.facefyEventListener?.onFace(face.frame)
-            }
-
+         
+            onFaceDetected(
+                FaceDetected(
+                    leftEyeOpenProbability: leftEyeOpenProbability,
+                    rightEyeOpenProbability: rightEyeOpenProbability,
+                    smilingProbability: smilingProbability,
+                    headEulerAngleX: headEulerAngleX,
+                    headEulerAngleY: headEulerAngleY,
+                    headEulerAngleZ: headEulerAngleZ,
+                    contours: faceContours,
+                    boundingBox: face.frame
+                )
+            )
         }
     }
 }
