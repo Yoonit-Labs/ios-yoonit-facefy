@@ -26,7 +26,7 @@ class FacefyViewController:
     @IBOutlet var leftEyeLabel: UILabel!
     @IBOutlet var rightEyeLabel: UILabel!
     @IBOutlet var smillingLabel: UILabel!
-    @IBOutlet var leftRightMovementeLabel: UILabel!
+    @IBOutlet var horizontalMovementLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,13 +68,13 @@ class FacefyViewController:
                 } else if -36 < headEulerAngleY && headEulerAngleY < -12 {
                     headPosition = "Right"
                 } else if -12 < headEulerAngleY && headEulerAngleY < 12 {
-                    headPosition = "Normal"
+                    headPosition = "Frontal"
                 } else if 12 < headEulerAngleY && headEulerAngleY < 36 {
                     headPosition = "Left"
                 } else if headEulerAngleY > 36 {
                     headPosition = "Super Left"
                 }
-                self.leftRightMovementeLabel.text = headPosition
+                self.horizontalMovementLabel.text = headPosition
             }
                         
             if let cgImage = image?.cgImage {

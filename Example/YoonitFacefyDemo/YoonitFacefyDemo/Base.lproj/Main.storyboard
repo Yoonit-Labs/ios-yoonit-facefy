@@ -46,8 +46,8 @@
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Left-Right Movemente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9U7-VI-dQw">
-                                        <rect key="frame" x="8" y="139" width="171" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Horizontal Movement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9U7-VI-dQw">
+                                        <rect key="frame" x="8" y="139" width="163" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
@@ -100,8 +100,8 @@
                         <outlet property="cameraView" destination="TBw-xC-afT" id="inF-dq-LPg"/>
                         <outlet property="faceImageView" destination="uz0-yH-6uq" id="VfA-ed-8kj"/>
                         <outlet property="graphicView" destination="laZ-OZ-DH5" id="dK9-xY-Ouy"/>
+                        <outlet property="horizontalMovementLabel" destination="Bry-le-uJC" id="tZZ-Wt-cxY"/>
                         <outlet property="leftEyeLabel" destination="EFc-6l-i3I" id="n1h-Zo-kzl"/>
-                        <outlet property="leftRightMovementeLabel" destination="Bry-le-uJC" id="4XX-ce-Esv"/>
                         <outlet property="rightEyeLabel" destination="NLY-ap-isj" id="r6i-vF-Zi3"/>
                         <outlet property="smillingLabel" destination="2Io-Qw-Xo7" id="Ifj-dN-KpP"/>
                     </connections>
