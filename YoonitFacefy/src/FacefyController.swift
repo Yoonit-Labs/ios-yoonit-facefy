@@ -34,8 +34,7 @@ public class FacefyController {
         onMessage: @escaping (String) -> Void
     ) {
         let visionImage: VisionImage = VisionImage(image: image)
-        
-        
+
         weak var weakSelf = self
         self.faceDetector.process(visionImage) {
             faces, error in
@@ -58,8 +57,8 @@ public class FacefyController {
             var faceContours: [CGPoint] = []
             
             // Get face analysis classification.
-            let leftEyeOpenProbability: CGFloat? = face.hasLeftEyeOpenProbability ? face.leftEyeOpenProbability : nil
-            let rightEyeOpenProbability: CGFloat? = face.hasRightEyeOpenProbability ? face.rightEyeOpenProbability : nil
+            let leftEyeOpenProbability: CGFloat? = face.hasRightEyeOpenProbability ? face.rightEyeOpenProbability : nil
+            let rightEyeOpenProbability: CGFloat? = face.hasLeftEyeOpenProbability ? face.leftEyeOpenProbability : nil
             let smilingProbability: CGFloat? = face.hasSmilingProbability ? face.smilingProbability : nil
             let headEulerAngleX: CGFloat? = face.hasHeadEulerAngleX ? face.headEulerAngleX : nil
             let headEulerAngleY: CGFloat? = face.hasHeadEulerAngleY ? face.headEulerAngleY : nil
