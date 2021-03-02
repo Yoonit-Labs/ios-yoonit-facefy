@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1751D24037C355F0A622A604 /* Pods_YoonitFacefyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFCD9384F93ACEFA13398DE /* Pods_YoonitFacefyDemo.framework */; };
 		5C06E54825D1F09A00E6770F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5C06E54725D1F09A00E6770F /* Podfile */; };
 		5C6580CC25D5ACA3001171F8 /* GraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6580CB25D5ACA3001171F8 /* GraphicView.swift */; };
 		6176EFC2252E496D00F4D4DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6176EFC1252E496D00F4D4DD /* AppDelegate.swift */; };
@@ -15,11 +16,9 @@
 		6176EFCB252E496F00F4D4DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6176EFCA252E496F00F4D4DD /* Assets.xcassets */; };
 		6176EFCE252E496F00F4D4DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6176EFCC252E496F00F4D4DD /* LaunchScreen.storyboard */; };
 		6176EFDE252E4A9100F4D4DD /* FacefyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6176EFDB252E4A9100F4D4DD /* FacefyViewController.swift */; };
-		A2F9BEFA7764C9AF1E464578 /* libPods-YoonitFacefyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF4945E5E73608853F9E19E /* libPods-YoonitFacefyDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1CF4945E5E73608853F9E19E /* libPods-YoonitFacefyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YoonitFacefyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		240368A2A8A0D7608668F832 /* Pods-YoonitFacefyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoonitFacefyDemo.debug.xcconfig"; path = "Target Support Files/Pods-YoonitFacefyDemo/Pods-YoonitFacefyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		3D7CC942132D736BF71FBFF2 /* Pods-YoonitFacefyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoonitFacefyDemo.release.xcconfig"; path = "Target Support Files/Pods-YoonitFacefyDemo/Pods-YoonitFacefyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5C06E54725D1F09A00E6770F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -33,6 +32,7 @@
 		6176EFCD252E496F00F4D4DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6176EFCF252E496F00F4D4DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6176EFDB252E4A9100F4D4DD /* FacefyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacefyViewController.swift; sourceTree = "<group>"; };
+		CFFCD9384F93ACEFA13398DE /* Pods_YoonitFacefyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoonitFacefyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2F9BEFA7764C9AF1E464578 /* libPods-YoonitFacefyDemo.a in Frameworks */,
+				1751D24037C355F0A622A604 /* Pods_YoonitFacefyDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				5C06E5A925D1FBC500E6770F /* YoonitFacefy.framework */,
-				1CF4945E5E73608853F9E19E /* libPods-YoonitFacefyDemo.a */,
+				CFFCD9384F93ACEFA13398DE /* Pods_YoonitFacefyDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +111,7 @@
 				6176EFBB252E496D00F4D4DD /* Frameworks */,
 				6176EFBC252E496D00F4D4DD /* Resources */,
 				1361A9BF6EFEB4AB442422FB /* [CP] Copy Pods Resources */,
+				F161A6E1F3C5199EF907BA46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,6 +206,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F161A6E1F3C5199EF907BA46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YoonitFacefyDemo/Pods-YoonitFacefyDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YoonitFacefyDemo/Pods-YoonitFacefyDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YoonitFacefyDemo/Pods-YoonitFacefyDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

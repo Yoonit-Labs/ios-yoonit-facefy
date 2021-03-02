@@ -77,6 +77,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "YoonitFacefy/src/**/*", "Classes", "Classes/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
   spec.swift_version = "5.0"
+  spec.static_framework = true
   spec.dependency 'GoogleMLKit/FaceDetection'
   spec.pod_target_xcconfig = {
     'LIBRARY_SEARCH_PATHS' => '${SRCROOT}/**',

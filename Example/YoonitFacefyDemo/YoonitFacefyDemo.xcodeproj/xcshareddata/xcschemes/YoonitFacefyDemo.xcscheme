@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F21CA5BA7243F2EBB99D62422951EFCD"
-               BuildableName = "libYoonitFacefy.a"
+               BuildableName = "YoonitFacefy.framework"
                BlueprintName = "YoonitFacefy"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>

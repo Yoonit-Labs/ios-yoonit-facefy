@@ -1,4 +1,4 @@
-module YoonitFacefy {
+framework module YoonitFacefy {
   umbrella header "YoonitFacefy-umbrella.h"
 
   export *

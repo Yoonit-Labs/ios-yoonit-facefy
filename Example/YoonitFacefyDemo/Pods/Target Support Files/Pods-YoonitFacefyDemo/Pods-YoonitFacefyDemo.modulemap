@@ -1,4 +1,4 @@
-module Pods_YoonitFacefyDemo {
+framework module Pods_YoonitFacefyDemo {
   umbrella header "Pods-YoonitFacefyDemo-umbrella.h"
 
   export *

@@ -25,6 +25,7 @@
   ],
   "exclude_files": "Classes/Exclude",
   "swift_versions": "5.0",
+  "static_framework": true,
   "dependencies": {
     "GoogleMLKit/FaceDetection": [
 
