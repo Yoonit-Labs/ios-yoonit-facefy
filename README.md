@@ -9,7 +9,7 @@ A iOS library to provide:
 - Face expressions
 - Face movement
 
-<img src="https://raw.githubusercontent.com/Yoonit-Labs/ios-yoonit-facefy/development/facefy-usage.gif" width="300">
+<img src="https://raw.githubusercontent.com/Yoonit-Labs/ios-yoonit-facefy/development/facefy.gif" width="300">
 
 ## Install
 

@@ -1,8 +1,8 @@
 {
   "name": "YoonitFacefy",
   "version": "1.0.0",
-  "summary": "YoonitFacefy is a module for detects human faces.",
-  "description": "\"A face detector module for iOS.\"",
+  "summary": "The face detection's module for iOS with a lot of awesome features",
+  "description": "\"The face detection's module for iOS with a lot of awesome features\"",
   "homepage": "https://github.com/Yoonit-Labs/ios-yoonit-facefy",
   "license": {
     "type": "MIT",
