@@ -78,24 +78,25 @@ self.facefy.detect(image!) {
 
 | Attribute | Type | Description |
 | -             | -        | -                  |
-| leftEyeOpenProbability | CGFloat | The left eye open probability. |
-| rightEyeOpenProbability | CGFloat | The right eye open probability. |
-| smilingProbability | CGFloat | The smilling probability. |
-| headEulerAngleY | CGFloat | The angle that points the "left-right" head direction. See [HeadEulerAngleY](#headeulerangley) |
-| contours | [CGPoint] | List of Points that represents the shape of the recognized face. |
-| boundingBox | CGRect | The face bounding box. |
+| leftEyeOpenProbability | `CGFloat?` | The left eye open probability. |
+| rightEyeOpenProbability | `CGFloat?` | The right eye open probability. |
+| smilingProbability | `CGFloat?` | The smilling probability. |
+| headEulerAngleX | `CGFloat?` | The angle in degrees that indicate the vertical head direction. See [Head Movements](#headmovements) |
+| headEulerAngleY | `CGFloat?` | The angle in degrees that indicate the horizontal head direction. See [Head Movements](#headmovements) |
+| headEulerAngleZ | `CGFloat?` | The angle in degrees that indicate the tilt head direction. See [Head Movements](#headmovements) |
+| contours | `[CGPoint]` | List of points that represents the shape of the detected face. |
+| boundingBox | `CGRect` | The face bounding box. |
 
-#### HeadEulerAngleY
+#### Head Movements
 
-Landmarks are points of interest within a face regarding the Euler Angle Y. 
+Here we explaining the above gif and how reached the "results". Each "movement" (vertical, horizontal and tilt) is a state, based in the angle in degrees that indicate head direction;
 
-| Euler Angle Y                       | Detectable landmarks                                      
-| -                                           | -                                              
-| < -36 degrees                      | left eye, left mouth, left ear, nose base, left cheek                             
-| -36 degrees to -12 degrees | left mouth, nose base, bottom mouth, right eye, left eye, left cheek, left ear tip                  
-| -12 degrees to 12 degrees   | right eye, left eye, nose base, left cheek, right cheek, left mouth, right mouth, bottom mouth          
-| 12 degrees to 36 degrees    | right mouth, nose base, bottom mouth, left eye, right eye, right cheek, right ear tip             
-| > 36 degrees                        | right eye, right mouth, right ear, nose base, right cheek       
+| Head Direction | Attribute                  |  _v_ < -36°       | -36° < _v_ < -12° | -12° < _v_ < 12° | 12° < _v_ < 36° |  36° < _v_       | 
+| -                        | -                              | -                   | -                        | -                   | -                    | -                   |
+| Vertical             | `headEulerAngleX` | Super Down | Down               | Frontal          | Up             | Super Up |
+| Horizontal        | `headEulerAngleY` | Super Right | Right                 | Frontal          | Left                 | Super Left    |
+| Tilt                    | `headEulerAngleZ` | Super Left   | Left                   | Frontal          | Right            | Super Right |
+
 
 ## To contribute and make it better
 
