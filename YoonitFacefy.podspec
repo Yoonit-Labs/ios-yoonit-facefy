@@ -43,9 +43,9 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author       = { "CyberLabs.AI" => "luigui.delyer@cyberlabs.com.br" }
-  
-  spec.authors      = { 'CyberLabs.AI'   => 'contato@cyberlabs.ai' }
+  spec.authors = { 'CyberLabs.AI'   => 'contato@cyberlabs.ai',
+                   'Luigui Delyer'  => 'luigui.delyer@cyberlabs.com.br',
+                   'Haroldo Teruya' => 'haroldo.teruya@cyberlabs.com.br' }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
