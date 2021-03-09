@@ -9,7 +9,9 @@
     "file": "LICENSE"
   },
   "authors": {
-    "CyberLabs.AI": "contato@cyberlabs.ai"
+    "CyberLabs.AI": "contato@cyberlabs.ai",
+    "Luigui Delyer": "luigui.delyer@cyberlabs.com.br",
+    "Haroldo Teruya": "haroldo.teruya@cyberlabs.com.br"
   },
   "platforms": {
     "ios": "14.0"
@@ -25,6 +27,7 @@
   ],
   "exclude_files": "Classes/Exclude",
   "swift_versions": "5.0",
+  "static_framework": true,
   "dependencies": {
     "GoogleMLKit/FaceDetection": [
 

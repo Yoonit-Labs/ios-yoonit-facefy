@@ -53,91 +53,83 @@ class FacefyViewController:
                 
         self.facefy?.detect(image!) {
             faceDetected in
-                         
-            if let rightEyeOpenProbability = faceDetected.rightEyeOpenProbability {
-                self.rightEyeLabel.text = rightEyeOpenProbability > 0.8 ? "Open" : "Close"
-            }
             
-            if let leftEyeOpenProbability = faceDetected.leftEyeOpenProbability {
-                self.leftEyeLabel.text = leftEyeOpenProbability > 0.8 ? "Open" : "Close"
-            }
-            
-            if let smilingProbability = faceDetected.smilingProbability {
-                self.smillingLabel.text = smilingProbability > 0.8 ? "Smilling" : "Not smilling"
-            }
-            
-            if let headEulerAngleY = faceDetected.headEulerAngleY {
-                var headPosition = ""
-                if headEulerAngleY < -36 {
-                    headPosition = "Super Right"
-                } else if -36 < headEulerAngleY && headEulerAngleY < -12 {
-                    headPosition = "Right"
-                } else if -12 < headEulerAngleY && headEulerAngleY < 12 {
-                    headPosition = "Frontal"
-                } else if 12 < headEulerAngleY && headEulerAngleY < 36 {
-                    headPosition = "Left"
-                } else if headEulerAngleY > 36 {
-                    headPosition = "Super Left"
+            if let faceDetected: FaceDetected = faceDetected {
+                if let rightEyeOpenProbability = faceDetected.rightEyeOpenProbability {
+                    self.rightEyeLabel.text =
+                        rightEyeOpenProbability > 0.8 ? "Open" : "Close"
                 }
-                self.horizontalMovementLabel.text = headPosition
-            }
-            
-            if let headEulerAngleX = faceDetected.headEulerAngleX {
-                var headPosition = ""
-                if headEulerAngleX < -36 {
-                    headPosition = "Super Down"
-                } else if -36 < headEulerAngleX && headEulerAngleX < -12 {
-                    headPosition = "Down"
-                } else if -12 < headEulerAngleX && headEulerAngleX < 12 {
-                    headPosition = "Frontal"
-                } else if 12 < headEulerAngleX && headEulerAngleX < 36 {
-                    headPosition = "Up"
-                } else if headEulerAngleX > 36 {
-                    headPosition = "Super Up"
+                if let leftEyeOpenProbability = faceDetected.leftEyeOpenProbability {
+                    self.leftEyeLabel.text =
+                        leftEyeOpenProbability > 0.8 ? "Open" : "Close"
                 }
-                self.verticalMovementLabel.text = headPosition
-            }
-            
-            if let headEulerAngleZ = faceDetected.headEulerAngleZ {
-                var headPosition = ""
-                if headEulerAngleZ < -36 {
-                    headPosition = "Super Left"
-                } else if -36 < headEulerAngleZ && headEulerAngleZ < -12 {
-                    headPosition = "Left"
-                } else if -12 < headEulerAngleZ && headEulerAngleZ < 12 {
-                    headPosition = "Frontal"
-                } else if 12 < headEulerAngleZ && headEulerAngleZ < 36 {
-                    headPosition = "Right"
-                } else if headEulerAngleZ > 36 {
-                    headPosition = "Super Right"
+                if let smilingProbability = faceDetected.smilingProbability {
+                    self.smillingLabel.text =
+                        smilingProbability > 0.8 ? "Smilling" : "Not smilling"
                 }
-                self.tiltMovementLabel.text = headPosition
+                if let headEulerAngleY = faceDetected.headEulerAngleY {
+                    var headPosition = ""
+                    if headEulerAngleY < -36 {
+                        headPosition = "Super Right"
+                    } else if -36 < headEulerAngleY && headEulerAngleY < -12 {
+                        headPosition = "Right"
+                    } else if -12 < headEulerAngleY && headEulerAngleY < 12 {
+                        headPosition = "Frontal"
+                    } else if 12 < headEulerAngleY && headEulerAngleY < 36 {
+                        headPosition = "Left"
+                    } else if headEulerAngleY > 36 {
+                        headPosition = "Super Left"
+                    }
+                    self.horizontalMovementLabel.text = headPosition
+                }
+                if let headEulerAngleX = faceDetected.headEulerAngleX {
+                    var headPosition = ""
+                    if headEulerAngleX < -36 {
+                        headPosition = "Super Down"
+                    } else if -36 < headEulerAngleX && headEulerAngleX < -12 {
+                        headPosition = "Down"
+                    } else if -12 < headEulerAngleX && headEulerAngleX < 12 {
+                        headPosition = "Frontal"
+                    } else if 12 < headEulerAngleX && headEulerAngleX < 36 {
+                        headPosition = "Up"
+                    } else if headEulerAngleX > 36 {
+                        headPosition = "Super Up"
+                    }
+                    self.verticalMovementLabel.text = headPosition
+                }
+                if let headEulerAngleZ = faceDetected.headEulerAngleZ {
+                    var headPosition = ""
+                    if headEulerAngleZ < -36 {
+                        headPosition = "Super Left"
+                    } else if -36 < headEulerAngleZ && headEulerAngleZ < -12 {
+                        headPosition = "Left"
+                    } else if -12 < headEulerAngleZ && headEulerAngleZ < 12 {
+                        headPosition = "Frontal"
+                    } else if 12 < headEulerAngleZ && headEulerAngleZ < 36 {
+                        headPosition = "Right"
+                    } else if headEulerAngleZ > 36 {
+                        headPosition = "Super Right"
+                    }
+                    self.tiltMovementLabel.text = headPosition
+                }                            
+                if let cgImage = image?.cgImage {
+                    // Crop the face image.
+                    self.faceImageView.image = UIImage(
+                        cgImage: cgImage.cropping(to: faceDetected.boundingBox)!
+                    ).withHorizontallyFlippedOrientation()
+                }
+            } else {
+                print("Face Undetected.")
+                self.faceImageView.image = nil
+                self.graphicView.clear()
             }
-                        
-            if let cgImage = image?.cgImage {
-                // Crop the face image.
-                self.faceImageView.image = UIImage(
-                    cgImage: cgImage.cropping(to: faceDetected.boundingBox)!
-                ).withHorizontallyFlippedOrientation()
-            }
-        } onMessage: { message in
-            self.handleMessage(message: message)
+        } onError: { message in
+            print(message)
         }
         
         self.faceImage = image!
     }
-    
-    func handleMessage(message: String) {
-        switch message {
-        case "FACE_UNDETECTED":
-            print("Face Undetected.")
-        default:
-            print(message)
-        }
-                    
-        self.graphicView.clear()
-    }
-    
+        
     func onFaceDetected(
         _ x: Int,
         _ y: Int,

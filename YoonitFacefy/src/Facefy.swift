@@ -20,13 +20,13 @@ public class Facefy: NSObject {
     
     public func detect(
         _ image: UIImage,
-        onFaceDetected: @escaping (FaceDetected) -> Void,
-        onMessage: @escaping (String) -> Void
+        onSuccess: @escaping (FaceDetected?) -> Void,
+        onError: @escaping (String) -> Void
     ) {
         self.facefyController.detect(
             image: image,
-            onFaceDetected: onFaceDetected,
-            onMessage: onMessage
+            onSuccess: onSuccess,
+            onError: onError
         )
     }
 }

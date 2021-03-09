@@ -2,14 +2,26 @@
 
 # ios-yoonit-facefy
 
-A iOS library to provide:
-- [Standart Google ML Kit](https://developers.google.com/ml-kit)
-- Face detection
-- Face contours
-- Face expressions
-- Face movement
+A iOS plugin to provide:
+* [Google MLKit](https://developers.google.com/ml-kit) integration
+* [PyTorch](https://pytorch.org/mobile/home/) integration (Soon)
+* Computer vision pipeline (Soon)
+* Face detection
+* Face contours
+* Face expressions
+* Face movement
 
 <img src="https://raw.githubusercontent.com/Yoonit-Labs/ios-yoonit-facefy/development/facefy.gif" width="300">
+
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [API](#api)
+  * [Methods](#methods)
+  * [FaceDetected](#facedetected)
+    * [Head Movements](#head-movements)
+* [To contribute and make it better](#to-contribute-and-make-it-better)
 
 ## Install
 
@@ -38,30 +50,30 @@ import YoonitFacefy
 let image = UIImage(contentsOfFile: "image path")
 let facefy: Facefy = Facefy()
 
-self.facefy.detect(image!) {
-    faceDetected in
-                 
-    if let leftEyeOpenProbability = faceDetected.leftEyeOpenProbability {
-        self.leftEyeLabel.text = String(format: "%.2f", leftEyeOpenProbability)
+self.facefy.detect(image!) { faceDetected in                                      
+    if let faceDetected: FaceDetected = faceDetected {
+        if let leftEyeOpenProbability = faceDetected.leftEyeOpenProbability {
+            self.leftEyeLabel.text = String(format: "%.2f", leftEyeOpenProbability)
+        }
+        if let rightEyeOpenProbability = faceDetected.rightEyeOpenProbability {
+            self.rightEyeLabel.text = String(format: "%.2f", rightEyeOpenProbability)
+        }
+        if let smilingProbability = faceDetected.smilingProbability {
+            self.smillingLabel.text = String(format: "%.2f", smilingProbability)
+        }
+        if let headEulerAngleY = faceDetected.headEulerAngleY {
+            self.leftRightMovementeLabel.text = String(format: "%.2f", headEulerAngleY)
+        }
+                    
+        if let cgImage = image?.cgImage {
+                                            
+            // Crop the face image from.
+            UIImage(
+                cgImage: cgImage.cropping(to: faceDetected.boundingBox)!
+            ).withHorizontallyFlippedOrientation()
+        }
     }
-    if let rightEyeOpenProbability = faceDetected.rightEyeOpenProbability {
-        self.rightEyeLabel.text = String(format: "%.2f", rightEyeOpenProbability)
-    }
-    if let smilingProbability = faceDetected.smilingProbability {
-        self.smillingLabel.text = String(format: "%.2f", smilingProbability)
-    }
-    if let headEulerAngleY = faceDetected.headEulerAngleY {
-        self.leftRightMovementeLabel.text = String(format: "%.2f", headEulerAngleY)
-    }
-                
-    if let cgImage = image?.cgImage {
-                                        
-        // Crop the face image from.
-        UIImage(
-            cgImage: cgImage.cropping(to: faceDetected.boundingBox)!
-        ).withHorizontallyFlippedOrientation()
-    }
-} onMessage: { message in
+} onError: { message in
     print(message)
 }
 ```
@@ -78,30 +90,37 @@ self.facefy.detect(image!) {
 
 | Attribute | Type | Description |
 | -             | -        | -                  |
-| leftEyeOpenProbability | CGFloat | The left eye open probability. |
-| rightEyeOpenProbability | CGFloat | The right eye open probability. |
-| smilingProbability | CGFloat | The smilling probability. |
-| headEulerAngleY | CGFloat | The angle that points the "left-right" head direction. See [HeadEulerAngleY](#headeulerangley) |
-| contours | [CGPoint] | List of Points that represents the shape of the recognized face. |
-| boundingBox | CGRect | The face bounding box. |
+| leftEyeOpenProbability | `CGFloat?` | The left eye open probability. |
+| rightEyeOpenProbability | `CGFloat?` | The right eye open probability. |
+| smilingProbability | `CGFloat?` | The smilling probability. |
+| headEulerAngleX | `CGFloat?` | The angle in degrees that indicate the vertical head direction. See [Head Movements](#headmovements) |
+| headEulerAngleY | `CGFloat?` | The angle in degrees that indicate the horizontal head direction. See [Head Movements](#headmovements) |
+| headEulerAngleZ | `CGFloat?` | The angle in degrees that indicate the tilt head direction. See [Head Movements](#headmovements) |
+| contours | `[CGPoint]` | List of points that represents the shape of the detected face. |
+| boundingBox | `CGRect` | The face bounding box. |
 
-#### HeadEulerAngleY
+#### Head Movements
 
-Landmarks are points of interest within a face regarding the Euler Angle Y. 
+Here we explaining the above gif and how reached the "results". Each "movement" (vertical, horizontal and tilt) is a state, based in the angle in degrees that indicate head direction;
 
-| Euler Angle Y                       | Detectable landmarks                                      
-| -                                           | -                                              
-| < -36 degrees                      | left eye, left mouth, left ear, nose base, left cheek                             
-| -36 degrees to -12 degrees | left mouth, nose base, bottom mouth, right eye, left eye, left cheek, left ear tip                  
-| -12 degrees to 12 degrees   | right eye, left eye, nose base, left cheek, right cheek, left mouth, right mouth, bottom mouth          
-| 12 degrees to 36 degrees    | right mouth, nose base, bottom mouth, left eye, right eye, right cheek, right ear tip             
-| > 36 degrees                        | right eye, right mouth, right ear, nose base, right cheek       
+| Head Direction | Attribute                  |  _v_ < -36°       | -36° < _v_ < -12° | -12° < _v_ < 12° | 12° < _v_ < 36° |  36° < _v_       | 
+| -                        | -                              | -                   | -                        | -                   | -                    | -                   |
+| Vertical             | `headEulerAngleX` | Super Down | Down               | Frontal          | Up             | Super Up |
+| Horizontal        | `headEulerAngleY` | Super Right | Right                 | Frontal          | Left                 | Super Left    |
+| Tilt                    | `headEulerAngleZ` | Super Left   | Left                   | Frontal          | Right            | Super Right |
+
 
 ## To contribute and make it better
 
 Clone the repo, change what you want and send PR.
 
+For commit messages we use <a href="https://www.conventionalcommits.org/">Conventional Commits</a>.
+
 Contributions are always welcome!
+
+<a href="https://github.com/Yoonit-Labs/ios-yoonit-facefy/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Yoonit-Labs/ios-yoonit-facefy" />
+</a>
 
 ---
 
