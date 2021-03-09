@@ -30,8 +30,8 @@ public class FacefyController {
     
     public func detect(
         image: UIImage,
-        onFaceDetected: @escaping (FaceDetected) -> Void,
-        onMessage: @escaping (String) -> Void
+        onSuccess: @escaping (FaceDetected?) -> Void,
+        onError: @escaping (String) -> Void
     ) {
         let visionImage: VisionImage = VisionImage(image: image)
 
@@ -40,12 +40,12 @@ public class FacefyController {
             faces, error in
             
             guard weakSelf != nil else {
-                onMessage(Message.FACE_UNDETECTED.rawValue)
+                onSuccess(nil)
                 return
             }
 
             guard error == nil, let faces = faces, !faces.isEmpty else {
-                onMessage(Message.FACE_UNDETECTED.rawValue)
+                onSuccess(nil)
                 return
             }
                                     
@@ -73,7 +73,7 @@ public class FacefyController {
                 }
             }
          
-            onFaceDetected(
+            onSuccess(
                 FaceDetected(
                     leftEyeOpenProbability: leftEyeOpenProbability,
                     rightEyeOpenProbability: rightEyeOpenProbability,
