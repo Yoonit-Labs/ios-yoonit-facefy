@@ -2,14 +2,26 @@
 
 # ios-yoonit-facefy
 
-A iOS library to provide:
-- [Standart Google ML Kit](https://developers.google.com/ml-kit)
-- Face detection
-- Face contours
-- Face expressions
-- Face movement
+A iOS plugin to provide:
+* [Google MLKit](https://developers.google.com/ml-kit) integration
+* [PyTorch](https://pytorch.org/mobile/home/) integration (Soon)
+* Computer vision pipeline (Soon)
+* Face detection
+* Face contours
+* Face expressions
+* Face movement
 
 <img src="https://raw.githubusercontent.com/Yoonit-Labs/ios-yoonit-facefy/development/facefy.gif" width="300">
+
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [API](#api)
+  * [Methods](#methods)
+  * [FaceDetected](#facedetected)
+    * [Head Movements](#head-movements)
+* [To contribute and make it better](#to-contribute-and-make-it-better)
 
 ## Install
 
@@ -38,30 +50,30 @@ import YoonitFacefy
 let image = UIImage(contentsOfFile: "image path")
 let facefy: Facefy = Facefy()
 
-self.facefy.detect(image!) {
-    faceDetected in
-                 
-    if let leftEyeOpenProbability = faceDetected.leftEyeOpenProbability {
-        self.leftEyeLabel.text = String(format: "%.2f", leftEyeOpenProbability)
+self.facefy.detect(image!) { faceDetected in                                      
+    if let faceDetected: FaceDetected = faceDetected {
+        if let leftEyeOpenProbability = faceDetected.leftEyeOpenProbability {
+            self.leftEyeLabel.text = String(format: "%.2f", leftEyeOpenProbability)
+        }
+        if let rightEyeOpenProbability = faceDetected.rightEyeOpenProbability {
+            self.rightEyeLabel.text = String(format: "%.2f", rightEyeOpenProbability)
+        }
+        if let smilingProbability = faceDetected.smilingProbability {
+            self.smillingLabel.text = String(format: "%.2f", smilingProbability)
+        }
+        if let headEulerAngleY = faceDetected.headEulerAngleY {
+            self.leftRightMovementeLabel.text = String(format: "%.2f", headEulerAngleY)
+        }
+                    
+        if let cgImage = image?.cgImage {
+                                            
+            // Crop the face image from.
+            UIImage(
+                cgImage: cgImage.cropping(to: faceDetected.boundingBox)!
+            ).withHorizontallyFlippedOrientation()
+        }
     }
-    if let rightEyeOpenProbability = faceDetected.rightEyeOpenProbability {
-        self.rightEyeLabel.text = String(format: "%.2f", rightEyeOpenProbability)
-    }
-    if let smilingProbability = faceDetected.smilingProbability {
-        self.smillingLabel.text = String(format: "%.2f", smilingProbability)
-    }
-    if let headEulerAngleY = faceDetected.headEulerAngleY {
-        self.leftRightMovementeLabel.text = String(format: "%.2f", headEulerAngleY)
-    }
-                
-    if let cgImage = image?.cgImage {
-                                        
-        // Crop the face image from.
-        UIImage(
-            cgImage: cgImage.cropping(to: faceDetected.boundingBox)!
-        ).withHorizontallyFlippedOrientation()
-    }
-} onMessage: { message in
+} onError: { message in
     print(message)
 }
 ```
@@ -102,7 +114,13 @@ Here we explaining the above gif and how reached the "results". Each "movement" 
 
 Clone the repo, change what you want and send PR.
 
+For commit messages we use <a href="https://www.conventionalcommits.org/">Conventional Commits</a>.
+
 Contributions are always welcome!
+
+<a href="https://github.com/Yoonit-Labs/ios-yoonit-facefy/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Yoonit-Labs/ios-yoonit-facefy" />
+</a>
 
 ---
 
