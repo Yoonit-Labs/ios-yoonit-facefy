@@ -53,18 +53,9 @@ public class FacefyController {
             let face: Face = faces.sorted {
                 return $0.frame.width > $1.frame.width
             }[0]
-                                           
-            var faceContours: [CGPoint] = []
-            
-            // Get face analysis classification.
-            let leftEyeOpenProbability: CGFloat? = face.hasRightEyeOpenProbability ? face.rightEyeOpenProbability : nil
-            let rightEyeOpenProbability: CGFloat? = face.hasLeftEyeOpenProbability ? face.leftEyeOpenProbability : nil
-            let smilingProbability: CGFloat? = face.hasSmilingProbability ? face.smilingProbability : nil
-            let headEulerAngleX: CGFloat? = face.hasHeadEulerAngleX ? face.headEulerAngleX : nil
-            let headEulerAngleY: CGFloat? = face.hasHeadEulerAngleY ? face.headEulerAngleY : nil
-            let headEulerAngleZ: CGFloat? = face.hasHeadEulerAngleZ ? face.headEulerAngleZ : nil
-            
+                                                                                   
             // Get face contours.
+            var faceContours: [CGPoint] = []
             if !face.contours.isEmpty {
                 for faceContour in face.contours {
                     for point in faceContour.points {
@@ -75,14 +66,20 @@ public class FacefyController {
          
             onSuccess(
                 FaceDetected(
-                    leftEyeOpenProbability: leftEyeOpenProbability,
-                    rightEyeOpenProbability: rightEyeOpenProbability,
-                    smilingProbability: smilingProbability,
-                    headEulerAngleX: headEulerAngleX,
-                    headEulerAngleY: headEulerAngleY,
-                    headEulerAngleZ: headEulerAngleZ,
-                    contours: faceContours,
-                    boundingBox: face.frame
+                    boundingBox: face.frame,                    
+                    leftEyeOpenProbability: Float(face.rightEyeOpenProbability),
+                    hasLeftEyeOpenProbability: face.hasRightEyeOpenProbability,
+                    rightEyeOpenProbability: Float(face.leftEyeOpenProbability),
+                    hasRightEyeOpenProbability: face.hasLeftEyeOpenProbability,
+                    smilingProbability: Float(face.smilingProbability),
+                    hasSmilingProbability: face.hasSmilingProbability,
+                    headEulerAngleX: Float(face.headEulerAngleX),
+                    hasHeadEulerAngleX: face.hasHeadEulerAngleX,
+                    headEulerAngleY: Float(face.headEulerAngleY),
+                    hasHeadEulerAngleY: face.hasHeadEulerAngleY,
+                    headEulerAngleZ: Float(face.headEulerAngleZ),
+                    hasHeadEulerAngleZ: face.hasHeadEulerAngleZ,
+                    contours: faceContours
                 )
             )
         }
