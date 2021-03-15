@@ -25,7 +25,7 @@ class FacefyViewController:
     @IBOutlet var faceImageView: UIImageView!
     @IBOutlet var leftEyeLabel: UILabel!
     @IBOutlet var rightEyeLabel: UILabel!
-    @IBOutlet var smillingLabel: UILabel!
+    @IBOutlet var smilingLabel: UILabel!
     @IBOutlet var horizontalMovementLabel: UILabel!
     @IBOutlet var verticalMovementLabel: UILabel!
     @IBOutlet var tiltMovementLabel: UILabel!
@@ -53,36 +53,44 @@ class FacefyViewController:
                 
         self.facefy?.detect(image!) {
             faceDetected in
-            
+                                    
             if let faceDetected: FaceDetected = faceDetected {
-                if let rightEyeOpenProbability = faceDetected.rightEyeOpenProbability {
-                    self.rightEyeLabel.text =
-                        rightEyeOpenProbability > 0.8 ? "Open" : "Close"
-                }
-                if let leftEyeOpenProbability = faceDetected.leftEyeOpenProbability {
-                    self.leftEyeLabel.text =
-                        leftEyeOpenProbability > 0.8 ? "Open" : "Close"
-                }
-                if let smilingProbability = faceDetected.smilingProbability {
-                    self.smillingLabel.text =
-                        smilingProbability > 0.8 ? "Smilling" : "Not smilling"
-                }
-                if let headEulerAngleY = faceDetected.headEulerAngleY {
-                    var headPosition = ""
-                    if headEulerAngleY < -36 {
-                        headPosition = "Super Right"
-                    } else if -36 < headEulerAngleY && headEulerAngleY < -12 {
-                        headPosition = "Right"
-                    } else if -12 < headEulerAngleY && headEulerAngleY < 12 {
-                        headPosition = "Frontal"
-                    } else if 12 < headEulerAngleY && headEulerAngleY < 36 {
-                        headPosition = "Left"
-                    } else if headEulerAngleY > 36 {
-                        headPosition = "Super Left"
-                    }
-                    self.horizontalMovementLabel.text = headPosition
-                }
-                if let headEulerAngleX = faceDetected.headEulerAngleX {
+                
+                print(
+                    "onFaceDetected" +
+                        "\n x: \(faceDetected.boundingBox.minX), y: \(faceDetected.boundingBox.minY), width: \(faceDetected.boundingBox.width), height: \(faceDetected.boundingBox.height)" +
+                        "\n leftEyeOpenProbability: \(faceDetected.hasLeftEyeOpenProbability) \(faceDetected.leftEyeOpenProbability)" +
+                        "\n rightEyeOpenProbability: \(faceDetected.hasRightEyeOpenProbability) \(faceDetected.rightEyeOpenProbability)" +
+                        "\n smilingProbability: \(faceDetected.hasSmilingProbability) \(faceDetected.smilingProbability)" +
+                        "\n headEulerAngleX: \(faceDetected.hasHeadEulerAngleX) \(faceDetected.headEulerAngleX)" +
+                        "\n headEulerAngleY: \(faceDetected.hasHeadEulerAngleY) \(faceDetected.headEulerAngleY)" +
+                        "\n headEulerAngleZ: \(faceDetected.hasHeadEulerAngleZ) \(faceDetected.headEulerAngleZ)"
+                )
+                
+                self.handleDisplayProbability(
+                    label: self.leftEyeLabel,
+                    hasValue: faceDetected.hasLeftEyeOpenProbability,
+                    value: faceDetected.leftEyeOpenProbability,
+                    validText: "Open",
+                    invalidText: "Close"
+                )
+                self.handleDisplayProbability(
+                    label: self.rightEyeLabel,
+                    hasValue: faceDetected.hasRightEyeOpenProbability,
+                    value: faceDetected.rightEyeOpenProbability,
+                    validText: "Open",
+                    invalidText: "Close"
+                )
+                self.handleDisplayProbability(
+                    label: self.smilingLabel,
+                    hasValue: faceDetected.hasSmilingProbability,
+                    value: faceDetected.smilingProbability,
+                    validText: "Smiling",
+                    invalidText: "Not Smiling"
+                )
+                
+                if faceDetected.hasHeadEulerAngleX {
+                    let headEulerAngleX = faceDetected.headEulerAngleX
                     var headPosition = ""
                     if headEulerAngleX < -36 {
                         headPosition = "Super Down"
@@ -97,7 +105,26 @@ class FacefyViewController:
                     }
                     self.verticalMovementLabel.text = headPosition
                 }
-                if let headEulerAngleZ = faceDetected.headEulerAngleZ {
+
+                if faceDetected.hasHeadEulerAngleY {
+                    let headEulerAngleY = faceDetected.headEulerAngleY
+                    var headPosition = ""
+                    if headEulerAngleY < -36 {
+                        headPosition = "Super Right"
+                    } else if -36 < headEulerAngleY && headEulerAngleY < -12 {
+                        headPosition = "Right"
+                    } else if -12 < headEulerAngleY && headEulerAngleY < 12 {
+                        headPosition = "Frontal"
+                    } else if 12 < headEulerAngleY && headEulerAngleY < 36 {
+                        headPosition = "Left"
+                    } else if headEulerAngleY > 36 {
+                        headPosition = "Super Left"
+                    }
+                    self.horizontalMovementLabel.text = headPosition
+                }
+
+                if faceDetected.hasHeadEulerAngleZ {
+                    let headEulerAngleZ = faceDetected.headEulerAngleZ
                     var headPosition = ""
                     if headEulerAngleZ < -36 {
                         headPosition = "Super Left"
@@ -111,8 +138,9 @@ class FacefyViewController:
                         headPosition = "Super Right"
                     }
                     self.tiltMovementLabel.text = headPosition
-                }                            
-                if let cgImage = image?.cgImage {
+                }
+                
+                if let cgImage = image?.cgImage {                                                            
                     // Crop the face image.
                     self.faceImageView.image = UIImage(
                         cgImage: cgImage.cropping(to: faceDetected.boundingBox)!
@@ -128,6 +156,18 @@ class FacefyViewController:
         }
         
         self.faceImage = image!
+    }
+    
+    func handleDisplayProbability(
+        label: UILabel,
+        hasValue: Bool,
+        value: Float,
+        validText: String,
+        invalidText: String
+    ) {
+        if hasValue {
+            label.text = value > 0.8 ? validText : invalidText
+        }
     }
         
     func onFaceDetected(
@@ -171,23 +211,5 @@ extension CGFloat {
     
     func toText() -> String {
         return "\(String(format: "%.2f", self))"
-    }
-}
-
-extension UIImage {
-    func flipHorizontally() -> UIImage? {
-        UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
-        let context = UIGraphicsGetCurrentContext()!
-        
-        context.translateBy(x: self.size.width/2, y: self.size.height/2)
-        context.scaleBy(x: -1.0, y: 1.0)
-        context.translateBy(x: -self.size.width/2, y: -self.size.height/2)
-        
-        self.draw(in: CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height))
-        
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return newImage
     }
 }

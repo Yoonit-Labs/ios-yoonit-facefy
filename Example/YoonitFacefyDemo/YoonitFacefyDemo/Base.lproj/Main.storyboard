@@ -131,7 +131,7 @@
                         <outlet property="horizontalMovementLabel" destination="Bry-le-uJC" id="tZZ-Wt-cxY"/>
                         <outlet property="leftEyeLabel" destination="EFc-6l-i3I" id="n1h-Zo-kzl"/>
                         <outlet property="rightEyeLabel" destination="NLY-ap-isj" id="r6i-vF-Zi3"/>
-                        <outlet property="smillingLabel" destination="2Io-Qw-Xo7" id="Ifj-dN-KpP"/>
+                        <outlet property="smilingLabel" destination="2Io-Qw-Xo7" id="XeL-aq-cCN"/>
                         <outlet property="tiltMovementLabel" destination="REF-Y6-FBd" id="Yb7-Ya-kgq"/>
                         <outlet property="verticalMovementLabel" destination="Zc7-lZ-f4l" id="hWs-mY-B1N"/>
                     </connections>
