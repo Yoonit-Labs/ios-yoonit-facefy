@@ -13,10 +13,11 @@ import Foundation
 import UIKit
 import Vision
 
-@objc
-public class Facefy: NSObject {
+public class Facefy {
     
-    var facefyController = FacefyController()
+    private var facefyController = FacefyController()
+    
+    public init() {}
     
     public func detect(
         _ image: UIImage,
