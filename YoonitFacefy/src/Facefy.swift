@@ -9,9 +9,7 @@
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 //
 
-import Foundation
 import UIKit
-import Vision
 
 public class Facefy {
     
