@@ -93,6 +93,7 @@
 				6176EF25252CFEE000F4D4DD /* README.md */,
 				6176EF22252CFC9500F4D4DD /* LICENSE */,
 				6176EF1F252CFA4300F4D4DD /* YoonitFacefy.podspec */,
+				6176EEFA252CF9D200F4D4DD /* Info.plist */,
 				6176EEF8252CF9D200F4D4DD /* YoonitFacefy */,
 				6176EEF7252CF9D200F4D4DD /* Products */,
 				85073D94B694632C1A966E28 /* Pods */,
@@ -112,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				5C0C6435254208E400EDF95B /* src */,
-				6176EEFA252CF9D200F4D4DD /* Info.plist */,
 				5CB4F8EE25CC7DDC001D3606 /* YoonitFacefy.h */,
 			);
 			path = YoonitFacefy;
