@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YoonitFacefy"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "The face detection's module for iOS with a lot of awesome features"
 
   # This description is used to generate tags and improve search results.

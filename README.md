@@ -11,7 +11,7 @@ A iOS plugin to provide:
 * Face expressions
 * Face movement
 
-<img src="https://raw.githubusercontent.com/Yoonit-Labs/ios-yoonit-facefy/development/facefy.gif" width="300">
+<img src="https://raw.githubusercontent.com/Yoonit-Labs/ios-yoonit-facefy/development/facefy.gif" width="300" />
 
 ## Table of Contents
 
@@ -53,29 +53,29 @@ let facefy: Facefy = Facefy()
 self.facefy.detect(image!) { faceDetected in                                      
     if let faceDetected: FaceDetected = faceDetected {
         
-        if faceDetected.hasLeftEyeOpenProbability {
-            print(String(format: "%.2f", faceDetected.leftEyeOpenProbability))
+        if let leftEyeOpenProbability = faceDetected.leftEyeOpenProbability {
+            print(String(format: "%.2f", leftEyeOpenProbability))
         }
-        if faceDetected.rightEyeOpenProbability {
-            print(String(format: "%.2f", faceDetected.rightEyeOpenProbability))
+        if let rightEyeOpenProbability = faceDetected.rightEyeOpenProbability {
+            print(String(format: "%.2f", rightEyeOpenProbability))
         }
-        if faceDetected.smilingProbability {
+        if let smilingProbability = faceDetected.smilingProbability {
             print(String(format: "%.2f", faceDetected.smilingProbability))
         }
-        if faceDetected.hasHeadEulerAngleX {
-            print(String(format: "%.2f", faceDetected.headEulerAngleX))
+        if let hasHeadEulerAngleX = faceDetected.hasHeadEulerAngleX {
+            print(String(format: "%.2f", hasHeadEulerAngleX))
         }
-        if faceDetected.hasHeadEulerAngleY {
-            print(String(format: "%.2f", faceDetected.headEulerAngleY))
+        if let hasHeadEulerAngleY = faceDetected.hasHeadEulerAngleY {
+            print(String(format: "%.2f", hasHeadEulerAngleY))
         }                
-        if faceDetected.hasHeadEulerAngleZ {
-            print(String(format: "%.2f", faceDetected.headEulerAngleZ))
+        if let hasHeadEulerAngleZ = faceDetected.hasHeadEulerAngleZ {
+            print(String(format: "%.2f", hasHeadEulerAngleZ))
         }
                     
         if let cgImage = image?.cgImage {                                                        
             
-            // Crop the face image from.
-            UIImage(
+            // Crop the face image from the camera frame.
+            let faceImage = UIImage(
                 cgImage: cgImage.cropping(to: faceDetected.boundingBox)!
             ).withHorizontallyFlippedOrientation()
         }
@@ -98,18 +98,12 @@ self.facefy.detect(image!) { faceDetected in
 | Attribute | Type | Description |
 | -             | -        | -                  |
 | boundingBox | `CGRect` | The face bounding box related to the image input. |
-| leftEyeOpenProbability | `Float` | The left eye open probability. |
-| hasLeftEyeOpenProbability | `Bool` | Indicates whether a left eye open probability is available. |
-| rightEyeOpenProbability | `Float` | The right eye open probability. |
-| hasRightEyeOpenProbability | `Bool` | Indicates whether a right eye open probability is available. |
-| smilingProbability | `Float` | The smiling probability. |
-| hasSmilingProbability | `Bool` | Indicates whether a smiling probability is available. |
-| headEulerAngleX | `Float` | The angle in degrees that indicate the vertical head direction. See [Head Movements](#headmovements). |
-| hasHeadEulerAngleX | `Bool` | Indicates whether the detector found the head x euler angle. |
-| headEulerAngleY | `Float` | The angle in degrees that indicate the horizontal head direction. See [Head Movements](#headmovements). |
-| hasHeadEulerAngleY | `Bool` | Indicates whether the detector found the head y euler angle. |
-| headEulerAngleZ | `Float` | The angle in degrees that indicate the tilt head direction. See [Head Movements](#headmovements). |
-| hasHeadEulerAngleZ | `Bool` | Indicates whether the detector found the head z euler angle. |
+| leftEyeOpenProbability | `Float?` | The left eye open probability. |
+| rightEyeOpenProbability | `Float?` | The right eye open probability. |
+| smilingProbability | `Float?` | The smiling probability. |
+| headEulerAngleX | `Float?` | The angle in degrees that indicate the vertical head direction. See [Head Movements](#headmovements). |
+| headEulerAngleY | `Float?` | The angle in degrees that indicate the horizontal head direction. See [Head Movements](#headmovements). |
+| headEulerAngleZ | `Float?` | The angle in degrees that indicate the tilt head direction. See [Head Movements](#headmovements). |
 | contours | `[CGPoint]` | List of points that represents the shape of the detected face. |
 
 #### Head Movements

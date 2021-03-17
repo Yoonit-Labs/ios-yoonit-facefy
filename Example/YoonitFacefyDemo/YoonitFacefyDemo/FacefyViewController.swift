@@ -54,43 +54,27 @@ class FacefyViewController:
         self.facefy?.detect(image!) {
             faceDetected in
                                     
-            if let faceDetected: FaceDetected = faceDetected {
-                
-                print(
-                    "onFaceDetected" +
-                        "\n x: \(faceDetected.boundingBox.minX), y: \(faceDetected.boundingBox.minY), width: \(faceDetected.boundingBox.width), height: \(faceDetected.boundingBox.height)" +
-                        "\n leftEyeOpenProbability: \(faceDetected.hasLeftEyeOpenProbability) \(faceDetected.leftEyeOpenProbability)" +
-                        "\n rightEyeOpenProbability: \(faceDetected.hasRightEyeOpenProbability) \(faceDetected.rightEyeOpenProbability)" +
-                        "\n smilingProbability: \(faceDetected.hasSmilingProbability) \(faceDetected.smilingProbability)" +
-                        "\n headEulerAngleX: \(faceDetected.hasHeadEulerAngleX) \(faceDetected.headEulerAngleX)" +
-                        "\n headEulerAngleY: \(faceDetected.hasHeadEulerAngleY) \(faceDetected.headEulerAngleY)" +
-                        "\n headEulerAngleZ: \(faceDetected.hasHeadEulerAngleZ) \(faceDetected.headEulerAngleZ)"
-                )
-                
+            if let faceDetected: FaceDetected = faceDetected {                                
                 self.handleDisplayProbability(
                     label: self.leftEyeLabel,
-                    hasValue: faceDetected.hasLeftEyeOpenProbability,
                     value: faceDetected.leftEyeOpenProbability,
                     validText: "Open",
                     invalidText: "Close"
                 )
                 self.handleDisplayProbability(
                     label: self.rightEyeLabel,
-                    hasValue: faceDetected.hasRightEyeOpenProbability,
                     value: faceDetected.rightEyeOpenProbability,
                     validText: "Open",
                     invalidText: "Close"
                 )
                 self.handleDisplayProbability(
                     label: self.smilingLabel,
-                    hasValue: faceDetected.hasSmilingProbability,
                     value: faceDetected.smilingProbability,
                     validText: "Smiling",
                     invalidText: "Not Smiling"
                 )
                 
-                if faceDetected.hasHeadEulerAngleX {
-                    let headEulerAngleX = faceDetected.headEulerAngleX
+                if let headEulerAngleX = faceDetected.headEulerAngleX {
                     var headPosition = ""
                     if headEulerAngleX < -36 {
                         headPosition = "Super Down"
@@ -106,8 +90,7 @@ class FacefyViewController:
                     self.verticalMovementLabel.text = headPosition
                 }
 
-                if faceDetected.hasHeadEulerAngleY {
-                    let headEulerAngleY = faceDetected.headEulerAngleY
+                if let headEulerAngleY = faceDetected.headEulerAngleY {
                     var headPosition = ""
                     if headEulerAngleY < -36 {
                         headPosition = "Super Right"
@@ -123,8 +106,7 @@ class FacefyViewController:
                     self.horizontalMovementLabel.text = headPosition
                 }
 
-                if faceDetected.hasHeadEulerAngleZ {
-                    let headEulerAngleZ = faceDetected.headEulerAngleZ
+                if let headEulerAngleZ = faceDetected.headEulerAngleZ {
                     var headPosition = ""
                     if headEulerAngleZ < -36 {
                         headPosition = "Super Left"
@@ -140,7 +122,14 @@ class FacefyViewController:
                     self.tiltMovementLabel.text = headPosition
                 }
                 
-                if let cgImage = image?.cgImage {                                                            
+                if let cgImage = image?.cgImage {
+                    
+                    self.graphicView.handleDraw(
+                        image: cgImage,
+                        faceBoundingBox: faceDetected.boundingBox,
+                        faceContours: faceDetected.contours
+                    )
+                    
                     // Crop the face image.
                     self.faceImageView.image = UIImage(
                         cgImage: cgImage.cropping(to: faceDetected.boundingBox)!
@@ -160,12 +149,11 @@ class FacefyViewController:
     
     func handleDisplayProbability(
         label: UILabel,
-        hasValue: Bool,
-        value: Float,
+        value: Float?,
         validText: String,
         invalidText: String
     ) {
-        if hasValue {
+        if let value: Float = value {
             label.text = value > 0.8 ? validText : invalidText
         }
     }
