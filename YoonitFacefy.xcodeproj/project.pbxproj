@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14A21D681153BBE1C4B003A8 /* Pods_YoonitFacefy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F916739A319F58C181F7B61D /* Pods_YoonitFacefy.framework */; };
 		5C06E5CF25D1FED400E6770F /* Facefy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C06E5CE25D1FED400E6770F /* Facefy.swift */; };
 		5C0C64392542108B00EDF95B /* logo_cyberlabs.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C64382542108B00EDF95B /* logo_cyberlabs.png */; };
+		5C5056FF260BA65A00286F91 /* YoonitFacefy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB4F8EE25CC7DDC001D3606 /* YoonitFacefy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C65787E25D32FB2001171F8 /* libGoogleDataTransport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C65787D25D32FB2001171F8 /* libGoogleDataTransport.a */; };
 		5C65788025D32FB2001171F8 /* libGoogleToolboxForMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C65787F25D32FB2001171F8 /* libGoogleToolboxForMac.a */; };
 		5C65788225D32FB2001171F8 /* libGoogleUtilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C65788125D32FB2001171F8 /* libGoogleUtilities.a */; };
@@ -25,9 +25,11 @@
 		6176EF23252CFC9500F4D4DD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6176EF22252CFC9500F4D4DD /* LICENSE */; };
 		6176EF26252CFEE000F4D4DD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6176EF25252CFEE000F4D4DD /* README.md */; };
 		6176EFA8252E476000F4D4DD /* Example in Resources */ = {isa = PBXBuildFile; fileRef = 6176EFA7252E476000F4D4DD /* Example */; };
+		BAABA018E3CFB32346F0B755 /* Pods_YoonitFacefy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717605CEDF04829548C01904 /* Pods_YoonitFacefy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3429F21BA41002C3557F5755 /* Pods-YoonitFacefy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoonitFacefy.release.xcconfig"; path = "Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy.release.xcconfig"; sourceTree = "<group>"; };
 		5C06E5CE25D1FED400E6770F /* Facefy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facefy.swift; sourceTree = "<group>"; };
 		5C0C64382542108B00EDF95B /* logo_cyberlabs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_cyberlabs.png; sourceTree = "<group>"; };
 		5C65787D25D32FB2001171F8 /* libGoogleDataTransport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleDataTransport.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,7 +38,6 @@
 		5C65788325D32FB2001171F8 /* libGoogleUtilitiesComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleUtilitiesComponents.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C65788525D32FB2001171F8 /* libGTMSessionFetcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGTMSessionFetcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C65788725D32FB2001171F8 /* libnanopb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libnanopb.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C65788925D32FB2001171F8 /* libPods-YoonitFacefy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-YoonitFacefy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C65788B25D32FB2001171F8 /* libPromisesObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPromisesObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C65788D25D32FB2001171F8 /* libProtobuf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libProtobuf.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C77937425EEABDF00CDE6E9 /* facefy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = facefy.gif; sourceTree = "<group>"; };
@@ -49,9 +50,8 @@
 		6176EF22252CFC9500F4D4DD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6176EF25252CFEE000F4D4DD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6176EFA7252E476000F4D4DD /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = "<group>"; };
-		6E55E37D37145733096CC85A /* Pods-YoonitFacefy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoonitFacefy.release.xcconfig"; path = "Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy.release.xcconfig"; sourceTree = "<group>"; };
-		9913F20FC3F5CAA58AFDDAD5 /* Pods-YoonitFacefy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoonitFacefy.debug.xcconfig"; path = "Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy.debug.xcconfig"; sourceTree = "<group>"; };
-		F916739A319F58C181F7B61D /* Pods_YoonitFacefy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoonitFacefy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		717605CEDF04829548C01904 /* Pods_YoonitFacefy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoonitFacefy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B20263ECC8D12A85905787 /* Pods-YoonitFacefy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoonitFacefy.debug.xcconfig"; path = "Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 				5C65788825D32FB2001171F8 /* libnanopb.a in Frameworks */,
 				5C65788C25D32FB2001171F8 /* libPromisesObjC.a in Frameworks */,
 				5C65788E25D32FB2001171F8 /* libProtobuf.a in Frameworks */,
-				14A21D681153BBE1C4B003A8 /* Pods_YoonitFacefy.framework in Frameworks */,
+				BAABA018E3CFB32346F0B755 /* Pods_YoonitFacefy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +121,8 @@
 		85073D94B694632C1A966E28 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9913F20FC3F5CAA58AFDDAD5 /* Pods-YoonitFacefy.debug.xcconfig */,
-				6E55E37D37145733096CC85A /* Pods-YoonitFacefy.release.xcconfig */,
+				80B20263ECC8D12A85905787 /* Pods-YoonitFacefy.debug.xcconfig */,
+				3429F21BA41002C3557F5755 /* Pods-YoonitFacefy.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -136,10 +136,9 @@
 				5C65788325D32FB2001171F8 /* libGoogleUtilitiesComponents.a */,
 				5C65788525D32FB2001171F8 /* libGTMSessionFetcher.a */,
 				5C65788725D32FB2001171F8 /* libnanopb.a */,
-				5C65788925D32FB2001171F8 /* libPods-YoonitFacefy.a */,
 				5C65788B25D32FB2001171F8 /* libPromisesObjC.a */,
 				5C65788D25D32FB2001171F8 /* libProtobuf.a */,
-				F916739A319F58C181F7B61D /* Pods_YoonitFacefy.framework */,
+				717605CEDF04829548C01904 /* Pods_YoonitFacefy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,6 +150,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C5056FF260BA65A00286F91 /* YoonitFacefy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,12 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6176EEFE252CF9D200F4D4DD /* Build configuration list for PBXNativeTarget "YoonitFacefy" */;
 			buildPhases = (
-				E198AB70057DFCE458FEC583 /* [CP] Check Pods Manifest.lock */,
+				534F63B2AB814FD7C227D150 /* [CP] Check Pods Manifest.lock */,
 				6176EEF1252CF9D200F4D4DD /* Headers */,
 				6176EEF2252CF9D200F4D4DD /* Sources */,
 				6176EEF3252CF9D200F4D4DD /* Frameworks */,
 				6176EEF4252CF9D200F4D4DD /* Resources */,
-				C4D1C7D6C5EF934EAC20F8D9 /* [CP] Copy Pods Resources */,
+				B0CC399CA4D4583247F1FA21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,24 +226,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C4D1C7D6C5EF934EAC20F8D9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E198AB70057DFCE458FEC583 /* [CP] Check Pods Manifest.lock */ = {
+		534F63B2AB814FD7C227D150 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,6 +246,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0CC399CA4D4583247F1FA21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YoonitFacefy/Pods-YoonitFacefy-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -405,7 +405,7 @@
 		};
 		6176EEFF252CF9D200F4D4DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9913F20FC3F5CAA58AFDDAD5 /* Pods-YoonitFacefy.debug.xcconfig */;
+			baseConfigurationReference = 80B20263ECC8D12A85905787 /* Pods-YoonitFacefy.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -422,7 +422,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoonit.facefy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -435,7 +435,7 @@
 		};
 		6176EF00252CF9D200F4D4DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E55E37D37145733096CC85A /* Pods-YoonitFacefy.release.xcconfig */;
+			baseConfigurationReference = 3429F21BA41002C3557F5755 /* Pods-YoonitFacefy.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,7 +452,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoonit.facefy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

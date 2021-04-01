@@ -125,7 +125,7 @@ public class GraphicView: UIView {
     
     func drawFaceContours(context: CGContext) {
         let size = CGSize(width: 4, height: 4)
-        let viewWidth: CGFloat = self.frame.width
+        
         UIColor.white.set()
         
         for point in self.faceContours {
@@ -133,7 +133,7 @@ public class GraphicView: UIView {
                 imageWidth: CGFloat(self.image!.width),
                 imageHeight: CGFloat(self.image!.height)
             )
-            let x: CGFloat = viewWidth - (point.x * scaledXY.x)
+            let x: CGFloat = point.x * scaledXY.x
             let y: CGFloat = point.y * scaledXY.y
             
             let dot: CGRect = CGRect(
@@ -161,18 +161,16 @@ public class GraphicView: UIView {
     func getFaceDetectionBox(
         cameraInputImage: CGImage,
         boundingBox: CGRect
-    ) -> CGRect {
-        let viewWidth: CGFloat = self.frame.width
-        
+    ) -> CGRect {        
         let scaledXY: CGPoint = self.getScale(
             imageWidth: CGFloat(cameraInputImage.width),
             imageHeight: CGFloat(cameraInputImage.height)
         )
         
         let top: CGFloat = boundingBox.minY * scaledXY.y
-        let right: CGFloat = viewWidth - (boundingBox.maxX * scaledXY.x)
+        let right: CGFloat = boundingBox.maxX * scaledXY.x
         let bottom: CGFloat = boundingBox.maxY * scaledXY.y
-        let left: CGFloat = viewWidth - (boundingBox.minX * scaledXY.x)
+        let left: CGFloat = boundingBox.minX * scaledXY.x
         
         return CGRect(
             x: left,

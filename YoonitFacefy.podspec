@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YoonitFacefy"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "The face detection's module for iOS with a lot of awesome features"
 
   # This description is used to generate tags and improve search results.
@@ -75,10 +75,15 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "YoonitFacefy/src/**/*", "Classes", "Classes/**/*.{h,m,swift}"
+  
   spec.exclude_files = "Classes/Exclude"
+  
   spec.swift_version = "5.0"
+  
   spec.static_framework = true
+  
   spec.dependency 'GoogleMLKit/FaceDetection'
+  
   spec.pod_target_xcconfig = {
     'LIBRARY_SEARCH_PATHS' => '${SRCROOT}/**',
     'FRAMEWORK_SEARCH_PATHS' => '${SRCROOT}/**',
