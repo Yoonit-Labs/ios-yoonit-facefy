@@ -8,5 +8,5 @@ target 'YoonitFacefyDemo' do
   # Pods for YoonitFacefyDemo
   pod 'YoonitFacefy', :path => '../../'
 
-  pod 'YoonitCamera'
+  pod 'YoonitCamera', :git => 'https://github.com/Yoonit-Labs/ios-yoonit-camera.git', :tag => '2.3.0'
 end
