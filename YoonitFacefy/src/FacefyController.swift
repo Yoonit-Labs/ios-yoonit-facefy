@@ -72,8 +72,8 @@ public class FacefyController {
             onSuccess(
                 FaceDetected(
                     boundingBox: face.frame,                    
-                    leftEyeOpenProbability: rightEyeOpenProbability,
-                    rightEyeOpenProbability: leftEyeOpenProbability,
+                    leftEyeOpenProbability: leftEyeOpenProbability,
+                    rightEyeOpenProbability: rightEyeOpenProbability,
                     smilingProbability: smilingProbability,
                     headEulerAngleX: headEulerAngleX,
                     headEulerAngleY: headEulerAngleY,

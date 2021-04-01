@@ -16,13 +16,12 @@ import YoonitFacefy
 class FacefyViewController:
     UIViewController,
     CameraEventListenerDelegate
-{
+{    
     var facefy: Facefy? = nil
-    var faceImage: UIImage?
-            
     @IBOutlet var cameraView: CameraView!
     @IBOutlet var graphicView: GraphicView!
     @IBOutlet var faceImageView: UIImageView!
+    @IBOutlet var boundingBox: UILabel!
     @IBOutlet var leftEyeLabel: UILabel!
     @IBOutlet var rightEyeLabel: UILabel!
     @IBOutlet var smilingLabel: UILabel!
@@ -40,8 +39,8 @@ class FacefyViewController:
         self.cameraView.setSaveImageCaptured(true)
         self.cameraView.setTimeBetweenImages(300)
         self.cameraView.startCaptureType("frame")
-    }        
-        
+    }
+            
     func onImageCaptured(
         _ type: String,
         _ count: Int,
@@ -49,12 +48,19 @@ class FacefyViewController:
         _ imagePath: String
     ) {
         let subpath = imagePath.substring(from: imagePath.index(imagePath.startIndex, offsetBy: 7))
-        let image = UIImage(contentsOfFile: subpath)
-                
-        self.facefy?.detect(image!) {
+        var image = UIImage(contentsOfFile: subpath)!
+        image = self.flipImageLeftRight(image)!
+        
+        self.facefy?.detect(image) {
             faceDetected in
-                                    
-            if let faceDetected: FaceDetected = faceDetected {                                
+
+            if let faceDetected: FaceDetected = faceDetected {
+                let x: Int = Int(faceDetected.boundingBox.minX)
+                let y: Int = Int(faceDetected.boundingBox.minY)
+                let width: Int = Int(faceDetected.boundingBox.width)
+                let height: Int = Int(faceDetected.boundingBox.height)
+                self.boundingBox.text = "(x: \(x), y: \(y), w: \(width), h: \(height))"
+
                 self.handleDisplayProbability(
                     label: self.leftEyeLabel,
                     value: faceDetected.leftEyeOpenProbability,
@@ -73,67 +79,67 @@ class FacefyViewController:
                     validText: "Smiling",
                     invalidText: "Not Smiling"
                 )
-                
-                if let headEulerAngleX = faceDetected.headEulerAngleX {
-                    var headPosition = ""
-                    if headEulerAngleX < -36 {
-                        headPosition = "Super Down"
-                    } else if -36 < headEulerAngleX && headEulerAngleX < -12 {
-                        headPosition = "Down"
-                    } else if -12 < headEulerAngleX && headEulerAngleX < 12 {
-                        headPosition = "Frontal"
-                    } else if 12 < headEulerAngleX && headEulerAngleX < 36 {
-                        headPosition = "Up"
-                    } else if headEulerAngleX > 36 {
-                        headPosition = "Super Up"
+
+                if let angle = faceDetected.headEulerAngleX {
+                    var text = ""
+                    if angle < -36 {
+                        text = "Super Down"
+                    } else if -36 < angle && angle < -12 {
+                        text = "Down"
+                    } else if -12 < angle && angle < 12 {
+                        text = "Frontal"
+                    } else if 12 < angle && angle < 36 {
+                        text = "Up"
+                    } else if 36 < angle {
+                        text = "Super Up"
                     }
-                    self.verticalMovementLabel.text = headPosition
+                    self.verticalMovementLabel.text = text
                 }
 
-                if let headEulerAngleY = faceDetected.headEulerAngleY {
-                    var headPosition = ""
-                    if headEulerAngleY < -36 {
-                        headPosition = "Super Right"
-                    } else if -36 < headEulerAngleY && headEulerAngleY < -12 {
-                        headPosition = "Right"
-                    } else if -12 < headEulerAngleY && headEulerAngleY < 12 {
-                        headPosition = "Frontal"
-                    } else if 12 < headEulerAngleY && headEulerAngleY < 36 {
-                        headPosition = "Left"
-                    } else if headEulerAngleY > 36 {
-                        headPosition = "Super Left"
+                if let angle = faceDetected.headEulerAngleY {
+                    var text = ""
+                    if angle < -36 {
+                        text = "Super Left"
+                    } else if -36 < angle && angle < -12 {
+                        text = "Left"
+                    } else if -12 < angle && angle < 12 {
+                        text = "Frontal"
+                    } else if 12 < angle && angle < 36 {
+                        text = "Right"
+                    } else if 36 < angle {
+                        text = "Super Right"
                     }
-                    self.horizontalMovementLabel.text = headPosition
+                    self.horizontalMovementLabel.text = text
                 }
 
-                if let headEulerAngleZ = faceDetected.headEulerAngleZ {
-                    var headPosition = ""
-                    if headEulerAngleZ < -36 {
-                        headPosition = "Super Left"
-                    } else if -36 < headEulerAngleZ && headEulerAngleZ < -12 {
-                        headPosition = "Left"
-                    } else if -12 < headEulerAngleZ && headEulerAngleZ < 12 {
-                        headPosition = "Frontal"
-                    } else if 12 < headEulerAngleZ && headEulerAngleZ < 36 {
-                        headPosition = "Right"
-                    } else if headEulerAngleZ > 36 {
-                        headPosition = "Super Right"
+                if let angle = faceDetected.headEulerAngleZ {
+                    var text = ""
+                    if angle < -36 {
+                        text = "Super Right"
+                    } else if -36 < angle && angle < -12 {
+                        text = "Right"
+                    } else if -12 < angle && angle < 12 {
+                        text = "Frontal"
+                    } else if 12 < angle && angle < 36 {
+                        text = "Left"
+                    } else if 36 < angle {
+                        text = "Super Left"
                     }
-                    self.tiltMovementLabel.text = headPosition
+                    self.tiltMovementLabel.text = text
                 }
-                
-                if let cgImage = image?.cgImage {
-                    
+
+                if let cgImage = image.cgImage {
+
                     self.graphicView.handleDraw(
                         image: cgImage,
                         faceBoundingBox: faceDetected.boundingBox,
                         faceContours: faceDetected.contours
                     )
-                    
+
                     // Crop the face image.
                     self.faceImageView.image = UIImage(
                         cgImage: cgImage.cropping(to: faceDetected.boundingBox)!
-                    ).withHorizontallyFlippedOrientation()
+                    )
                 }
             } else {
                 print("Face Undetected.")
@@ -143,8 +149,6 @@ class FacefyViewController:
         } onError: { message in
             print(message)
         }
-        
-        self.faceImage = image!
     }
     
     func handleDisplayProbability(
@@ -189,6 +193,23 @@ class FacefyViewController:
     
     func onQRCodeScanned(_ content: String) {
         
+    }
+    
+    func flipImageLeftRight(_ image: UIImage) -> UIImage? {
+
+        UIGraphicsBeginImageContextWithOptions(image.size, false, image.scale)
+        
+        let context = UIGraphicsGetCurrentContext()!
+        
+        context.translateBy(x: image.size.width, y: image.size.height)
+        context.scaleBy(x: -image.scale, y: -image.scale)
+        context.draw(image.cgImage!, in: CGRect(origin:CGPoint.zero, size: image.size))
+
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+
+        UIGraphicsEndImageContext()
+
+        return newImage
     }
 }
 
