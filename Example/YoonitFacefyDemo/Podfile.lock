@@ -52,12 +52,13 @@ PODS:
   - nanopb/encode (2.30907.0)
   - PromisesObjC (1.2.12)
   - Protobuf (3.14.0)
-  - YoonitCamera (2.2.1)
-  - YoonitFacefy (1.0.4):
+  - YoonitCamera (2.7.0):
+    - YoonitFacefy
+  - YoonitFacefy (1.0.5):
     - GoogleMLKit/FaceDetection
 
 DEPENDENCIES:
-  - YoonitCamera (from `https://github.com/Yoonit-Labs/ios-yoonit-camera.git`, tag `2.3.0`)
+  - YoonitCamera (from `https://github.com/Yoonit-Labs/ios-yoonit-camera.git`, tag `2.7.0`)
   - YoonitFacefy (from `../../`)
 
 SPEC REPOS:
@@ -78,14 +79,14 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   YoonitCamera:
     :git: https://github.com/Yoonit-Labs/ios-yoonit-camera.git
-    :tag: 2.3.0
+    :tag: 2.7.0
   YoonitFacefy:
     :path: "../../"
 
 CHECKOUT OPTIONS:
   YoonitCamera:
     :git: https://github.com/Yoonit-Labs/ios-yoonit-camera.git
-    :tag: 2.3.0
+    :tag: 2.7.0
 
 SPEC CHECKSUMS:
   GoogleDataTransport: 1024b1a4dfbd7a0e92cb20d7e0a6f1fb66b449a4
@@ -100,9 +101,9 @@ SPEC CHECKSUMS:
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Protobuf: 0cde852566359049847168e51bd1c690e0f70056
-  YoonitCamera: 0428ca55617a7752cd8a0298963c5d5144ddad6d
-  YoonitFacefy: 7d4eba6167bb23fdc27777c4e9f0c2da2f8e1b32
+  YoonitCamera: b42e7405363e882952dc5575e74cc40ec088d989
+  YoonitFacefy: cbdceda2336933a5028d2c7a87f4d8fccb78c263
 
-PODFILE CHECKSUM: c04e6cdfb6d85eee0ddca6d6f799401b3228e4a3
+PODFILE CHECKSUM: 0ad6d47bd9c877339e4d96bd2640e87e4f518132
 
 COCOAPODS: 1.10.1

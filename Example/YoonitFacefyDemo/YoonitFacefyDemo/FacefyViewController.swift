@@ -16,7 +16,7 @@ import YoonitFacefy
 class FacefyViewController:
     UIViewController,
     CameraEventListenerDelegate
-{    
+{
     var facefy: Facefy? = nil
     @IBOutlet var cameraView: CameraView!
     @IBOutlet var graphicView: GraphicView!
@@ -40,12 +40,15 @@ class FacefyViewController:
         self.cameraView.setTimeBetweenImages(300)
         self.cameraView.startCaptureType("frame")
     }
-            
+
     func onImageCaptured(
         _ type: String,
         _ count: Int,
         _ total: Int,
-        _ imagePath: String
+        _ imagePath: String,
+        _ darkness: NSNumber?,
+        _ lightness: NSNumber?,
+        _ sharpness: NSNumber?
     ) {
         let subpath = imagePath.substring(from: imagePath.index(imagePath.startIndex, offsetBy: 7))
         var image = UIImage(contentsOfFile: subpath)!
@@ -161,12 +164,18 @@ class FacefyViewController:
             label.text = value > 0.8 ? validText : invalidText
         }
     }
-        
+            
     func onFaceDetected(
         _ x: Int,
         _ y: Int,
         _ width: Int,
-        _ height: Int
+        _ height: Int,
+        _ leftEyeOpenProbability: NSNumber?,
+        _ rightEyeOpenProbability: NSNumber?,
+        _ smilingProbability: NSNumber?,
+        _ headEulerAngleX: NSNumber?,
+        _ headEulerAngleY: NSNumber?,
+        _ headEulerAngleZ: NSNumber?
     ) {
         
     }

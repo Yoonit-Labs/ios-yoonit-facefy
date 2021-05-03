@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -71,23 +71,20 @@
 		09837E74458BF81CC77001A916AA3DC7 /* FBLPromise+All.m in Sources */ = {isa = PBXBuildFile; fileRef = 61348B48347A0FEB45DCF19A351E7011 /* FBLPromise+All.m */; };
 		0A0E53098A451BC4E787C35FC65765D7 /* FieldMask.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 33651E3D765559610FDCA60525C5ABA3 /* FieldMask.pbobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A4C5E469406D120996C02D68FAEFC85 /* FBLPromise+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 183B4DD5F39FFE1B9A89C9A883E25435 /* FBLPromise+Testing.h */; };
-		0B1935DC01DDCDC9E76FC2DAFD37D7AA /* FaceAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEE958592BA05CB016BEAF2F6E5BAE /* FaceAnalyzer.swift */; };
 		0B8654A3BF16BA80D86A01D3C36B3865 /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4DD5E90FE831DDCDEF86623249B90A /* GTMNSDictionary+URLArguments.m */; };
+		0BA2D46389EED3D9DC36AD4BBE3E1997 /* CoordinatesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3DC5D0EF72790094133CB9B782BAA /* CoordinatesController.swift */; };
 		0C4888D23F56460DBF422F9F21585D3F /* PromisesObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA58359795A7B5586AF988B6147A103 /* PromisesObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C58B4E2210CE9B4460A88BBDA3DC58E /* GPBMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8521F8E6B67A2B5723C9084F5F6818 /* GPBMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		0C8EBA27009C35F37D9C43C98D84E3A3 /* FaceROI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A9B443FCA8FD7520D038A5B9E64DE9 /* FaceROI.swift */; };
 		0DA26AF138E88543E6F1A420695DB63C /* GDTCORTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = C638D0D047A4BF01BA62A08F019332EF /* GDTCORTransport.m */; };
 		0E32A6578450F9378A322D6879FB2612 /* GDTCCTCompressionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F4E48B7BE38E10DA1DF1577A6B28B7 /* GDTCCTCompressionHelper.m */; };
 		0E3792E38BCB5CC8DD176532D267ADB5 /* Timestamp.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD0253A2E5AC318719630876EE3E717 /* Timestamp.pbobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E69F8186DB595B5D8FED59F3DC8C6C3 /* FacefyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48D0E21E73F1BF216BBDB1A5D4B4FFB /* FacefyController.swift */; };
-		1078A1AF5457D4FA686FB88D945BB51D /* FaceCropController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6BC0653EBDFDF38B96D1D7CE69010 /* FaceCropController.swift */; };
 		116A68D50A0850F719DAC5B9258456C1 /* GPBEmpty.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CD70691F743D1543529BD8AA513915 /* GPBEmpty.pbobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11A6841B7088F0621C101AD3E9CA5E6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A78CC2B128EA29D6826BAB07E7E344 /* Foundation.framework */; };
+		12367AB104FDF55A5FA08BCDC27E1FEB /* Facefy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BB67D294103A5698A7B99D3466859F /* Facefy.swift */; };
+		1272633D919AA91E8B3641B4DDAC874B /* KeyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7E21A232565506E8A5FF64D8A9CDDF /* KeyError.swift */; };
 		1386FC63FDED9225538F87B2D259C0E5 /* FBLPromise+All.h in Headers */ = {isa = PBXBuildFile; fileRef = 0548BF7A769BBD6B4B0DB1F093673442 /* FBLPromise+All.h */; };
 		13A28E60E2B3ED24BD268F6FCC597CB0 /* FBLPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BC33DD2260F1DEEE75653D22661B67 /* FBLPromise.m */; };
-		144578AD6F9CFB42512E806EE7AB253A /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C85AB925FDB4CEFF51717BD8C2A607 /* CameraView.swift */; };
 		1463124BCDD8333D9C9B0912C18E1AD7 /* GDTCORClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 52F9BCB3F2B2810083B70F5863DF10C2 /* GDTCORClock.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14658F9B7465BBA40ADED9FB3D7A4C39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A78CC2B128EA29D6826BAB07E7E344 /* Foundation.framework */; };
 		1487A54F6295A35CCB1B0BA502D8C931 /* GULUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = D62AB1AF97895948CF39DC91FA298384 /* GULUserDefaults.m */; };
 		14C86E860BAE634DA44BEB89CDD722E4 /* FBLPromiseError.h in Headers */ = {isa = PBXBuildFile; fileRef = 6537FA8C98F7A51D9A3EAFC11331A6E1 /* FBLPromiseError.h */; };
 		17237F25E194FEC9FE81A1476F214243 /* FBLPromise+Wrap.h in Headers */ = {isa = PBXBuildFile; fileRef = F78556551FB47298D80A25390191C8F7 /* FBLPromise+Wrap.h */; };
@@ -100,6 +97,7 @@
 		1B254DB7C40EA7FD2875186CA91F0582 /* GoogleUtilitiesComponents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB2D09E7CF59B5F066ED531DB1567BE /* GoogleUtilitiesComponents-dummy.m */; };
 		1C7659A4893DCB76306FAA71CCA74482 /* GPBDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A07327297E2D00EA7EC77C3DADC60F29 /* GPBDictionary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1D11ACC779F39DBA4D8F242BED32E860 /* fssd_25_8bit_v1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = DE65F78BA121356DD9443C184B344B8E /* fssd_25_8bit_v1.tflite */; };
+		1D13CDAC5304C3A89B44D24B86D3A180 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEED932BF0D787829E4C623FC37C26E /* Message.swift */; };
 		1EA64686BF133DF6580E24FB6DCAC0C1 /* GPBWireFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = CC489E564CAAFB477BD1C8F7336AB34F /* GPBWireFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F3FA094F92AF2A06547CFB1E8C71810 /* GPBSourceContext.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 9781C429CE42A46BDC2DBF1D3F4B0A73 /* GPBSourceContext.pbobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FE2FCFC20D663C947E2294CEC0C6133 /* GPBUtilities_PackagePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C935F2CC52D2D712AC9C2F0A57A874 /* GPBUtilities_PackagePrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -107,25 +105,26 @@
 		2071E78A5C7B621AC28E68498C63F792 /* GPBExtensionRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = B979AFA598BCAB118C5F3535FB842F7E /* GPBExtensionRegistry.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2098D1388274271D7F349E37EEF65BB1 /* FBLPromise+Await.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 3D2C81C6EDF49E10E93F0FA35678F767 /* FBLPromise+Await.h */; };
 		21B9B8566E29B54B37A6E0EDA3FFDBEC /* GPBUnknownFieldSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F87AC8ACF184C2CF2291C61D2AAD55 /* GPBUnknownFieldSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		269A7A123A06207F08DC71C0DEA2BE60 /* FrameAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BC409AF53E09E9B1869B76C40ACBC /* FrameAnalyzer.swift */; };
 		277F0FA5F1DF934A0D155135D7A62B30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A78CC2B128EA29D6826BAB07E7E344 /* Foundation.framework */; };
 		27963DBB1D5849B2B810F07A29702CB3 /* FBLPromise.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 4BD276B8EA8EEB6511A55DF103F6A7C5 /* FBLPromise.h */; };
 		2935BB364D8A126FACF166FDA592A62B /* FBLPromise+Race.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = C48E53C4C0AC6E4CDAFBC12A7C613115 /* FBLPromise+Race.h */; };
+		29DDCC6380FBEA2F763C609D8B2916C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A78CC2B128EA29D6826BAB07E7E344 /* Foundation.framework */; };
 		2A35853C4B10204AB27D9E777E1075AF /* FBLPromisePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 022434F0C0C85814D6F9720399B4F8FB /* FBLPromisePrivate.h */; };
-		2E8057B9B2F2ACE7F007CDB0FBD866E6 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F655EF18338FBB825EF25A11B7183 /* CameraController.swift */; };
 		2EA81572F31276560AB152FC0AB3C8A0 /* GoogleDataTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA275012B28B9422ECD9123B640E069 /* GoogleDataTransport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2EF703EDC51DF6772FBCD61B211C2400 /* KeyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4904F52C952054CD9FEF0581564FEBC8 /* KeyError.swift */; };
 		2EFAB0D943CEC7EDC3F5CAE87341F6A0 /* GPBBootstrap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D6CAA6D0258BD332B8394077461B17F /* GPBBootstrap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F5AAEA035F3F0600AC65A89BC8F25D0 /* GDTCORClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C60C0EE7D4D3ECD99BDCDBF5778945 /* GDTCORClock.m */; };
+		2F5F931BA45104C826A9F5EAD89FF12E /* FaceDetected.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71BFA00776667E0C1A59AA4989D597 /* FaceDetected.swift */; };
 		2F64C2447EF3EF81B09E803111EA5AE4 /* Duration.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = C02C5270EB2BAB1FCD0041B089BB2FA5 /* Duration.pbobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FE6AB992151103233E32D1906A96C1D /* FBLPromise+Recover.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 05069BB0B935367B346C8A3173D79DA8 /* FBLPromise+Recover.h */; };
 		2FFF2A45FB50DC2075F01EF08070A88C /* SourceContext.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F05ECEAB992E448F650297F2F0CF7F5 /* SourceContext.pbobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30C021D774A0509818C67887D869A069 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C5BFC6A30CC40499601873577E5F10 /* extensions.swift */; };
-		311D0C9B95D49E6B3473DFDDE7855C0C /* YoonitCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C642DA0ABACC02816EC4BF3AA9B1B96 /* YoonitCamera-dummy.m */; };
 		315E733BF9398E05A7CEB8CD5264F142 /* GULHeartbeatDateStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F583D53548230952321C508A8A8D4E8 /* GULHeartbeatDateStorage.m */; };
+		31ACA35242F20990569A371C1B391CDB /* YoonitCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BEA58BF2BDF25089057D7157342D72 /* YoonitCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33C45F1770C67720F8A29F4F89A022B9 /* GULCCComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = E092F526B286DA6BD162BDF6CF875957 /* GULCCComponent.m */; };
 		340410C78D14828CC682E5AE29B68828 /* FBLPromise+Async.h in Headers */ = {isa = PBXBuildFile; fileRef = FFA7971C6288D5D6DFFCD3C082A61342 /* FBLPromise+Async.h */; };
 		34BE48A0791DFF76D5EF71393605D581 /* GDTCORAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E5DF1420E3922C0AB58440758604BAC /* GDTCORAssert.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		34D3AA6081A9AAE705581F61C626DC5E /* GDTCORLifecycle.h in Headers */ = {isa = PBXBuildFile; fileRef = AFC8A8C07853B7A2DAE8907B5712A4D7 /* GDTCORLifecycle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3594749F967E9ED1EA8FAB0148C00CD2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE50382ABD35A74964005F4C63AF6A4 /* CameraView.swift */; };
 		35A3EEC7B1DCF46474099D8261599710 /* FBLPromise+Async.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B315E0A9CC83F9B8CC5C86F1986A81 /* FBLPromise+Async.m */; };
 		35C57AD67FF4BBA079AA07E2FA610A5E /* GDTCORPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = B31B38D2DD28016989F045BA14CF2A17 /* GDTCORPlatform.m */; };
 		36AD7E03600164802041B2599FFD2874 /* GTMLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BB384BA423DAB7BCBA875B44DC91A47 /* GTMLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -143,7 +142,6 @@
 		3E57A93CA72AD68813DB1946D913E301 /* Empty.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 736937C83A3E5F8DAEBF864AFE4E5F04 /* Empty.pbobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E7AB62763232B2842EB1AC9B6E1D6C7 /* FBLPromise+Retry.h in Headers */ = {isa = PBXBuildFile; fileRef = 87B9153302F6441C93D953BFEBF6C8FD /* FBLPromise+Retry.h */; };
 		3F601FEE9D860A8DED3C25C0C2C1AFB0 /* FBLPromise+Delay.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 56752FF73B22333AB32872D65EC9D9F1 /* FBLPromise+Delay.h */; };
-		4081F441D62EADB01BCFCFA9A5D68CC5 /* FaceBoundingBoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4EC0A63141ABFB81B66C2CE4990A8 /* FaceBoundingBoxController.swift */; };
 		41F679443066CD3CF09A9CB3B18B4BCB /* GULURLSessionDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B9ED904770295512D0360BAE9C91211 /* GULURLSessionDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43424F99BB53493545AE27A7EAE0501B /* GPBDuration.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEE45031E134619256C34EC9C4426BD /* GPBDuration.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		436AA94ACCC9B34EB3BDE0670C972893 /* GPBCodedOutputStream_PackagePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E6AF0431D427D94DA6C4531FBB946661 /* GPBCodedOutputStream_PackagePrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -153,19 +151,18 @@
 		4623402F285482726AB75AFFF5593587 /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7DFA5DDE2BFCF9B3C587987D41E245 /* GTMSessionUploadFetcher.m */; };
 		46B4B3FEC94EE5D5E2E6A58025B985CF /* FBLPromise+Always.h in Headers */ = {isa = PBXBuildFile; fileRef = 278C64024876557C84BACBED8C90CA32 /* FBLPromise+Always.h */; };
 		476F5128F2678DC9C5B1A48E36BAF445 /* GDTCORStorageEventSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 55091EC8B28F0AEBE405FF80C155925B /* GDTCORStorageEventSelector.m */; };
-		47DCA1DF862EAD14E7950AE84A945E77 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B0C4D2C98BE653A19ACD64FBFD1478 /* Utils.swift */; };
 		488AFCF2FDF541D613EBC9F4AC71641C /* GULCCComponentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 50CEE441281B91FB8A21446E4DCE844F /* GULCCComponentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B01A53FCFF52B92D6E4A2474BC5BF16 /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 58972DD56B17DB9A2A2773C2FCA27ABB /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B69D4E650D9779BEFBB92787F564082 /* CaptureOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6497D5CA32149B6BB8112B650DCCC /* CaptureOptions.swift */; };
 		4BC162D1BD4F05997A3D7169A3AAEDE6 /* GPBCodedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = CE210BD6A3DAF3801FFFC3274E4D9DC9 /* GPBCodedInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4C304D75B903D16A08EF53C8D0EB5408 /* GPBArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 432E29A30B096764CFDB181F033F417E /* GPBArray.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4DC6581885B5987A55F4D2216E249254 /* GULKeychainUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8091AECE42A07867E7755964B6528FB0 /* GULKeychainUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E0312C0DDF2CFA33786266DC2E73BB2 /* Wrappers.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = EA837E2699AB78B8FC9B9E3E69633FDA /* Wrappers.pbobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E14A73EDB3C3C74CE40BCD4EAADB7C4 /* GPBType.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = B637B919ED3D7DB1196CB3C88033E7F2 /* GPBType.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4E6BE7FD875255C52941E5A64D092FE0 /* YoonitFacefy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CD5AE3B830767898EBA1382269E12 /* YoonitFacefy-dummy.m */; };
 		4EC35594FBD2B6AD63A7491429841AB8 /* GPBArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8615CE892B3EFADEC04C7A8837EEB969 /* GPBArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50B4037781FD4BA604391DA454262B18 /* GDTCOREndpoints.h in Headers */ = {isa = PBXBuildFile; fileRef = A76E3F9CCE665BA47B1F290725A5A30B /* GDTCOREndpoints.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		517D738F96D7A24346635A22189C48CF /* GPBStruct.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D63DDC60826BE6D101FFD1CCFBC821A /* GPBStruct.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		531C4C2A782ACE76C8A747A4B431EA4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A78CC2B128EA29D6826BAB07E7E344 /* Foundation.framework */; };
+		51E274295BD6372DE26BFC960F77F346 /* CameraGraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF16633DF71863D34A97C6A0828A0A6 /* CameraGraphicView.swift */; };
 		53D0DB406C7D22D270E3F0C9D97D1208 /* FBLPromise+Race.h in Headers */ = {isa = PBXBuildFile; fileRef = C48E53C4C0AC6E4CDAFBC12A7C613115 /* FBLPromise+Race.h */; };
 		5439F3A088499E6188CF0D2F9CF826CB /* GULCCDependency.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FECF098CD8F21AF676294DF2AB7DD05 /* GULCCDependency.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57595DEC3ADA9C993E05582D1F86BA4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A78CC2B128EA29D6826BAB07E7E344 /* Foundation.framework */; };
@@ -180,15 +177,16 @@
 		5D991161F38D216094C19059375C59C4 /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = DF27BAFBD613D600C13925DCD57E9195 /* pb_common.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc -fno-objc-arc"; }; };
 		5DACE46FA1312EEF652A7FAC8757537B /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BB1ADDCF5A4D271746ABAE92B9D464A /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E9B97D9DD2739B58A13D34B1D480952 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A78CC2B128EA29D6826BAB07E7E344 /* Foundation.framework */; };
+		5ED0746D2F9D79CF756807432C1D7971 /* ImageQualityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E4E23431F422E716897828F04D5626 /* ImageQualityController.swift */; };
 		5F9BBFC18C63C3987F738F49E660A8B7 /* FBLPromise+Catch.h in Headers */ = {isa = PBXBuildFile; fileRef = 33EB696C38A5ECAA5ADD36061DE9E600 /* FBLPromise+Catch.h */; };
 		5FD31C51BB0A1971FEDCAF5245A3EF52 /* FBLPromise+Always.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 278C64024876557C84BACBED8C90CA32 /* FBLPromise+Always.h */; };
 		601A9FE74CBC6EF24C0C3CD3EBBF1A5B /* GDTCORRegistrar.h in Headers */ = {isa = PBXBuildFile; fileRef = BBE8D4584151E424567D7C389C6CF132 /* GDTCORRegistrar.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6316C2C1D1E95938544A6A674B42453E /* FaceDetected.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71BFA00776667E0C1A59AA4989D597 /* FaceDetected.swift */; };
 		631D31AD8207C7B8F0B8D7CE0486C746 /* GULCCComponentContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A676534E7D41682065C033F0A35F086 /* GULCCComponentContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64DB1926EFE984AE8CE3D77E8306950E /* GPBUnknownField.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DEE44CA7903DF0A7716DC78B18928B /* GPBUnknownField.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		66486600CDD3E0008AB102BAF2C24101 /* GPBMessage_PackagePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E490A66FA8F9CDB8B7E7B1FBA856EB /* GPBMessage_PackagePrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6781BBB29BF578EFAB96D09CB1E94924 /* FBLPromise+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C337943BEB525FF18D073FA2AE72A3 /* FBLPromise+Testing.m */; };
 		67A6D3B85D286874F841462BA13FE30A /* GULCCComponentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E50F704248494DBF453E5DDAE8922 /* GULCCComponentType.m */; };
+		67D0F366A78DAACA2AFF2B2EBD3CFB90 /* FaceAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978D48D32A64C02AD0374F36DD26B324 /* FaceAnalyzer.swift */; };
 		68B3C59ECB5FB2983C500A9200511485 /* GTMSessionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E0A3CF76811976DE6FF6BAFA3632EEA /* GTMSessionFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6912F05D0BB732F04076FC2B0AC06A47 /* FBLPromise+Do.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 0187CC884A0FAF76AF8593ADBE076068 /* FBLPromise+Do.h */; };
 		691F23A6EECDF9CE49FEB4EA1B0E64AA /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA3074DC14727D714BE30261B22B5A7 /* GTMSessionFetcher.m */; };
@@ -196,9 +194,9 @@
 		6A2C0B676797C37F1809EDA75CBB2BB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A78CC2B128EA29D6826BAB07E7E344 /* Foundation.framework */; };
 		6C1D4DF600FCEE39965421D568BE7955 /* GDTCORStorageProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4756663B25B1EBB54BD9282734919D26 /* GDTCORStorageProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6C853FBBCFC1E60BF40BDBFCC5297901 /* GULCCDependency.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FA0A7777073F81CA2D5838ADE73AA /* GULCCDependency.m */; };
+		6DBB9D427507E83512942E0705AF342F /* ROI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3048020B1F356BF880869E004DD829 /* ROI.swift */; };
 		6DE3190BC83DF0209733C2EA0A869F50 /* GTMDebugSelectorValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = 10AD5124BCCB53ACA7CEAF4AF646A1B7 /* GTMDebugSelectorValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		703D74A812967B5782F0186F1599D9B7 /* Api.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 41B99F8AF81FE888BC95C8769C2E11FA /* Api.pbobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70BF908A5ED20E39DBBE17227D6A2064 /* CameraEventListenerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC479F127D64BFBF4646B14CA22D1400 /* CameraEventListenerDelegate.swift */; };
 		70E9A5322DA380CA139CF8D60F669BE8 /* GTMSessionUploadFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BA9B251E5A71DD4C55FE1EFEF894D6B /* GTMSessionUploadFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7142AB3012BC9CC9915204FB01A215BD /* GPBRuntimeTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = AC93644C1D135C2875B637DE2DE29D7A /* GPBRuntimeTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73147DF2C18BCD9ABF283718CFD92EB5 /* GPBApi.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2341D43F1C8BC60CAB6861A64FCE2246 /* GPBApi.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -223,11 +221,12 @@
 		7D62108276DD60A41205D203371CC0FF /* GPBEmpty.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBA0EB4A56A238D8B5786BEB6F4956B /* GPBEmpty.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7E63B7122F286FAEE61B035F7F7EA514 /* FBLPromise+Retry.m in Sources */ = {isa = PBXBuildFile; fileRef = D3192286C40F075E8B0B9F8D13B67278 /* FBLPromise+Retry.m */; };
 		7EF7F0EBD6C3BCD6FA7049C16E03CAF8 /* GPBCodedOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD8E45E46A2C537CC91B19F2F920A5B /* GPBCodedOutputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7F5C55553568616AB890E96A29FF3BFC /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C94215E325CB0FD697A03B93B879F /* extensions.swift */; };
 		828ED4CDC6C1C18885A2FB45A4FD0353 /* FBLPromise+Catch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEEB6174F82214AB1841650AD924815 /* FBLPromise+Catch.m */; };
 		8373E715A26BA6290D2568015384E2B3 /* GPBWireFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = C00295BD2C8C81B0183A690C6F932564 /* GPBWireFormat.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		83D1BCEDBA2FD0EF96B37039041D937A /* CameraEventListenerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3E36976BA303623E604FAF665F122A /* CameraEventListenerDelegate.swift */; };
 		8644A1D7006AF3BFFDD49F45ED3D45C1 /* GPBProtocolBuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = BDBF864311CEDB80A07223648A6B8746 /* GPBProtocolBuffers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		871DC816B6858BB5B413D8AF4CEC375C /* YoonitCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD106480EABBF06FF79FC443AA59679D /* YoonitCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87C8E84AFCB2BE73238AEAF4C32807B8 /* YoonitFacefy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD2188717B970683DDC6CDA90BCAD278 /* YoonitFacefy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		887CB675E6F48C99B1660FBCC6B26530 /* YoonitCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B686469E569EE1057AA89F2A8CB2A98 /* YoonitCamera-dummy.m */; };
 		8983E04DCE3851B37457200DDF3C633C /* PromisesObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE93049EEFF92AC44316B4A2261B55 /* PromisesObjC-dummy.m */; };
 		8B346A1A82AD8AC9B409B05CE4113FB5 /* FBLPromise+Then.m in Sources */ = {isa = PBXBuildFile; fileRef = 467780686C6056FF8D94D575FB0D1304 /* FBLPromise+Then.m */; };
 		8BB9A7EDEB7A51DC7DF0FF710C016549 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 584B82ED5BF1127992467961106179E9 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -235,6 +234,7 @@
 		8D6409AB9D2E7938D06F9457022C408B /* FBLPromise+Validate.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = A12F759DF2DFF1345D650035813CFB26 /* FBLPromise+Validate.h */; };
 		8DE734FB97BEFD9F489956C1C6DC20F7 /* cct.nanopb.c in Sources */ = {isa = PBXBuildFile; fileRef = E93C972A10D409C396B3E78FFE0F22CC /* cct.nanopb.c */; };
 		8E5E2F1B5CAC4C6556BC611C5049196A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75100DA70ED9A2152AC0FAEA36605A48 /* SystemConfiguration.framework */; };
+		8EC5CDCB1AE2199384D19FAF05C64E52 /* QRCodeAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE298D83735288031F173976051C63F /* QRCodeAnalyzer.swift */; };
 		8F86F0F0A96C27E916C4AB30D0E84389 /* GDTCORStorageEventSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = A3B1E7F2A78B60EFB79E5E0AA19274CD /* GDTCORStorageEventSelector.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		903C83F943241B02BD017D26D094F54D /* FBLPromise+Async.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = FFA7971C6288D5D6DFFCD3C082A61342 /* FBLPromise+Async.h */; };
 		909D7173696D3E75B857DB8BBD6CC7AA /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E831B02AD7923A466F2C4548A3E7764 /* pb_encode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
@@ -247,22 +247,21 @@
 		986EFF320E287F34E968E19CFD974B35 /* nanopb-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2BD1E03EE603B59B2317D540C8FE86 /* nanopb-dummy.m */; };
 		988E801832CB8B489E7981156CBF09D2 /* GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBD24E6741D8747CB57E372954FB89 /* GTMSessionFetcher-dummy.m */; };
 		98B31D64A33842F054283F04ABB1E827 /* FBLPromise+Recover.h in Headers */ = {isa = PBXBuildFile; fileRef = 05069BB0B935367B346C8A3173D79DA8 /* FBLPromise+Recover.h */; };
-		9BE432B8FBDC83C1723C4F38C54A8334 /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE58C730D518CC42DAFC674C3DFD444 /* FileUtils.swift */; };
 		9C72C34AA1A419844B274EE1613246AC /* GPBUnknownField.h in Headers */ = {isa = PBXBuildFile; fileRef = 70270BD94EA18B7413939991E35BFC9C /* GPBUnknownField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DC27976346A459FE3F53A13E570064F /* FrameAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5168E13A1AFFE742F0DFF80B17C9FC2 /* FrameAnalyzer.swift */; };
 		9E3AA2862C923C7F2F4775701976DE6D /* fssd_25_8bit_gray_v1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 5A52715D6CA78B9AB669C2C24DFD9F0A /* fssd_25_8bit_gray_v1.tflite */; };
 		9F1D982FD6BED2EBA8D1E63A31403510 /* GULLoggerLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7626D61E6D54D59E166867C2B29661 /* GULLoggerLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F44C1A69A19485A3994B24478418F7C /* FBLPromise+Then.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C9C089DF14171D7D7A939FA063E4749 /* FBLPromise+Then.h */; };
 		9FFBC859C9A187896CDBBAD48819DCD9 /* GULAppEnvironmentUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C59D0AD78B603FE4398B4CC25B2C12 /* GULAppEnvironmentUtil.m */; };
 		A0681BA76A15180BE3D6F5ED37DAE40C /* GULKeychainStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 62255AD04E9562F4A3734947B04235A1 /* GULKeychainStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0933188CDB5E526DFFE53CC97D222EF /* FacefyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48D0E21E73F1BF216BBDB1A5D4B4FFB /* FacefyController.swift */; };
 		A0A177C68B040EE76D891047CEBD730C /* fssd_100_8bit_gray_v1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = E9C6D0E73D4B4EC1281FE38C8F3F0691 /* fssd_100_8bit_gray_v1.tflite */; };
 		A1D5737B9C895CBB663B4B25689A7C8D /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E604607E134344759F549E0484C622F4 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1F665F617921DBCB61F4A8A945F00C8 /* FBLPromise+Do.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B0E8478C38BF2A64C166E686518402 /* FBLPromise+Do.m */; };
 		A22CD6352DB20138DEE680851BAC60BC /* cct.nanopb.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E9CDF3FBB5EA2F1838E255CEE5B1D00 /* cct.nanopb.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A57B7A9767F540D8AFA5A46C5E0AA39D /* GPBExtensionRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D949E7FAD8D36DAA96511FFB2D3AF28 /* GPBExtensionRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A63360E6697496E1B21E194C0B702D56 /* FBLPromise+Then.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 0C9C089DF14171D7D7A939FA063E4749 /* FBLPromise+Then.h */; };
+		A8E662AEFA61E9CCC0F3FC557C4D4EC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A78CC2B128EA29D6826BAB07E7E344 /* Foundation.framework */; };
 		A93E774B9B572F52522B44912AB61E83 /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EAFB8C1B409A9523D2246B33CEA2DF /* GTMNSData+zlib.m */; };
-		A997637D3245E0F29C894002609A743B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510DAAFA09297D5EC6F0E634EB1AF0AD /* Message.swift */; };
 		A9D715F06B850B2581AF6476D13537BF /* GPBDuration.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D003ABF5687415B17371EB0FCF8CA8 /* GPBDuration.pbobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9FC4834138836080037E98A3510320B /* GULHeartbeatDateStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 946D8648708B487D7D3834C0DE3379B4 /* GULHeartbeatDateStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AAFC039197388436799887AAB6CE4F9E /* GULSecureCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E1FA1C5AEB32FBAAE6B391A4F76924 /* GULSecureCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -292,12 +291,13 @@
 		B7235611B2735C98AD8C6BD6E981C5F0 /* GULURLSessionDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF6BE5DD56C9B8B89A9C9031FAFD953 /* GULURLSessionDataResponse.m */; };
 		B7A0CEBC6504A8FABB715AF9D30F0325 /* FBLPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD276B8EA8EEB6511A55DF103F6A7C5 /* FBLPromise.h */; };
 		B8369361DA6216D8998606E2EDF7F8EC /* FBLPromises.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D9FE5DB0349788D71CA4CF152E9A9 /* FBLPromises.framework */; };
+		B8D4A560A4EBD31AE2032727F1D3CDEB /* YoonitFacefy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD2188717B970683DDC6CDA90BCAD278 /* YoonitFacefy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B978DE85B4684A458A99B26FF7AE845D /* GPBDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A027B9BEB5E7F23B89180FEF3CD2C24 /* GPBDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA0DEAF2E1ADA3D2515BC62317A01D82 /* BCLjoy_200.emd in Resources */ = {isa = PBXBuildFile; fileRef = 4C1AF5A0752851697586D88A84F9490E /* BCLjoy_200.emd */; };
+		BA5B91F2076A9D42EE6EFE8C0860C3AA /* CaptureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812259EB43FCBAE1D6C47D6A623A61D9 /* CaptureType.swift */; };
 		BC5EADE19C5E9261AECBF614AA78889A /* GDTCORUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B3F6FE81D1168E4B03D846B2FDE6004 /* GDTCORUploader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BD331DB4C335F095EDB8E5F44E85E0AD /* GPBUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D97E57CF04220BF85640DB564F703AF0 /* GPBUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BD9BFF6462857580A9254A684F58C255 /* GDTCOREvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E421D9A1F38F2F2E5A81AD7FFBD2B2 /* GDTCOREvent.m */; };
-		BDFE9F609C823249BF04B501DE929FDA /* CaptureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B08DD2098CA6C8D4A6BD9B8C56280D /* CaptureType.swift */; };
 		BE4D6B9A8B9D7E96E92062846DBA4D67 /* FBLPromise+Reduce.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = D4F426B47C7488B3ED26AA8DA74BF52B /* FBLPromise+Reduce.h */; };
 		BE7C155E5D81D24D1A5C3BFC5768904F /* GPBUnknownFieldSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7355A28AC243D4BD0F15221C06022 /* GPBUnknownFieldSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BFC90AFF84D1D09E386E6BA4A4F21E62 /* GDTCCTNanopbHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CD5457145967EDC85848EDFE6C4292 /* GDTCCTNanopbHelpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -307,17 +307,18 @@
 		C2CD9B7F09D6F8EF1E430779E4721780 /* GPBUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B89CCC42B73CE975E2AF6F51DCA75C5 /* GPBUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2DDF9516AE16956510D2A5EE443DA68 /* GULCCComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6F0186EC19C7344EF78EBABEB83C49 /* GULCCComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C434FC79DEF7D5208EB45E9AAF42F055 /* FBLPromise+Reduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 5019CB025BABEF925916AFF30BA9E593 /* FBLPromise+Reduce.m */; };
-		C46FC21B27E479A6681499AAA1A44A46 /* Facefy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BB67D294103A5698A7B99D3466859F /* Facefy.swift */; };
 		C54C77B31AFDEF3CE1F60672B63EED20 /* GULCCComponentContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1EFE3683280ABE2FD39C9ABDD2011F /* GULCCComponentContainer.m */; };
 		C5E15CB0C3C5664320257728E5A20F46 /* GPBAny.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = B40672ADE57B66AAFDC309817E92F031 /* GPBAny.pbobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C871D4A668B3EC3710D72B1900B3791C /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = A3E18B541A138DA75CD9B65B24EEF610 /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9351A934E23C771E8661B07003BDF7B /* GPBExtensionInternals.h in Headers */ = {isa = PBXBuildFile; fileRef = 64FB6A0315921FA7717C7A89952F9CCA /* GPBExtensionInternals.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB2452AA09750B39A33484C93371E8C4 /* GoogleDataTransport-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 216DB1FCA14854B93FC57E6BB289210E /* GoogleDataTransport-dummy.m */; };
 		CDB5D18D8957E5EAAD69F145A55D84AE /* GPBTimestamp.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = FE733C3E1553FF964DB976EAA03D119F /* GPBTimestamp.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CEB105D94C929D33A5ABB6B917321E62 /* YoonitFacefy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CD5AE3B830767898EBA1382269E12 /* YoonitFacefy-dummy.m */; };
 		CFE5F584A6098A577826E8798DB1E8C6 /* GULLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E7987482033792DB021A2A799165DE /* GULLogger.m */; };
 		D013D5F276E17532C3AE4DD015EB7D01 /* MFT_fssd_accgray.pb in Resources */ = {isa = PBXBuildFile; fileRef = 77924EC40A9E54885B936F9230C48884 /* MFT_fssd_accgray.pb */; };
 		D090ACBD60A187E93BDF84F603C577A4 /* GDTCORTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA22CDADA9EA1A84B5E3F73595DF19D /* GDTCORTransformer.m */; };
 		D1661F2541E6C57E1948177BFD304C7E /* GDTCORTargets.h in Headers */ = {isa = PBXBuildFile; fileRef = 05BB54C3CBE7F7A499421FA733F8A1AA /* GDTCORTargets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E6D9BE0C95AB1189A783B9E33CB0DE /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6875DE1D20B908B018FECB81483BD1 /* FileUtils.swift */; };
 		D22469CE42CC666C459138E3C423F8FE /* GDTCORDirectorySizeTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 29954A019F13C2CD5493198687D90673 /* GDTCORDirectorySizeTracker.m */; };
 		D22D19A2A40A995CF5A418584CF28706 /* GDTCORReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A905170A113FAF483FA13DD7EEDE3D26 /* GDTCORReachability.m */; };
 		D301D4FAA247F20867892214C62765AD /* GPBRootObject_PackagePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 03AF737FBFBA1E1B77DEA7FF93B23C32 /* GPBRootObject_PackagePrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -337,11 +338,9 @@
 		E0D6ECAA925CF8DF44E65B1C3A986DA4 /* BCLrighteyeclosed_200.emd in Resources */ = {isa = PBXBuildFile; fileRef = B33FB537A9B48D8D9CC2ED7C71982B72 /* BCLrighteyeclosed_200.emd */; };
 		E173F5BF461CD8E09F28AFC90A81662F /* GDTCOREventDataObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0500CEBD813B2C29A7E6C3EE0A49146A /* GDTCOREventDataObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1E0C697FDCCBDF10DB7485E2D74E338 /* GDTCORRegistrar_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 484297D00938560BBC593C9FEE4D85E4 /* GDTCORRegistrar_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E2779FB76BD81D19FEFD064E6769E015 /* CaptureOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C873726A768B5E2F2BC9F1D4FCCE2BB /* CaptureOptions.swift */; };
 		E37903AA900F513D77DDFB82E07EF9D4 /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E05D02E7377838867E592789BB0FE1 /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E39763D2D8A1196D0E6C629486FCC6D3 /* FBLPromise+Race.m in Sources */ = {isa = PBXBuildFile; fileRef = 433A510152BE57874DBE4F4D54BB4A71 /* FBLPromise+Race.m */; };
 		E40E9928E3CE3C7DA57B3779B4246DAF /* Protobuf-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B032521621CFAB4D182B6DF12DDB52AD /* Protobuf-dummy.m */; };
-		E433E40316DF0C2EE16B571A5075F9F6 /* CameraGraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC21CF0C0DF1D3F825107BC35D6F4E08 /* CameraGraphicView.swift */; };
 		E4BCAEB43D8DBB37F2199518DFB358B6 /* FBLPromises.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 4670CDDCF54BBAEEAB63179E44BE3E93 /* FBLPromises.h */; };
 		E4C4B41D098BD5AA7E447B8D36ECBE19 /* GPBTimestamp.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC6EE6E1FA7AC044DF04B6A5DF7F2E2 /* GPBTimestamp.pbobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5744065569998BB6D9D59FB7A8AB070 /* GPBWellKnownTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8F06B87E63492A117E0A50A49E3CA7 /* GPBWellKnownTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -366,6 +365,7 @@
 		F902C6029C81F9A71766FDC358561CD5 /* GULLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E463EB553A41D325DB305E1C88089A1 /* GULLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F97B6C19E20DA1BA452327DDE2902E4C /* GPBArray_PackagePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E5E5F9558FE5EFFC857D01AD474AD7D /* GPBArray_PackagePrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9BBE2C359D1076DD9F2303EE6A8ADEE /* GoogleUtilities-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F105617A24A7143E250D2123DF63D73C /* GoogleUtilities-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAED27175A33DFF39F47AE921E021C1F /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F53130F116D309D50C7AEC3DC66FC60 /* CameraController.swift */; };
 		FB9E9838FE12BB37F7C791265F5E720E /* GULCCLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A80DFE111DE3961FFA6A933DB3C096E /* GULCCLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC2077109C130C8652C8D665A5C958E8 /* nanopb-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 202BC4C20A20CCB309B80700DE7760C0 /* nanopb-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC4D3C2771BBCA878CAE00D04FF7C18B /* BCLlefteyeclosed_200.emd in Resources */ = {isa = PBXBuildFile; fileRef = FF4E646C4D03FE181264590E52C0845F /* BCLlefteyeclosed_200.emd */; };
@@ -409,6 +409,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D2B5E7DCCBBFB32341D857D01211A1A3;
 			remoteInfo = nanopb;
+		};
+		131D987FD4B7ADB6CC6B2B969B20F5DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F21CA5BA7243F2EBB99D62422951EFCD;
+			remoteInfo = YoonitFacefy;
 		};
 		18AB0D445919A04000FD09F37BBB8F5E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -550,6 +557,13 @@
 			remoteGlobalIDString = F1D55369E4C8976F396F83588DAC03C4;
 			remoteInfo = MLKitVision;
 		};
+		A0A029BA2C88971E86ABE8A8F0C47707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D46A1F6123B14449A2A1FC04011860D;
+			remoteInfo = GoogleMLKit;
+		};
 		A9D64EF19BCE3FC59106A9E930D40F63 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -584,13 +598,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = D676E21115185671D7258A56944ABE98;
 			remoteInfo = GTMSessionFetcher;
-		};
-		E926F0ED1517FC6C43B8A1D0A451984A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6D46A1F6123B14449A2A1FC04011860D;
-			remoteInfo = GoogleMLKit;
 		};
 		E99F55ACDBF6D3FDCDA94E0913C48E4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -667,7 +674,6 @@
 		06FC5C9CF96D60C50FCD47D339C91951 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A78CC2B128EA29D6826BAB07E7E344 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		0801688560E5A1F2BAD3D65D2A132AA9 /* GDTCORTransformer_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORTransformer_Private.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORTransformer_Private.h; sourceTree = "<group>"; };
-		08C5BFC6A30CC40499601873577E5F10 /* extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = extensions.swift; path = YoonitCamera/src/utils/extensions.swift; sourceTree = "<group>"; };
 		0A2F8FB1C440E4F8E87999391626AA8A /* FBLPromise+Await.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Await.m"; path = "Sources/FBLPromises/FBLPromise+Await.m"; sourceTree = "<group>"; };
 		0C37C22202DCFC141FC96E5F98EECE03 /* Protobuf.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Protobuf.modulemap; sourceTree = "<group>"; };
 		0C9C089DF14171D7D7A939FA063E4749 /* FBLPromise+Then.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Then.h"; path = "Sources/FBLPromises/include/FBLPromise+Then.h"; sourceTree = "<group>"; };
@@ -685,13 +691,14 @@
 		137444C01FAF08F99F0521C4ED70725D /* GoogleDataTransport-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleDataTransport-umbrella.h"; sourceTree = "<group>"; };
 		14CD70691F743D1543529BD8AA513915 /* GPBEmpty.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBEmpty.pbobjc.h; path = objectivec/GPBEmpty.pbobjc.h; sourceTree = "<group>"; };
 		158E8C6E791246DE60E1141C3D645E6B /* GoogleUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUtilities.debug.xcconfig; sourceTree = "<group>"; };
-		15A2FEC79BB31E82B6135451DCCBA36F /* YoonitCamera-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YoonitCamera-Info.plist"; sourceTree = "<group>"; };
 		183B4DD5F39FFE1B9A89C9A883E25435 /* FBLPromise+Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Testing.h"; path = "Sources/FBLPromises/include/FBLPromise+Testing.h"; sourceTree = "<group>"; };
+		19BEA58BF2BDF25089057D7157342D72 /* YoonitCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoonitCamera-umbrella.h"; sourceTree = "<group>"; };
 		1B7DFA5DDE2BFCF9B3C587987D41E245 /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
 		1BA9B251E5A71DD4C55FE1EFEF894D6B /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
-		1BE58C730D518CC42DAFC674C3DFD444 /* FileUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileUtils.swift; path = YoonitCamera/src/utils/FileUtils.swift; sourceTree = "<group>"; };
 		1C07D687918820F28E31AEAF1DE97BC0 /* GoogleToolboxForMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.release.xcconfig; sourceTree = "<group>"; };
 		1C997975B1251E9428EC8B06F6AC2550 /* Protobuf-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Protobuf-Info.plist"; sourceTree = "<group>"; };
+		1D6DE49CF792D03BAC237AE18166E8EC /* YoonitCamera-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YoonitCamera-Info.plist"; sourceTree = "<group>"; };
+		1F53130F116D309D50C7AEC3DC66FC60 /* CameraController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraController.swift; path = YoonitCamera/src/CameraController.swift; sourceTree = "<group>"; };
 		1F7626D61E6D54D59E166867C2B29661 /* GULLoggerLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLoggerLevel.h; path = GoogleUtilities/Logger/Public/GoogleUtilities/GULLoggerLevel.h; sourceTree = "<group>"; };
 		1FECF098CD8F21AF676294DF2AB7DD05 /* GULCCDependency.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULCCDependency.h; path = GoogleUtilitiesComponents/Sources/Public/GULCCDependency.h; sourceTree = "<group>"; };
 		202BC4C20A20CCB309B80700DE7760C0 /* nanopb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-umbrella.h"; sourceTree = "<group>"; };
@@ -706,10 +713,12 @@
 		251C6319AD50CB50F18D50CBF727F8B2 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27681D3EB05626EB980B1964012DB733 /* GTMDebugThreadValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugThreadValidation.h; path = DebugUtils/GTMDebugThreadValidation.h; sourceTree = "<group>"; };
 		278C64024876557C84BACBED8C90CA32 /* FBLPromise+Always.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Always.h"; path = "Sources/FBLPromises/include/FBLPromise+Always.h"; sourceTree = "<group>"; };
+		27E4E23431F422E716897828F04D5626 /* ImageQualityController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageQualityController.swift; path = YoonitCamera/src/controllers/ImageQualityController.swift; sourceTree = "<group>"; };
 		28A6DB952CEA79E3902D41748273A364 /* GoogleUtilitiesComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleUtilitiesComponents.framework; path = GoogleUtilitiesComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A9112F03C777D2930CFE3C15E2EAB7 /* Pods-YoonitFacefyDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YoonitFacefyDemo-umbrella.h"; sourceTree = "<group>"; };
 		29954A019F13C2CD5493198687D90673 /* GDTCORDirectorySizeTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORDirectorySizeTracker.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORDirectorySizeTracker.m; sourceTree = "<group>"; };
 		29E421D9A1F38F2F2E5A81AD7FFBD2B2 /* GDTCOREvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCOREvent.m; path = GoogleDataTransport/GDTCORLibrary/GDTCOREvent.m; sourceTree = "<group>"; };
+		2A9E6674901F1C7C4DD5A86CF0276C88 /* YoonitCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YoonitCamera.modulemap; sourceTree = "<group>"; };
 		2B044AB25145C12A8060B96E8288A8F5 /* GPBProtocolBuffers_RuntimeSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBProtocolBuffers_RuntimeSupport.h; path = objectivec/GPBProtocolBuffers_RuntimeSupport.h; sourceTree = "<group>"; };
 		2B3F6FE81D1168E4B03D846B2FDE6004 /* GDTCORUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORUploader.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORUploader.h; sourceTree = "<group>"; };
 		2B6401FA65D0FEB70449C9783E5C64AC /* GDTCOREvent+GDTCCTSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GDTCOREvent+GDTCCTSupport.h"; path = "GoogleDataTransport/GDTCCTLibrary/Public/GDTCOREvent+GDTCCTSupport.h"; sourceTree = "<group>"; };
@@ -732,16 +741,15 @@
 		38C41AA2155AA2192459A8B1F59AEEFE /* GDTCORTransport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORTransport.h; path = GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORTransport.h; sourceTree = "<group>"; };
 		39C435D53183AFEC42765BC428BE4F83 /* GDTCORTransport_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORTransport_Private.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORTransport_Private.h; sourceTree = "<group>"; };
 		3B3785BD50761DB2CA1DE71F045B8E02 /* GPBCodedOutputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBCodedOutputStream.h; path = objectivec/GPBCodedOutputStream.h; sourceTree = "<group>"; };
-		3B5F655EF18338FBB825EF25A11B7183 /* CameraController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraController.swift; path = YoonitCamera/src/CameraController.swift; sourceTree = "<group>"; };
 		3B6FA0A7777073F81CA2D5838ADE73AA /* GULCCDependency.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULCCDependency.m; path = GoogleUtilitiesComponents/Sources/GULCCDependency.m; sourceTree = "<group>"; };
 		3C79092026AC5CB219F6FB44016131B5 /* GDTCORReachability_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORReachability_Private.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORReachability_Private.h; sourceTree = "<group>"; };
 		3D2C81C6EDF49E10E93F0FA35678F767 /* FBLPromise+Await.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Await.h"; path = "Sources/FBLPromises/include/FBLPromise+Await.h"; sourceTree = "<group>"; };
 		3E5DF1420E3922C0AB58440758604BAC /* GDTCORAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORAssert.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORAssert.h; sourceTree = "<group>"; };
+		3F6875DE1D20B908B018FECB81483BD1 /* FileUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileUtils.swift; path = YoonitCamera/src/utils/FileUtils.swift; sourceTree = "<group>"; };
 		3FCF14AEA930FE8C5A514BFFF0B3C573 /* YoonitFacefy.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YoonitFacefy.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		41372C37AABEA7049E9D346D5084A399 /* PromisesObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromisesObjC.release.xcconfig; sourceTree = "<group>"; };
 		41B99F8AF81FE888BC95C8769C2E11FA /* Api.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Api.pbobjc.h; path = objectivec/google/protobuf/Api.pbobjc.h; sourceTree = "<group>"; };
 		42643B5CBBC5473EDA0E8036C27A81EC /* GPBCodedInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBCodedInputStream.h; path = objectivec/GPBCodedInputStream.h; sourceTree = "<group>"; };
-		42A9B443FCA8FD7520D038A5B9E64DE9 /* FaceROI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FaceROI.swift; path = YoonitCamera/src/models/FaceROI.swift; sourceTree = "<group>"; };
 		42FC72999FC07708A97EE6CC223B607B /* GULKeychainStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULKeychainStorage.m; path = GoogleUtilities/Environment/SecureStorage/GULKeychainStorage.m; sourceTree = "<group>"; };
 		432E29A30B096764CFDB181F033F417E /* GPBArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBArray.m; path = objectivec/GPBArray.m; sourceTree = "<group>"; };
 		433A510152BE57874DBE4F4D54BB4A71 /* FBLPromise+Race.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Race.m"; path = "Sources/FBLPromises/FBLPromise+Race.m"; sourceTree = "<group>"; };
@@ -757,11 +765,10 @@
 		4756663B25B1EBB54BD9282734919D26 /* GDTCORStorageProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORStorageProtocol.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORStorageProtocol.h; sourceTree = "<group>"; };
 		4811AB3F26B63CF621F5BC81A7C05B81 /* GPBRootObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBRootObject.h; path = objectivec/GPBRootObject.h; sourceTree = "<group>"; };
 		484297D00938560BBC593C9FEE4D85E4 /* GDTCORRegistrar_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORRegistrar_Private.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORRegistrar_Private.h; sourceTree = "<group>"; };
-		4904F52C952054CD9FEF0581564FEBC8 /* KeyError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyError.swift; path = YoonitCamera/src/KeyError.swift; sourceTree = "<group>"; };
+		490F77BC5961FC4E01C2E626FCFCDACD /* YoonitCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YoonitCamera.release.xcconfig; sourceTree = "<group>"; };
 		49C0AF722843A19417869616DD3BD4A0 /* contours.tfl */ = {isa = PBXFileReference; includeInIndex = 1; name = contours.tfl; path = Resources/GoogleMVFaceDetectorResources/contours.tfl; sourceTree = "<group>"; };
 		4A4A38A17C902AC57EC9D810EF4C35BF /* GDTCOREvent_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCOREvent_Private.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCOREvent_Private.h; sourceTree = "<group>"; };
 		4AFA5E311659981200FB479598B3AC08 /* GDTCORFlatFileStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORFlatFileStorage.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORFlatFileStorage.h; sourceTree = "<group>"; };
-		4AFEE958592BA05CB016BEAF2F6E5BAE /* FaceAnalyzer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FaceAnalyzer.swift; path = YoonitCamera/src/analyzers/face/FaceAnalyzer.swift; sourceTree = "<group>"; };
 		4BA58359795A7B5586AF988B6147A103 /* PromisesObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromisesObjC-umbrella.h"; sourceTree = "<group>"; };
 		4BC606EA0803D906560E94778314851F /* GPBApi.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBApi.pbobjc.h; path = objectivec/GPBApi.pbobjc.h; sourceTree = "<group>"; };
 		4BD276B8EA8EEB6511A55DF103F6A7C5 /* FBLPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromise.h; path = Sources/FBLPromises/include/FBLPromise.h; sourceTree = "<group>"; };
@@ -777,7 +784,6 @@
 		4EF848D285BF880D8B10CA2A5A2956DF /* Pods-YoonitFacefyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YoonitFacefyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5019CB025BABEF925916AFF30BA9E593 /* FBLPromise+Reduce.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Reduce.m"; path = "Sources/FBLPromises/FBLPromise+Reduce.m"; sourceTree = "<group>"; };
 		50CEE441281B91FB8A21446E4DCE844F /* GULCCComponentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULCCComponentType.h; path = GoogleUtilitiesComponents/Sources/Public/GULCCComponentType.h; sourceTree = "<group>"; };
-		510DAAFA09297D5EC6F0E634EB1AF0AD /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Message.swift; path = YoonitCamera/src/Message.swift; sourceTree = "<group>"; };
 		52F9BCB3F2B2810083B70F5863DF10C2 /* GDTCORClock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORClock.h; path = GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORClock.h; sourceTree = "<group>"; };
 		55091EC8B28F0AEBE405FF80C155925B /* GDTCORStorageEventSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORStorageEventSelector.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORStorageEventSelector.m; sourceTree = "<group>"; };
 		55DD8063265402191041FB46B8964B37 /* FBLPromise+Always.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Always.m"; path = "Sources/FBLPromises/FBLPromise+Always.m"; sourceTree = "<group>"; };
@@ -790,10 +796,12 @@
 		5A4CDE0872D41A69F5C1EEAD0C660988 /* GDTCCTUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCCTUploader.h; path = GoogleDataTransport/GDTCCTLibrary/Private/GDTCCTUploader.h; sourceTree = "<group>"; };
 		5A52715D6CA78B9AB669C2C24DFD9F0A /* fssd_25_8bit_gray_v1.tflite */ = {isa = PBXFileReference; includeInIndex = 1; name = fssd_25_8bit_gray_v1.tflite; path = Resources/GoogleMVFaceDetectorResources/fssd_25_8bit_gray_v1.tflite; sourceTree = "<group>"; };
 		5BB1ADDCF5A4D271746ABAE92B9D464A /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
+		5CD6497D5CA32149B6BB8112B650DCCC /* CaptureOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureOptions.swift; path = YoonitCamera/src/models/CaptureOptions.swift; sourceTree = "<group>"; };
 		5D5E9A12741FEF7FE0BCEFD400FA0C80 /* GDTCORConsoleLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORConsoleLogger.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORConsoleLogger.m; sourceTree = "<group>"; };
 		5D9447F8CEC225BE277D1620A059E680 /* GULAppEnvironmentUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULAppEnvironmentUtil.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULAppEnvironmentUtil.h; sourceTree = "<group>"; };
 		5D949E7FAD8D36DAA96511FFB2D3AF28 /* GPBExtensionRegistry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBExtensionRegistry.h; path = objectivec/GPBExtensionRegistry.h; sourceTree = "<group>"; };
 		5EBC696D36B0A8D88B675330B73B2C2C /* GTMLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMLogger.m; path = Foundation/GTMLogger.m; sourceTree = "<group>"; };
+		5EE298D83735288031F173976051C63F /* QRCodeAnalyzer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeAnalyzer.swift; path = YoonitCamera/src/analyzers/qrcode/QRCodeAnalyzer.swift; sourceTree = "<group>"; };
 		5EF7355A28AC243D4BD0F15221C06022 /* GPBUnknownFieldSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBUnknownFieldSet.m; path = objectivec/GPBUnknownFieldSet.m; sourceTree = "<group>"; };
 		5FBA0EB4A56A238D8B5786BEB6F4956B /* GPBEmpty.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBEmpty.pbobjc.m; path = objectivec/GPBEmpty.pbobjc.m; sourceTree = "<group>"; };
 		60E0B9110FFB019BB340351543E41C98 /* GoogleUtilitiesComponents-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GoogleUtilitiesComponents-Info.plist"; sourceTree = "<group>"; };
@@ -817,19 +825,20 @@
 		6BBB6C18B2CD3B5774C59C0EB3065D02 /* GoogleMVFaceDetectorResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GoogleMVFaceDetectorResources.bundle; path = "MLKitFaceDetection-GoogleMVFaceDetectorResources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C500C39656854195B5ACE5993037C58 /* MLKitFaceDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLKitFaceDetection.release.xcconfig; sourceTree = "<group>"; };
 		6C7FFDF1573B95ACFB6883787CE1EFDC /* GPBMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBMessage.h; path = objectivec/GPBMessage.h; sourceTree = "<group>"; };
-		6C873726A768B5E2F2BC9F1D4FCCE2BB /* CaptureOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureOptions.swift; path = YoonitCamera/src/models/CaptureOptions.swift; sourceTree = "<group>"; };
 		6CA22CDADA9EA1A84B5E3F73595DF19D /* GDTCORTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORTransformer.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORTransformer.m; sourceTree = "<group>"; };
+		6CE50382ABD35A74964005F4C63AF6A4 /* CameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = YoonitCamera/src/CameraView.swift; sourceTree = "<group>"; };
+		6CEED932BF0D787829E4C623FC37C26E /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Message.swift; path = YoonitCamera/src/enums/Message.swift; sourceTree = "<group>"; };
 		6D4F56CA9A9E524B6259F4DE4656C0BA /* YoonitFacefy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YoonitFacefy.debug.xcconfig; sourceTree = "<group>"; };
 		6D63DDC60826BE6D101FFD1CCFBC821A /* GPBStruct.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBStruct.pbobjc.m; path = objectivec/GPBStruct.pbobjc.m; sourceTree = "<group>"; };
 		6D7CE09D6214FE23D14002510C5A4625 /* GPBWrappers.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBWrappers.pbobjc.m; path = objectivec/GPBWrappers.pbobjc.m; sourceTree = "<group>"; };
 		6DE4702AEB54B9E0A008A30117E9FD41 /* Pods-YoonitFacefyDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YoonitFacefyDemo-resources.sh"; sourceTree = "<group>"; };
 		6DEEB6174F82214AB1841650AD924815 /* FBLPromise+Catch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Catch.m"; path = "Sources/FBLPromises/FBLPromise+Catch.m"; sourceTree = "<group>"; };
+		6E7C94215E325CB0FD697A03B93B879F /* extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = extensions.swift; path = YoonitCamera/src/utils/extensions.swift; sourceTree = "<group>"; };
 		6F05ECEAB992E448F650297F2F0CF7F5 /* SourceContext.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SourceContext.pbobjc.h; path = objectivec/google/protobuf/SourceContext.pbobjc.h; sourceTree = "<group>"; };
 		6F0B9B63ED5A2A9CF4A7547D712167C4 /* GDTCOREvent+GDTCCTSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GDTCOREvent+GDTCCTSupport.m"; path = "GoogleDataTransport/GDTCCTLibrary/GDTCOREvent+GDTCCTSupport.m"; sourceTree = "<group>"; };
 		70270BD94EA18B7413939991E35BFC9C /* GPBUnknownField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBUnknownField.h; path = objectivec/GPBUnknownField.h; sourceTree = "<group>"; };
 		7171AA4B1F19B077523BFD9DD37902A9 /* FBLPromise+Recover.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Recover.m"; path = "Sources/FBLPromises/FBLPromise+Recover.m"; sourceTree = "<group>"; };
 		71AEC4E0DD0D9D4CC25CD846B21AF17F /* PromisesObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromisesObjC.debug.xcconfig; sourceTree = "<group>"; };
-		71D4EC0A63141ABFB81B66C2CE4990A8 /* FaceBoundingBoxController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FaceBoundingBoxController.swift; path = YoonitCamera/src/analyzers/face/FaceBoundingBoxController.swift; sourceTree = "<group>"; };
 		72012C17FCAE0148964564E44A395903 /* GoogleDataTransportInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GoogleDataTransportInternal.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GoogleDataTransportInternal.h; sourceTree = "<group>"; };
 		734C87BCAA25E9AB69E7AD7FE131AA2E /* GoogleUtilitiesComponents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleUtilitiesComponents-umbrella.h"; sourceTree = "<group>"; };
 		736937C83A3E5F8DAEBF864AFE4E5F04 /* Empty.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Empty.pbobjc.h; path = objectivec/google/protobuf/Empty.pbobjc.h; sourceTree = "<group>"; };
@@ -843,15 +852,17 @@
 		7A80DFE111DE3961FFA6A933DB3C096E /* GULCCLibrary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULCCLibrary.h; path = GoogleUtilitiesComponents/Sources/Public/GULCCLibrary.h; sourceTree = "<group>"; };
 		7B9ED904770295512D0360BAE9C91211 /* GULURLSessionDataResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULURLSessionDataResponse.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULURLSessionDataResponse.h; sourceTree = "<group>"; };
 		7BD89B96AB38F70972A63B766C85A3E0 /* GoogleDataTransport.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GoogleDataTransport.modulemap; sourceTree = "<group>"; };
+		7BF16633DF71863D34A97C6A0828A0A6 /* CameraGraphicView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraGraphicView.swift; path = YoonitCamera/src/CameraGraphicView.swift; sourceTree = "<group>"; };
 		7D38EFC753CFEA42043040D6AFF02100 /* GoogleToolboxForMac-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GoogleToolboxForMac-Info.plist"; sourceTree = "<group>"; };
 		7F19D6195A13E5D4FEB2FDF89926FB9B /* MLKitFaceDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLKitFaceDetection.debug.xcconfig; sourceTree = "<group>"; };
 		7FD0253A2E5AC318719630876EE3E717 /* Timestamp.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Timestamp.pbobjc.h; path = objectivec/google/protobuf/Timestamp.pbobjc.h; sourceTree = "<group>"; };
 		804D3E0C9293BF7E86B45FB0F381D184 /* GPBDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBDescriptor.m; path = objectivec/GPBDescriptor.m; sourceTree = "<group>"; };
 		8091AECE42A07867E7755964B6528FB0 /* GULKeychainUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULKeychainUtils.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULKeychainUtils.h; sourceTree = "<group>"; };
 		8097D828831BE76DE7446C9CAF29B963 /* GoogleUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUtilities.release.xcconfig; sourceTree = "<group>"; };
+		812259EB43FCBAE1D6C47D6A623A61D9 /* CaptureType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureType.swift; path = YoonitCamera/src/enums/CaptureType.swift; sourceTree = "<group>"; };
 		828D64E4D4660899651131465D817AA5 /* GoogleDataTransport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleDataTransport.debug.xcconfig; sourceTree = "<group>"; };
+		84A3DC5D0EF72790094133CB9B782BAA /* CoordinatesController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoordinatesController.swift; path = YoonitCamera/src/controllers/CoordinatesController.swift; sourceTree = "<group>"; };
 		856B5CD56F194FAD26EA91620B66D614 /* GoogleDataTransport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleDataTransport.framework; path = GoogleDataTransport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		85EBA042331FE624169F30EE35C305E5 /* YoonitCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YoonitCamera.release.xcconfig; sourceTree = "<group>"; };
 		8615CE892B3EFADEC04C7A8837EEB969 /* GPBArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBArray.h; path = objectivec/GPBArray.h; sourceTree = "<group>"; };
 		86C60C0EE7D4D3ECD99BDCDBF5778945 /* GDTCORClock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORClock.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORClock.m; sourceTree = "<group>"; };
 		86F9BDA688F7905CFE33A84E082A5CCC /* GoogleMLKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMLKit.release.xcconfig; sourceTree = "<group>"; };
@@ -862,7 +873,6 @@
 		8E28FF479DCB333B678E65172A965146 /* GDTCOREvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCOREvent.h; path = GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREvent.h; sourceTree = "<group>"; };
 		8FF6BE5DD56C9B8B89A9C9031FAFD953 /* GULURLSessionDataResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULURLSessionDataResponse.m; path = GoogleUtilities/Environment/URLSessionPromiseWrapper/GULURLSessionDataResponse.m; sourceTree = "<group>"; };
 		93BAB77EA5A0F7C709E3EC39C5D48066 /* GPBUnknownField_PackagePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBUnknownField_PackagePrivate.h; path = objectivec/GPBUnknownField_PackagePrivate.h; sourceTree = "<group>"; };
-		93CB4C26337176B694A858D10D3B06FF /* YoonitCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoonitCamera-prefix.pch"; sourceTree = "<group>"; };
 		93EA1A5A94E6DF2C8937423207D80511 /* Pods-YoonitFacefyDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YoonitFacefyDemo-Info.plist"; sourceTree = "<group>"; };
 		943C0EFEB980B598A2B3BA6B96C307B3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		946D8648708B487D7D3834C0DE3379B4 /* GULHeartbeatDateStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULHeartbeatDateStorage.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULHeartbeatDateStorage.h; sourceTree = "<group>"; };
@@ -870,14 +880,16 @@
 		94E490A66FA8F9CDB8B7E7B1FBA856EB /* GPBMessage_PackagePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBMessage_PackagePrivate.h; path = objectivec/GPBMessage_PackagePrivate.h; sourceTree = "<group>"; };
 		95378D6ADB21336BF09FBA712693094C /* FBLPromise+Any.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Any.h"; path = "Sources/FBLPromises/include/FBLPromise+Any.h"; sourceTree = "<group>"; };
 		9781C429CE42A46BDC2DBF1D3F4B0A73 /* GPBSourceContext.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBSourceContext.pbobjc.h; path = objectivec/GPBSourceContext.pbobjc.h; sourceTree = "<group>"; };
+		978D48D32A64C02AD0374F36DD26B324 /* FaceAnalyzer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FaceAnalyzer.swift; path = YoonitCamera/src/analyzers/face/FaceAnalyzer.swift; sourceTree = "<group>"; };
 		985E412FAD9945898FE497DF7BE277FB /* GTMMethodCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMMethodCheck.h; path = DebugUtils/GTMMethodCheck.h; sourceTree = "<group>"; };
 		98B0E8478C38BF2A64C166E686518402 /* FBLPromise+Do.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Do.m"; path = "Sources/FBLPromises/FBLPromise+Do.m"; sourceTree = "<group>"; };
 		99AA465E208CA4BA8D989DFC8655337A /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
+		9A3E36976BA303623E604FAF665F122A /* CameraEventListenerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraEventListenerDelegate.swift; path = YoonitCamera/src/delegates/CameraEventListenerDelegate.swift; sourceTree = "<group>"; };
+		9B686469E569EE1057AA89F2A8CB2A98 /* YoonitCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YoonitCamera-dummy.m"; sourceTree = "<group>"; };
 		9BCE93049EEFF92AC44316B4A2261B55 /* PromisesObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromisesObjC-dummy.m"; sourceTree = "<group>"; };
 		9C4E42D8C269DADA05BF142D35C52715 /* Pods-YoonitFacefyDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YoonitFacefyDemo-frameworks.sh"; sourceTree = "<group>"; };
 		9C5BB5DA2E6E2EAFE2B3512E010AFCC0 /* MLKitVision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLKitVision.debug.xcconfig; sourceTree = "<group>"; };
 		9C5C12F9BA96FB0A425F8C24176DA194 /* GPBFieldMask.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBFieldMask.pbobjc.h; path = objectivec/GPBFieldMask.pbobjc.h; sourceTree = "<group>"; };
-		9C642DA0ABACC02816EC4BF3AA9B1B96 /* YoonitCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YoonitCamera-dummy.m"; sourceTree = "<group>"; };
 		9C69426F7745C5573839E43B9E8A8248 /* Protobuf-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Protobuf-umbrella.h"; sourceTree = "<group>"; };
 		9CB15A7586AC7CB991D49486F1AC5C82 /* GDTCORConsoleLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORConsoleLogger.h; path = GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORConsoleLogger.h; sourceTree = "<group>"; };
 		9CF431CB9014AE59FA9C955762F92743 /* GDTCORPlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORPlatform.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORPlatform.h; sourceTree = "<group>"; };
@@ -888,13 +900,13 @@
 		A07327297E2D00EA7EC77C3DADC60F29 /* GPBDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBDictionary.m; path = objectivec/GPBDictionary.m; sourceTree = "<group>"; };
 		A12F759DF2DFF1345D650035813CFB26 /* FBLPromise+Validate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Validate.h"; path = "Sources/FBLPromises/include/FBLPromise+Validate.h"; sourceTree = "<group>"; };
 		A160EF9E2FBE30C3F6FB5F1BC173F80E /* FBLPromise+Delay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Delay.m"; path = "Sources/FBLPromises/FBLPromise+Delay.m"; sourceTree = "<group>"; };
-		A1629A1448FBDE6E729943B0FA24018A /* YoonitCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YoonitCamera.debug.xcconfig; sourceTree = "<group>"; };
 		A23ADEF744CF46E1EA1AA0C8F1251075 /* MLKitVision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MLKitVision.framework; path = Frameworks/MLKitVision.framework; sourceTree = "<group>"; };
 		A2405F0C1F5F6EE7E5A723C77DC95E1D /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A318675B051505CD466C30793FB3E22E /* GDTCORUploadCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORUploadCoordinator.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORUploadCoordinator.h; sourceTree = "<group>"; };
 		A3B1E7F2A78B60EFB79E5E0AA19274CD /* GDTCORStorageEventSelector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORStorageEventSelector.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORStorageEventSelector.h; sourceTree = "<group>"; };
 		A3E18B541A138DA75CD9B65B24EEF610 /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
 		A4D6C238856DB50733B4AACF23C4DCAC /* GoogleUtilitiesComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUtilitiesComponents.release.xcconfig; sourceTree = "<group>"; };
+		A50BC409AF53E09E9B1869B76C40ACBC /* FrameAnalyzer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameAnalyzer.swift; path = YoonitCamera/src/analyzers/frame/FrameAnalyzer.swift; sourceTree = "<group>"; };
 		A52D781F88B5EC466EA6490BE5BDFB14 /* Any.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Any.pbobjc.h; path = objectivec/google/protobuf/Any.pbobjc.h; sourceTree = "<group>"; };
 		A60283C573350C662364B9C8E0E7D6E1 /* GPBSourceContext.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBSourceContext.pbobjc.m; path = objectivec/GPBSourceContext.pbobjc.m; sourceTree = "<group>"; };
 		A76E3F9CCE665BA47B1F290725A5A30B /* GDTCOREndpoints.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCOREndpoints.h; path = GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREndpoints.h; sourceTree = "<group>"; };
@@ -903,7 +915,6 @@
 		A905170A113FAF483FA13DD7EEDE3D26 /* GDTCORReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORReachability.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORReachability.m; sourceTree = "<group>"; };
 		AB250F75E18CBDFA063477FDAD9D67AF /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
 		AB5EF7B12B0B3A35BAB7051F357F2A60 /* MLKitCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLKitCommon.debug.xcconfig; sourceTree = "<group>"; };
-		AC479F127D64BFBF4646B14CA22D1400 /* CameraEventListenerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraEventListenerDelegate.swift; path = YoonitCamera/src/delegates/CameraEventListenerDelegate.swift; sourceTree = "<group>"; };
 		AC7866F9FAAD7A5A8659D14BA94D2BC9 /* GDTCCTNanopbHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCCTNanopbHelpers.m; path = GoogleDataTransport/GDTCCTLibrary/GDTCCTNanopbHelpers.m; sourceTree = "<group>"; };
 		AC8521F8E6B67A2B5723C9084F5F6818 /* GPBMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBMessage.m; path = objectivec/GPBMessage.m; sourceTree = "<group>"; };
 		AC93644C1D135C2875B637DE2DE29D7A /* GPBRuntimeTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBRuntimeTypes.h; path = objectivec/GPBRuntimeTypes.h; sourceTree = "<group>"; };
@@ -923,10 +934,10 @@
 		B7E1FA1C5AEB32FBAAE6B391A4F76924 /* GULSecureCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULSecureCoding.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULSecureCoding.h; sourceTree = "<group>"; };
 		B979AFA598BCAB118C5F3535FB842F7E /* GPBExtensionRegistry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBExtensionRegistry.m; path = objectivec/GPBExtensionRegistry.m; sourceTree = "<group>"; };
 		BA1A6118800DD73797D59E94E91B4E77 /* YoonitFacefy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YoonitFacefy.modulemap; sourceTree = "<group>"; };
+		BA7E21A232565506E8A5FF64D8A9CDDF /* KeyError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyError.swift; path = YoonitCamera/src/enums/KeyError.swift; sourceTree = "<group>"; };
 		BBE8D4584151E424567D7C389C6CF132 /* GDTCORRegistrar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORRegistrar.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORRegistrar.h; sourceTree = "<group>"; };
 		BCF7BE33E2A053CC62882E11F7F771FE /* Pods-YoonitFacefyDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YoonitFacefyDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BD04463774D5A4C48DEAA255EDFB916C /* GPBRootObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBRootObject.m; path = objectivec/GPBRootObject.m; sourceTree = "<group>"; };
-		BD106480EABBF06FF79FC443AA59679D /* YoonitCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoonitCamera-umbrella.h"; sourceTree = "<group>"; };
 		BD2188717B970683DDC6CDA90BCAD278 /* YoonitFacefy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoonitFacefy-umbrella.h"; sourceTree = "<group>"; };
 		BD614F49490242F95ADCF6A4C5DF9B2F /* GDTCORAssert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORAssert.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORAssert.m; sourceTree = "<group>"; };
 		BDBF864311CEDB80A07223648A6B8746 /* GPBProtocolBuffers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBProtocolBuffers.h; path = objectivec/GPBProtocolBuffers.h; sourceTree = "<group>"; };
@@ -947,7 +958,6 @@
 		C3660A895CD7E2DF6D93C4F54ECF398A /* PromisesObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromisesObjC.modulemap; sourceTree = "<group>"; };
 		C48E53C4C0AC6E4CDAFBC12A7C613115 /* FBLPromise+Race.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Race.h"; path = "Sources/FBLPromises/include/FBLPromise+Race.h"; sourceTree = "<group>"; };
 		C4FDCD6ED05B34555EA641E0CF82FB60 /* FBLPromiseError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLPromiseError.m; path = Sources/FBLPromises/FBLPromiseError.m; sourceTree = "<group>"; };
-		C5168E13A1AFFE742F0DFF80B17C9FC2 /* FrameAnalyzer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameAnalyzer.swift; path = YoonitCamera/src/analyzers/frame/FrameAnalyzer.swift; sourceTree = "<group>"; };
 		C638D0D047A4BF01BA62A08F019332EF /* GDTCORTransport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORTransport.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORTransport.m; sourceTree = "<group>"; };
 		C64206B551A390E457B168EEFA84DDD2 /* FBLPromise+Timeout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Timeout.h"; path = "Sources/FBLPromises/include/FBLPromise+Timeout.h"; sourceTree = "<group>"; };
 		C713BE3C6B86B8C152E22C5B92B3B408 /* GoogleUtilities.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GoogleUtilities.modulemap; sourceTree = "<group>"; };
@@ -962,15 +972,12 @@
 		CE210BD6A3DAF3801FFFC3274E4D9DC9 /* GPBCodedInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBCodedInputStream.m; path = objectivec/GPBCodedInputStream.m; sourceTree = "<group>"; };
 		CE4C07C5925CC21BBC2FC573D30E7A45 /* fssd_100_8bit_v1.tflite */ = {isa = PBXFileReference; includeInIndex = 1; name = fssd_100_8bit_v1.tflite; path = Resources/GoogleMVFaceDetectorResources/fssd_100_8bit_v1.tflite; sourceTree = "<group>"; };
 		D037844F7F2BC414EC11803531327381 /* MLKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLKit.h; path = MLKitCore/Sources/MLKit.h; sourceTree = "<group>"; };
-		D0B08DD2098CA6C8D4A6BD9B8C56280D /* CaptureType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureType.swift; path = YoonitCamera/src/CaptureType.swift; sourceTree = "<group>"; };
 		D3192286C40F075E8B0B9F8D13B67278 /* FBLPromise+Retry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Retry.m"; path = "Sources/FBLPromises/FBLPromise+Retry.m"; sourceTree = "<group>"; };
 		D4F426B47C7488B3ED26AA8DA74BF52B /* FBLPromise+Reduce.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Reduce.h"; path = "Sources/FBLPromises/include/FBLPromise+Reduce.h"; sourceTree = "<group>"; };
 		D61ECFF7C3CFAB34F3E7238D3A273C8C /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
 		D62AB1AF97895948CF39DC91FA298384 /* GULUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULUserDefaults.m; path = GoogleUtilities/UserDefaults/GULUserDefaults.m; sourceTree = "<group>"; };
 		D79F978E0863EE059A36DE3A5769F6A1 /* GTMSessionFetcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMSessionFetcher.debug.xcconfig; sourceTree = "<group>"; };
-		D8C85AB925FDB4CEFF51717BD8C2A607 /* CameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = YoonitCamera/src/CameraView.swift; sourceTree = "<group>"; };
 		D97171D64749F9F3E24D3BC79EA51A8E /* Pods-YoonitFacefyDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YoonitFacefyDemo-dummy.m"; sourceTree = "<group>"; };
-		D97873B00E4843B5D847289767707320 /* YoonitCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YoonitCamera.modulemap; sourceTree = "<group>"; };
 		D97E57CF04220BF85640DB564F703AF0 /* GPBUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBUtilities.m; path = objectivec/GPBUtilities.m; sourceTree = "<group>"; };
 		DCF85EC6DC04B0DF56401FD466A38C2E /* Pods-YoonitFacefyDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YoonitFacefyDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		DDD8E45E46A2C537CC91B19F2F920A5B /* GPBCodedOutputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBCodedOutputStream.m; path = objectivec/GPBCodedOutputStream.m; sourceTree = "<group>"; };
@@ -980,7 +987,7 @@
 		DF27BAFBD613D600C13925DCD57E9195 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
 		E092F526B286DA6BD162BDF6CF875957 /* GULCCComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULCCComponent.m; path = GoogleUtilitiesComponents/Sources/GULCCComponent.m; sourceTree = "<group>"; };
 		E09BE91FD7F34C7DB8BEACC0731BE9BC /* GULCCComponentContainerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULCCComponentContainerInternal.h; path = GoogleUtilitiesComponents/Sources/Private/GULCCComponentContainerInternal.h; sourceTree = "<group>"; };
-		E1B0C4D2C98BE653A19ACD64FBFD1478 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = YoonitCamera/src/utils/Utils.swift; sourceTree = "<group>"; };
+		E265726DC4C1A810371ADA9597E5C14E /* YoonitCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoonitCamera-prefix.pch"; sourceTree = "<group>"; };
 		E48D0E21E73F1BF216BBDB1A5D4B4FFB /* FacefyController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacefyController.swift; path = YoonitFacefy/src/FacefyController.swift; sourceTree = "<group>"; };
 		E604607E134344759F549E0484C622F4 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
 		E6AF0431D427D94DA6C4531FBB946661 /* GPBCodedOutputStream_PackagePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBCodedOutputStream_PackagePrivate.h; path = objectivec/GPBCodedOutputStream_PackagePrivate.h; sourceTree = "<group>"; };
@@ -989,6 +996,7 @@
 		E93C972A10D409C396B3E78FFE0F22CC /* cct.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cct.nanopb.c; path = GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/cct.nanopb.c; sourceTree = "<group>"; };
 		E9C6D0E73D4B4EC1281FE38C8F3F0691 /* fssd_100_8bit_gray_v1.tflite */ = {isa = PBXFileReference; includeInIndex = 1; name = fssd_100_8bit_gray_v1.tflite; path = Resources/GoogleMVFaceDetectorResources/fssd_100_8bit_gray_v1.tflite; sourceTree = "<group>"; };
 		EA837E2699AB78B8FC9B9E3E69633FDA /* Wrappers.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Wrappers.pbobjc.h; path = objectivec/google/protobuf/Wrappers.pbobjc.h; sourceTree = "<group>"; };
+		EC3E480712A7349530CD9005BF604B7E /* YoonitCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YoonitCamera.debug.xcconfig; sourceTree = "<group>"; };
 		EC81291FB8C9CC79F674519E126FD69B /* GPBWellKnownTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBWellKnownTypes.m; path = objectivec/GPBWellKnownTypes.m; sourceTree = "<group>"; };
 		ED1EFE3683280ABE2FD39C9ABDD2011F /* GULCCComponentContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULCCComponentContainer.m; path = GoogleUtilitiesComponents/Sources/GULCCComponentContainer.m; sourceTree = "<group>"; };
 		EE444A4F898873380BF1FDF7590CD5FA /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
@@ -1004,16 +1012,15 @@
 		FB85D2C2C9B51D694808F836932EAF70 /* NSURLSession+GULPromises.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+GULPromises.m"; path = "GoogleUtilities/Environment/URLSessionPromiseWrapper/NSURLSession+GULPromises.m"; sourceTree = "<group>"; };
 		FBED76D6D5689E036C0879693038807E /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+URLArguments.m"; path = "Foundation/GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
 		FBF1C59542A0C4F86FAE347337E847F7 /* GULUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULUserDefaults.h; path = GoogleUtilities/UserDefaults/Public/GoogleUtilities/GULUserDefaults.h; sourceTree = "<group>"; };
-		FC21CF0C0DF1D3F825107BC35D6F4E08 /* CameraGraphicView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraGraphicView.swift; path = YoonitCamera/src/CameraGraphicView.swift; sourceTree = "<group>"; };
 		FCCE2EF7A63718A21C4D767D730AB371 /* YoonitFacefy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YoonitFacefy.release.xcconfig; sourceTree = "<group>"; };
 		FD0864A10A310AFC8DD57C31EE50EE04 /* GDTCOREndpoints.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCOREndpoints.m; path = GoogleDataTransport/GDTCORLibrary/GDTCOREndpoints.m; sourceTree = "<group>"; };
 		FD8ABBCEB556745B086D9061EDB20DD8 /* GoogleToolboxForMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.debug.xcconfig; sourceTree = "<group>"; };
-		FDA6BC0653EBDFDF38B96D1D7CE69010 /* FaceCropController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FaceCropController.swift; path = YoonitCamera/src/analyzers/face/FaceCropController.swift; sourceTree = "<group>"; };
 		FDC2A78AA628F9415EF566F758B6944B /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = Source/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
 		FDC5C3AAA690BF4ADB5AF3DCC047443D /* nanopb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.debug.xcconfig; sourceTree = "<group>"; };
 		FE0ECEDF79D3C62824ADD5AF39216E91 /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
 		FE4FB40A25342F163B8746F8BFC54A70 /* Protobuf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Protobuf.debug.xcconfig; sourceTree = "<group>"; };
 		FE733C3E1553FF964DB976EAA03D119F /* GPBTimestamp.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBTimestamp.pbobjc.m; path = objectivec/GPBTimestamp.pbobjc.m; sourceTree = "<group>"; };
+		FF3048020B1F356BF880869E004DD829 /* ROI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ROI.swift; path = YoonitCamera/src/models/ROI.swift; sourceTree = "<group>"; };
 		FF4E646C4D03FE181264590E52C0845F /* BCLlefteyeclosed_200.emd */ = {isa = PBXFileReference; includeInIndex = 1; name = BCLlefteyeclosed_200.emd; path = Resources/GoogleMVFaceDetectorResources/BCLlefteyeclosed_200.emd; sourceTree = "<group>"; };
 		FFA7971C6288D5D6DFFCD3C082A61342 /* FBLPromise+Async.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Async.h"; path = "Sources/FBLPromises/include/FBLPromise+Async.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1027,11 +1034,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F431C956574DA61A028E5879AD6F4EF /* Frameworks */ = {
+		1F84D9142F1DF580424C2EF794CEC010 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14658F9B7465BBA40ADED9FB3D7A4C39 /* Foundation.framework in Frameworks */,
+				A8E662AEFA61E9CCC0F3FC557C4D4EC0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1085,6 +1092,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7A9503561902082E1DA17285C577B100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29DDCC6380FBEA2F763C609D8B2916C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C895C7323C496B55DAFDBE5A9D2361D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1093,14 +1108,6 @@
 				ABE554622CBB06B21E8E6B84394E16D4 /* Foundation.framework in Frameworks */,
 				D926174F5043013771C0183A4CF8233C /* nanopb.framework in Frameworks */,
 				8E5E2F1B5CAC4C6556BC611C5049196A /* SystemConfiguration.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D6F05A0C4C1AF1F82208D847F97B08B8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				531C4C2A782ACE76C8A747A4B431EA4A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1262,21 +1269,6 @@
 			path = "../Target Support Files/Protobuf";
 			sourceTree = "<group>";
 		};
-		2FCA3FD17B674246ED705491138D2493 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D97873B00E4843B5D847289767707320 /* YoonitCamera.modulemap */,
-				9C642DA0ABACC02816EC4BF3AA9B1B96 /* YoonitCamera-dummy.m */,
-				15A2FEC79BB31E82B6135451DCCBA36F /* YoonitCamera-Info.plist */,
-				93CB4C26337176B694A858D10D3B06FF /* YoonitCamera-prefix.pch */,
-				BD106480EABBF06FF79FC443AA59679D /* YoonitCamera-umbrella.h */,
-				A1629A1448FBDE6E729943B0FA24018A /* YoonitCamera.debug.xcconfig */,
-				85EBA042331FE624169F30EE35C305E5 /* YoonitCamera.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/YoonitCamera";
-			sourceTree = "<group>";
-		};
 		34EE198FD2E2882E7779EDAA8BCB7115 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1408,31 +1400,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/GTMSessionFetcher";
-			sourceTree = "<group>";
-		};
-		45E2CB67957DD5C58573BB068F8C17CD /* YoonitCamera */ = {
-			isa = PBXGroup;
-			children = (
-				3B5F655EF18338FBB825EF25A11B7183 /* CameraController.swift */,
-				AC479F127D64BFBF4646B14CA22D1400 /* CameraEventListenerDelegate.swift */,
-				FC21CF0C0DF1D3F825107BC35D6F4E08 /* CameraGraphicView.swift */,
-				D8C85AB925FDB4CEFF51717BD8C2A607 /* CameraView.swift */,
-				6C873726A768B5E2F2BC9F1D4FCCE2BB /* CaptureOptions.swift */,
-				D0B08DD2098CA6C8D4A6BD9B8C56280D /* CaptureType.swift */,
-				08C5BFC6A30CC40499601873577E5F10 /* extensions.swift */,
-				4AFEE958592BA05CB016BEAF2F6E5BAE /* FaceAnalyzer.swift */,
-				71D4EC0A63141ABFB81B66C2CE4990A8 /* FaceBoundingBoxController.swift */,
-				FDA6BC0653EBDFDF38B96D1D7CE69010 /* FaceCropController.swift */,
-				42A9B443FCA8FD7520D038A5B9E64DE9 /* FaceROI.swift */,
-				1BE58C730D518CC42DAFC674C3DFD444 /* FileUtils.swift */,
-				C5168E13A1AFFE742F0DFF80B17C9FC2 /* FrameAnalyzer.swift */,
-				4904F52C952054CD9FEF0581564FEBC8 /* KeyError.swift */,
-				510DAAFA09297D5EC6F0E634EB1AF0AD /* Message.swift */,
-				E1B0C4D2C98BE653A19ACD64FBFD1478 /* Utils.swift */,
-				2FCA3FD17B674246ED705491138D2493 /* Support Files */,
-			);
-			name = YoonitCamera;
-			path = YoonitCamera;
 			sourceTree = "<group>";
 		};
 		464A01B3A5FD93A900C8889D53A94A27 /* Support Files */ = {
@@ -1614,6 +1581,21 @@
 			name = decode;
 			sourceTree = "<group>";
 		};
+		8108F44A2A97B992D0C868D9A2C93863 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A9E6674901F1C7C4DD5A86CF0276C88 /* YoonitCamera.modulemap */,
+				9B686469E569EE1057AA89F2A8CB2A98 /* YoonitCamera-dummy.m */,
+				1D6DE49CF792D03BAC237AE18166E8EC /* YoonitCamera-Info.plist */,
+				E265726DC4C1A810371ADA9597E5C14E /* YoonitCamera-prefix.pch */,
+				19BEA58BF2BDF25089057D7157342D72 /* YoonitCamera-umbrella.h */,
+				EC3E480712A7349530CD9005BF604B7E /* YoonitCamera.debug.xcconfig */,
+				490F77BC5961FC4E01C2E626FCFCDACD /* YoonitCamera.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YoonitCamera";
+			sourceTree = "<group>";
+		};
 		8438210554391E6B1A55E01D7157863B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -1698,7 +1680,7 @@
 				565BE6D676DA0D1C8B5299B3B0CE6C56 /* nanopb */,
 				C00AC492B6AAB735B4E6282EB1794335 /* PromisesObjC */,
 				3500699D7E0BC196ABEEF262350EB9E6 /* Protobuf */,
-				45E2CB67957DD5C58573BB068F8C17CD /* YoonitCamera */,
+				E55A7B0B434123DB09183D3534282DD7 /* YoonitCamera */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1897,6 +1879,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E55A7B0B434123DB09183D3534282DD7 /* YoonitCamera */ = {
+			isa = PBXGroup;
+			children = (
+				1F53130F116D309D50C7AEC3DC66FC60 /* CameraController.swift */,
+				9A3E36976BA303623E604FAF665F122A /* CameraEventListenerDelegate.swift */,
+				7BF16633DF71863D34A97C6A0828A0A6 /* CameraGraphicView.swift */,
+				6CE50382ABD35A74964005F4C63AF6A4 /* CameraView.swift */,
+				5CD6497D5CA32149B6BB8112B650DCCC /* CaptureOptions.swift */,
+				812259EB43FCBAE1D6C47D6A623A61D9 /* CaptureType.swift */,
+				84A3DC5D0EF72790094133CB9B782BAA /* CoordinatesController.swift */,
+				6E7C94215E325CB0FD697A03B93B879F /* extensions.swift */,
+				978D48D32A64C02AD0374F36DD26B324 /* FaceAnalyzer.swift */,
+				3F6875DE1D20B908B018FECB81483BD1 /* FileUtils.swift */,
+				A50BC409AF53E09E9B1869B76C40ACBC /* FrameAnalyzer.swift */,
+				27E4E23431F422E716897828F04D5626 /* ImageQualityController.swift */,
+				BA7E21A232565506E8A5FF64D8A9CDDF /* KeyError.swift */,
+				6CEED932BF0D787829E4C623FC37C26E /* Message.swift */,
+				5EE298D83735288031F173976051C63F /* QRCodeAnalyzer.swift */,
+				FF3048020B1F356BF880869E004DD829 /* ROI.swift */,
+				8108F44A2A97B992D0C868D9A2C93863 /* Support Files */,
+			);
+			name = YoonitCamera;
+			path = YoonitCamera;
+			sourceTree = "<group>";
+		};
 		EEB839C8C9A0A7C97BDDAED5F5C4E881 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2021,22 +2028,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		268BC9AD55BCF9415196B884C0E675C0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87C8E84AFCB2BE73238AEAF4C32807B8 /* YoonitFacefy-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B579237236A9CA9D8635682BBDA22CF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				871DC816B6858BB5B413D8AF4CEC375C /* YoonitCamera-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3D03D80F09EF76ADA5B59EDBF171A9B3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2046,6 +2037,22 @@
 				FEE4C9D594D110D041FC457BA1057F3E /* GTMSessionFetcherLogging.h in Headers */,
 				B1705A6D0333B40D12CEE6DC89494660 /* GTMSessionFetcherService.h in Headers */,
 				70E9A5322DA380CA139CF8D60F669BE8 /* GTMSessionUploadFetcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		436D49C6D54FE06174031033B789B1FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31ACA35242F20990569A371C1B391CDB /* YoonitCamera-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC7A160A7A0CEC47449A3A6F678A766 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D4A560A4EBD31AE2032727F1D3CDEB /* YoonitFacefy-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2372,16 +2379,17 @@
 		};
 		E8DA5BF530FC56593D39E406E1F1720D /* YoonitCamera */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77916A1E1A6D3F81D081B0473E8CD699 /* Build configuration list for PBXNativeTarget "YoonitCamera" */;
+			buildConfigurationList = 5E91F4CFB109C8EDCF6CE7383B920307 /* Build configuration list for PBXNativeTarget "YoonitCamera" */;
 			buildPhases = (
-				3B579237236A9CA9D8635682BBDA22CF /* Headers */,
-				98E5EC5EEF6FE0E521DD67DE35581E73 /* Sources */,
-				1F431C956574DA61A028E5879AD6F4EF /* Frameworks */,
-				D7AD7A06800CA4C94E3AFA924FA81063 /* Resources */,
+				436D49C6D54FE06174031033B789B1FB /* Headers */,
+				0CF14578D8727FC0C412C8A7EF4CF625 /* Sources */,
+				1F84D9142F1DF580424C2EF794CEC010 /* Frameworks */,
+				CD5A31461A94C813232B1DA592514919 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C6341F169B598301EC130F7B49A58F5C /* PBXTargetDependency */,
 			);
 			name = YoonitCamera;
 			productName = YoonitCamera;
@@ -2390,17 +2398,17 @@
 		};
 		F21CA5BA7243F2EBB99D62422951EFCD /* YoonitFacefy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBFD03E5153A21B035108FBBF87B81FF /* Build configuration list for PBXNativeTarget "YoonitFacefy" */;
+			buildConfigurationList = 8219E43B550767B18C7279F006F1C33F /* Build configuration list for PBXNativeTarget "YoonitFacefy" */;
 			buildPhases = (
-				268BC9AD55BCF9415196B884C0E675C0 /* Headers */,
-				438B3ACCCB412AFCB18F3CA9332AB0F4 /* Sources */,
-				D6F05A0C4C1AF1F82208D847F97B08B8 /* Frameworks */,
-				44374E85023A5B4F784F10F4B72A76A9 /* Resources */,
+				4CC7A160A7A0CEC47449A3A6F678A766 /* Headers */,
+				2CAE086274CF6A869A20F5054B4C8A34 /* Sources */,
+				7A9503561902082E1DA17285C577B100 /* Frameworks */,
+				4EB19CD05E6180E0AB49ABBB2DE1E2DA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EB1E97D0F603BBDBFF52A4B145750C6F /* PBXTargetDependency */,
+				3C03951432622068C6AC9AF8762CB89D /* PBXTargetDependency */,
 			);
 			name = YoonitFacefy;
 			productName = YoonitFacefy;
@@ -2417,7 +2425,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -2490,7 +2498,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44374E85023A5B4F784F10F4B72A76A9 /* Resources */ = {
+		4EB19CD05E6180E0AB49ABBB2DE1E2DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2539,7 +2547,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7AD7A06800CA4C94E3AFA924FA81063 /* Resources */ = {
+		CD5A31461A94C813232B1DA592514919 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2560,6 +2568,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0CF14578D8727FC0C412C8A7EF4CF625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAED27175A33DFF39F47AE921E021C1F /* CameraController.swift in Sources */,
+				83D1BCEDBA2FD0EF96B37039041D937A /* CameraEventListenerDelegate.swift in Sources */,
+				51E274295BD6372DE26BFC960F77F346 /* CameraGraphicView.swift in Sources */,
+				3594749F967E9ED1EA8FAB0148C00CD2 /* CameraView.swift in Sources */,
+				4B69D4E650D9779BEFBB92787F564082 /* CaptureOptions.swift in Sources */,
+				BA5B91F2076A9D42EE6EFE8C0860C3AA /* CaptureType.swift in Sources */,
+				0BA2D46389EED3D9DC36AD4BBE3E1997 /* CoordinatesController.swift in Sources */,
+				7F5C55553568616AB890E96A29FF3BFC /* extensions.swift in Sources */,
+				67D0F366A78DAACA2AFF2B2EBD3CFB90 /* FaceAnalyzer.swift in Sources */,
+				D1E6D9BE0C95AB1189A783B9E33CB0DE /* FileUtils.swift in Sources */,
+				269A7A123A06207F08DC71C0DEA2BE60 /* FrameAnalyzer.swift in Sources */,
+				5ED0746D2F9D79CF756807432C1D7971 /* ImageQualityController.swift in Sources */,
+				1272633D919AA91E8B3641B4DDAC874B /* KeyError.swift in Sources */,
+				1D13CDAC5304C3A89B44D24B86D3A180 /* Message.swift in Sources */,
+				8EC5CDCB1AE2199384D19FAF05C64E52 /* QRCodeAnalyzer.swift in Sources */,
+				6DBB9D427507E83512942E0705AF342F /* ROI.swift in Sources */,
+				887CB675E6F48C99B1660FBCC6B26530 /* YoonitCamera-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0DFA9A47F3BA2EEE17FC949E0AD719BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2572,21 +2604,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CAE086274CF6A869A20F5054B4C8A34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5F931BA45104C826A9F5EAD89FF12E /* FaceDetected.swift in Sources */,
+				12367AB104FDF55A5FA08BCDC27E1FEB /* Facefy.swift in Sources */,
+				A0933188CDB5E526DFFE53CC97D222EF /* FacefyController.swift in Sources */,
+				CEB105D94C929D33A5ABB6B917321E62 /* YoonitFacefy-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3DD2EAA92C64E6D53742EA75037D2772 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		438B3ACCCB412AFCB18F3CA9332AB0F4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6316C2C1D1E95938544A6A674B42453E /* FaceDetected.swift in Sources */,
-				C46FC21B27E479A6681499AAA1A44A46 /* Facefy.swift in Sources */,
-				0E69F8186DB595B5D8FED59F3DC8C6C3 /* FacefyController.swift in Sources */,
-				4E6BE7FD875255C52941E5A64D092FE0 /* YoonitFacefy-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2677,30 +2709,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98E5EC5EEF6FE0E521DD67DE35581E73 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2E8057B9B2F2ACE7F007CDB0FBD866E6 /* CameraController.swift in Sources */,
-				70BF908A5ED20E39DBBE17227D6A2064 /* CameraEventListenerDelegate.swift in Sources */,
-				E433E40316DF0C2EE16B571A5075F9F6 /* CameraGraphicView.swift in Sources */,
-				144578AD6F9CFB42512E806EE7AB253A /* CameraView.swift in Sources */,
-				E2779FB76BD81D19FEFD064E6769E015 /* CaptureOptions.swift in Sources */,
-				BDFE9F609C823249BF04B501DE929FDA /* CaptureType.swift in Sources */,
-				30C021D774A0509818C67887D869A069 /* extensions.swift in Sources */,
-				0B1935DC01DDCDC9E76FC2DAFD37D7AA /* FaceAnalyzer.swift in Sources */,
-				4081F441D62EADB01BCFCFA9A5D68CC5 /* FaceBoundingBoxController.swift in Sources */,
-				1078A1AF5457D4FA686FB88D945BB51D /* FaceCropController.swift in Sources */,
-				0C8EBA27009C35F37D9C43C98D84E3A3 /* FaceROI.swift in Sources */,
-				9BE432B8FBDC83C1723C4F38C54A8334 /* FileUtils.swift in Sources */,
-				9DC27976346A459FE3F53A13E570064F /* FrameAnalyzer.swift in Sources */,
-				2EF703EDC51DF6772FBCD61B211C2400 /* KeyError.swift in Sources */,
-				A997637D3245E0F29C894002609A743B /* Message.swift in Sources */,
-				47DCA1DF862EAD14E7950AE84A945E77 /* Utils.swift in Sources */,
-				311D0C9B95D49E6B3473DFDDE7855C0C /* YoonitCamera-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BA366EC761A47D2C033267F8CAAFB658 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2776,6 +2784,12 @@
 			name = MLKitFaceDetection;
 			target = 8628FA5433C5F582EFA7209B6B4C8CD7 /* MLKitFaceDetection */;
 			targetProxy = 21F8686AB6C63DF7B2CABE9793CA7D20 /* PBXContainerItemProxy */;
+		};
+		3C03951432622068C6AC9AF8762CB89D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMLKit;
+			target = 6D46A1F6123B14449A2A1FC04011860D /* GoogleMLKit */;
+			targetProxy = A0A029BA2C88971E86ABE8A8F0C47707 /* PBXContainerItemProxy */;
 		};
 		3D27D64E164A9967B716167E0B8DE86B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2903,6 +2917,12 @@
 			target = 6D46A1F6123B14449A2A1FC04011860D /* GoogleMLKit */;
 			targetProxy = 2CB4F474F47BA87D0F4C6130E48F903E /* PBXContainerItemProxy */;
 		};
+		C6341F169B598301EC130F7B49A58F5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YoonitFacefy;
+			target = F21CA5BA7243F2EBB99D62422951EFCD /* YoonitFacefy */;
+			targetProxy = 131D987FD4B7ADB6CC6B2B969B20F5DC /* PBXContainerItemProxy */;
+		};
 		CFEA70DF02F63F3FFFDEC6BE7A46761D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Protobuf;
@@ -2932,12 +2952,6 @@
 			name = MLKitCommon;
 			target = 0A4338C5C8BD51549298BECF630A6D57 /* MLKitCommon */;
 			targetProxy = 8487B5C492C1AA8C11F9BF132B859D4C /* PBXContainerItemProxy */;
-		};
-		EB1E97D0F603BBDBFF52A4B145750C6F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GoogleMLKit;
-			target = 6D46A1F6123B14449A2A1FC04011860D /* GoogleMLKit */;
-			targetProxy = E926F0ED1517FC6C43B8A1D0A451984A /* PBXContainerItemProxy */;
 		};
 		F05C832D25F55BB7FC1276B27E31D7F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3179,42 +3193,6 @@
 			};
 			name = Debug;
 		};
-		50B9B2522EE6CEADC7B908DF107B2962 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85EBA042331FE624169F30EE35C305E5 /* YoonitCamera.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YoonitCamera/YoonitCamera-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YoonitCamera/YoonitCamera-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/YoonitCamera/YoonitCamera.modulemap";
-				PRODUCT_MODULE_NAME = YoonitCamera;
-				PRODUCT_NAME = YoonitCamera;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		54C086C556345D16DD7A298A7A1E71A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6666D1DE448711631EBC719785753088 /* GoogleDataTransport.release.xcconfig */;
@@ -3248,6 +3226,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		588C76FCCE29D6EC32D862D23AFC4BC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC3E480712A7349530CD9005BF604B7E /* YoonitCamera.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YoonitCamera/YoonitCamera-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YoonitCamera/YoonitCamera-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/YoonitCamera/YoonitCamera.modulemap";
+				PRODUCT_MODULE_NAME = YoonitCamera;
+				PRODUCT_NAME = YoonitCamera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		593F10BFFA94DAC7D6E17FB8A7F32D72 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -3411,7 +3425,7 @@
 			};
 			name = Debug;
 		};
-		66D08C9923056DE9E0001E4B627B991A /* Release */ = {
+		748B1893F4220441F69BB71250E0D04E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FCCE2EF7A63718A21C4D767D730AB371 /* YoonitFacefy.release.xcconfig */;
 			buildSettings = {
@@ -3427,7 +3441,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/YoonitFacefy/YoonitFacefy-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/YoonitFacefy/YoonitFacefy-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3739,7 +3753,7 @@
 			};
 			name = Debug;
 		};
-		C511A983214E00BB47CE54479F2563E6 /* Debug */ = {
+		C065C3D04B79BD0E8C610A9E96E05610 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D4F56CA9A9E524B6259F4DE4656C0BA /* YoonitFacefy.debug.xcconfig */;
 			buildSettings = {
@@ -3755,7 +3769,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/YoonitFacefy/YoonitFacefy-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/YoonitFacefy/YoonitFacefy-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3880,41 +3894,6 @@
 			};
 			name = Release;
 		};
-		D0626D3F59EE063D6C4673D233814661 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1629A1448FBDE6E729943B0FA24018A /* YoonitCamera.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YoonitCamera/YoonitCamera-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YoonitCamera/YoonitCamera-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/YoonitCamera/YoonitCamera.modulemap";
-				PRODUCT_MODULE_NAME = YoonitCamera;
-				PRODUCT_NAME = YoonitCamera;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		DBD9C6E1B361BDA0F881F870A60ED588 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C07D687918820F28E31AEAF1DE97BC0 /* GoogleToolboxForMac.release.xcconfig */;
@@ -3983,6 +3962,43 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		E5E049FFC8D85623AB6560C4EF324D66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 490F77BC5961FC4E01C2E626FCFCDACD /* YoonitCamera.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YoonitCamera/YoonitCamera-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YoonitCamera/YoonitCamera-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/YoonitCamera/YoonitCamera.modulemap";
+				PRODUCT_MODULE_NAME = YoonitCamera;
+				PRODUCT_NAME = YoonitCamera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		F2FB6A2AA18D6CE674DE7A3A6AADFC9A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -4085,11 +4101,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77916A1E1A6D3F81D081B0473E8CD699 /* Build configuration list for PBXNativeTarget "YoonitCamera" */ = {
+		5E91F4CFB109C8EDCF6CE7383B920307 /* Build configuration list for PBXNativeTarget "YoonitCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0626D3F59EE063D6C4673D233814661 /* Debug */,
-				50B9B2522EE6CEADC7B908DF107B2962 /* Release */,
+				588C76FCCE29D6EC32D862D23AFC4BC5 /* Debug */,
+				E5E049FFC8D85623AB6560C4EF324D66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4099,6 +4115,15 @@
 			buildConfigurations = (
 				7F15FE4AEC6FF01251074D7AE1A07F22 /* Debug */,
 				5D3D2D7A58DA20AB83399BA87607248E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8219E43B550767B18C7279F006F1C33F /* Build configuration list for PBXNativeTarget "YoonitFacefy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C065C3D04B79BD0E8C610A9E96E05610 /* Debug */,
+				748B1893F4220441F69BB71250E0D04E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4162,15 +4187,6 @@
 			buildConfigurations = (
 				8E69BF3BBDF1300F1C0B8E5DB53C4D17 /* Debug */,
 				54C086C556345D16DD7A298A7A1E71A9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FBFD03E5153A21B035108FBBF87B81FF /* Build configuration list for PBXNativeTarget "YoonitFacefy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C511A983214E00BB47CE54479F2563E6 /* Debug */,
-				66D08C9923056DE9E0001E4B627B991A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
