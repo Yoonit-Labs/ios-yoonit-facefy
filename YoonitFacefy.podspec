@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YoonitFacefy"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "The face detection's module for iOS with a lot of awesome features"
 
   # This description is used to generate tags and improve search results.
@@ -43,9 +43,8 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.authors = { 'CyberLabs.AI'   => 'contato@cyberlabs.ai',
-                   'Luigui Delyer'  => 'luigui.delyer@cyberlabs.com.br',
-                   'Haroldo Teruya' => 'haroldo.teruya@cyberlabs.com.br' }
+  spec.authors = { 'Haroldo Teruya' => 'haroldo.s.teruya@gmail.com',
+                   'Luigui Delyer'  => 'luigui.delyer@cyberlabs.com.br' }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
