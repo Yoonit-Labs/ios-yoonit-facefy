@@ -1,17 +1,54 @@
-<img src="https://raw.githubusercontent.com/Yoonit-Labs/ios-yoonit-facefy/development/logo_cyberlabs.png" width="300">
+<h1 align="center">iOS Yoonit Facefy</h1>
 
-# ios-yoonit-facefy
+<p align="center">
+    <img src="https://img.shields.io/github/v/tag/Yoonit-Labs/ios-yoonit-facefy?color=lightgrey&label=version&style=for-the-badge" />
+    <img src="https://img.shields.io/github/license/Yoonit-Labs/ios-yoonit-facefy?color=lightgrey&style=for-the-badge" />  
+</p>
 
-A iOS plugin to provide:
-* [Google MLKit](https://developers.google.com/ml-kit) integration
-* [PyTorch](https://pytorch.org/mobile/home/) integration (Soon)
-* Computer vision pipeline (Soon)
-* Face detection
-* Face contours
-* Face expressions
-* Face movement
+<div align="center">
+    <table>
+        <tbody>
+            <tr>
+                <td align="left" valign="middle">
+                    <p>◻ <a href="https://developers.google.com/ml-kit">Google MLKit</a> integration</p>                    
+                    <p>◻ Face detection</p>
+                    <p>◻ Face contours</p>
+                    <p>◻ Face expressions</p>
+                    <p>◻ Face movement</p>
+                </td>
+                <td align="center" valign="middle">                    
+                    <img src="https://raw.githubusercontent.com/Yoonit-Labs/ios-yoonit-facefy/development/facefy.gif" width="300" />
+                </td>
+            </tr>
+        <tbody>
+    </table>
+</div>
 
-<img src="https://raw.githubusercontent.com/Yoonit-Labs/ios-yoonit-facefy/development/facefy.gif" width="300" />
+<div align="center">
+    <h3>Sponsors</h3>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <b>Platinum</b>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" valign="middle">
+                    <a 
+                        href="https://cyberlabs.ai"
+                    >
+                        <img 
+                            src="https://raw.githubusercontent.com/Yoonit-Labs/ios-yoonit-facefy/main/sponsor_cyberlabs.png"
+                            width="300" 
+                        />
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h5><a href="mailto:about@yoonit.dev">Become a sponsor!</a></h5>
+</div>
 
 ## Table of Contents
 
@@ -119,9 +156,7 @@ Here we explaining the above gif and how reached the "results". Each "movement" 
 
 ## To contribute and make it better
 
-Clone the repo, change what you want and send PR.
-
-For commit messages we use <a href="https://www.conventionalcommits.org/">Conventional Commits</a>.
+Clone the repo, change what you want and send PR. For commit messages we use <a href="https://www.conventionalcommits.org/">Conventional Commits</a>.
 
 Contributions are always welcome!
 
@@ -131,4 +166,4 @@ Contributions are always welcome!
 
 ---
 
-Code with ❤ by the [**Cyberlabs AI**](https://cyberlabs.ai/) Front-End Team
+Code with ❤ by the [**Yoonit**](https://yoonit.dev/) Team

@@ -18,6 +18,7 @@
 		5C65788825D32FB2001171F8 /* libnanopb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C65788725D32FB2001171F8 /* libnanopb.a */; };
 		5C65788C25D32FB2001171F8 /* libPromisesObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C65788B25D32FB2001171F8 /* libPromisesObjC.a */; };
 		5C65788E25D32FB2001171F8 /* libProtobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C65788D25D32FB2001171F8 /* libProtobuf.a */; };
+		5C687D3C272DDD540028D053 /* sponsor_cyberlabs.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C687D3B272DDD540028D053 /* sponsor_cyberlabs.png */; };
 		5C77937525EEABDF00CDE6E9 /* facefy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C77937425EEABDF00CDE6E9 /* facefy.gif */; };
 		5CB4F8F625CC7E63001D3606 /* FacefyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB4F8F525CC7E63001D3606 /* FacefyController.swift */; };
 		5CD73DD625E5795A00DF4C6F /* FaceDetected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD73DD525E5795A00DF4C6F /* FaceDetected.swift */; };
@@ -39,6 +40,7 @@
 		5C65788725D32FB2001171F8 /* libnanopb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libnanopb.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C65788B25D32FB2001171F8 /* libPromisesObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPromisesObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C65788D25D32FB2001171F8 /* libProtobuf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libProtobuf.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C687D3B272DDD540028D053 /* sponsor_cyberlabs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sponsor_cyberlabs.png; sourceTree = "<group>"; };
 		5C77937425EEABDF00CDE6E9 /* facefy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = facefy.gif; sourceTree = "<group>"; };
 		5CB4F8EE25CC7DDC001D3606 /* YoonitFacefy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YoonitFacefy.h; sourceTree = "<group>"; };
 		5CB4F8F525CC7E63001D3606 /* FacefyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacefyController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				5C0C64382542108B00EDF95B /* logo_cyberlabs.png */,
 				5C77937425EEABDF00CDE6E9 /* facefy.gif */,
 				6176EF25252CFEE000F4D4DD /* README.md */,
+				5C687D3B272DDD540028D053 /* sponsor_cyberlabs.png */,
 				6176EF22252CFC9500F4D4DD /* LICENSE */,
 				6176EF1F252CFA4300F4D4DD /* YoonitFacefy.podspec */,
 				6176EEFA252CF9D200F4D4DD /* Info.plist */,
@@ -218,6 +221,7 @@
 				6176EF23252CFC9500F4D4DD /* LICENSE in Resources */,
 				5C77937525EEABDF00CDE6E9 /* facefy.gif in Resources */,
 				6176EF20252CFA4300F4D4DD /* YoonitFacefy.podspec in Resources */,
+				5C687D3C272DDD540028D053 /* sponsor_cyberlabs.png in Resources */,
 				5C0C64392542108B00EDF95B /* logo_cyberlabs.png in Resources */,
 				6176EFA8252E476000F4D4DD /* Example in Resources */,
 			);
